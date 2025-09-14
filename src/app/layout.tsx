@@ -1,12 +1,17 @@
 import { getMetadata } from "./seo";
-// import { Figtree } from "next/font/google";
+import { Manrope, DM_Mono } from "next/font/google";
+// import { Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import { Metadata } from "next";
 
-// const font = Figtree({
-//   weight: "variable",
-//   subsets: ["latin"],
-// });
+export const mono = DM_Mono({
+  weight: "400",
+  subsets: ["latin"],
+});
+const font = Manrope({
+  weight: "variable",
+  subsets: ["latin"],
+});
 
 const metadata: Metadata = getMetadata();
 
@@ -17,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`$ antialiased`}>{children}</body>
+      <body className={`${font.className} antialiased`}>{children}</body>
     </html>
   );
 }

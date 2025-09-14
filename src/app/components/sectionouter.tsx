@@ -4,18 +4,18 @@ function SectionOuter({ children, className }: { children?: React.ReactNode; cla
   return (
     <div
       className={cn(
-        "h-screen relative grid grid-cols-8 [&>*:not(:last-child)]:border-r *:border-neutral-200 border-t border-neutral-200",
+        "min-h-screen relative grid grid-cols-8 [&>*:not(:last-child)]:border-r *:border-neutral-200 border-t border-neutral-200",
         className
       )}
     >
-      <div className=""></div>
-      <div className=""></div>
-      <div className=""></div>
-      <div className=""></div>
-      <div className=""></div>
-      <div className=""></div>
-      <div className=""></div>
-      <div className=""></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
       {children}
     </div>
   );
