@@ -4,10 +4,11 @@ import { Manrope, DM_Mono } from "next/font/google";
 import "./globals.css";
 import { Metadata } from "next";
 
-export const mono = DM_Mono({
-  weight: "400",
-  subsets: ["latin"],
-});
+// export const mono = DM_Mono({
+//   weight: "400",
+//   subsets: ["latin"],
+// });
+
 const font = Manrope({
   weight: "variable",
   subsets: ["latin"],
