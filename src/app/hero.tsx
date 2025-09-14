@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { cn } from "./utils";
 
 function Hero({ className }: { className?: string }) {
@@ -15,19 +16,27 @@ function Hero({ className }: { className?: string }) {
       </div>
       <div className="h-10 py-1 col-start-4 text-2xl text-center bg-foreground hover:bg-sky-400 transition-color duration-100 -skew-x-12 overflow-clip group relative cursor-pointer shadow">
         <span className="w-full h-10 left-0 top-1 group-hover:top-20 group-hover:text-background transition-all duration-100 inline-block skew-x-12 absolute text-background">
-          Our Services
+          <Link href="#services" className="w-full h-full">
+            Our Services
+          </Link>
         </span>
-        <span className="w-full h-10 left-0 -top-20 group-hover:top-1 group-hover:text-background transition-all duration-100 inline-block skew-x-12 absolute">
-          <span className="text-foreground">See More</span>
-        </span>
+        <Link href="#services" className="w-full h-full">
+          <span className="w-full h-10 left-0 -top-20 group-hover:top-1 group-hover:text-background transition-all duration-100 inline-block skew-x-12 absolute">
+            <span className="text-foreground">See More</span>
+          </span>
+        </Link>
       </div>
       <div className="h-10 py-1 col-start-5 text-2xl text-center bg-foreground hover:bg-sky-400 transition-color duration-100 -skew-x-12 overflow-clip group relative cursor-pointer shadow">
         <span className="w-full h-10 left-0 top-1 group-hover:top-20 group-hover:text-background transition-all duration-100 inline-block skew-x-12 absolute text-background">
-          Get in Touch
+          <Link href="#contact" className="w-full h-full">
+            Get in Touch
+          </Link>
         </span>
-        <span className="w-full h-10 left-0 -top-20 group-hover:top-1 group-hover:text-background transition-all duration-100 inline-block skew-x-12 absolute">
-          <span className="text-foreground">Let&apos;s Talk</span>
-        </span>
+        <Link href="#contact" className="w-full h-full">
+          <span className="w-full h-10 left-0 -top-20 group-hover:top-1 group-hover:text-background transition-all duration-100 inline-block skew-x-12 absolute">
+            <span className="text-foreground">Let&apos;s Talk</span>
+          </span>
+        </Link>
       </div>
     </>
   );

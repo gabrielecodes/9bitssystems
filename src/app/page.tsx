@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <main className="w-full min-h-screen select-non">
+      <main className="w-full min-h-screen select-none">
         <SectionOuter>
           <SectionInner>
             <Hero />
@@ -24,7 +24,7 @@ export default function Home() {
         <Border />
         <SectionOuter>
           <SectionInner className="gap-x-0">
-            <div className="h-20 col-span-8"></div>
+            <div id="services" className="h-20 col-span-8"></div>
             <h2 className="h-20 ml-2 col-start-2 col-span-6 flex items-center">
               <span className="px-4 inline-block transform -skew-x-12 bg-neutral-800 text-background shadow">
                 <span className="font-semibold inline-block skew-x-12">Our Services</span>
@@ -35,7 +35,7 @@ export default function Home() {
               <h2 className="mb-10">Data Strategy</h2>
               <div className="mb-10 flex items-center gap-x-6">
                 <div className="w-full h-52 p-4 flex items-center justify-center bg-foreground relative group ">
-                  <div className="group-hover:bg-[url('/gradient1.png')] bg-[length:100%_100%] absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                  <div className="bg-[url('/gradient1.png')] bg-[length:100%_100%] absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out"></div>
                   <Star />
                 </div>
               </div>
@@ -57,7 +57,7 @@ export default function Home() {
               <h2 className="mb-10">Cloud Infrastructure</h2>
               <div className="mb-10 flex items-center gap-x-6">
                 <div className="w-full h-52 p-4 flex items-center justify-center bg-foreground relative group">
-                  <div className="group-hover:bg-[url('/gradient2.png')] bg-[length:100%_100%] absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                  <div className="bg-[url('/gradient2.png')] bg-[length:100%_100%] absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out"></div>
                   <Triangles />
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function Home() {
               <h2 className="mb-10">Software Development</h2>
               <div className="mb-10 flex items-center gap-x-6">
                 <div className="w-full h-52 p-4 flex items-center justify-center bg-foreground relative group">
-                  <div className="group-hover:bg-[url('/gradient3.png')] bg-[length:100%_100%] absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                  <div className="bg-[url('/gradient3.png')] bg-[length:100%_100%] absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out"></div>
                   <Squares />
                 </div>
               </div>
