@@ -10,10 +10,7 @@ function Hero({ className }: { className?: string }) {
         </div>
         <h1 className="mb-6 text-center leading-24 text-8xl font-black">Scale Smarter. Grow Faster.</h1>
         <h3 className="w-2/3 text-center text-neutral-400">
-          <span className="w-fit px-2 text-black inline-block transform -skew-x-12 bg-sky-400">
-            <span className="inline-block transform skew-x-12">10x</span>
-          </span>{" "}
-          your business through data strategy, scalable cloud infrastructure, and reliable automation.
+          Supporting your business growth with reliable data, cloud, and automation solutions.
         </h3>
       </div>
       <div className="h-10 py-1 col-start-4 text-2xl text-center bg-foreground hover:bg-sky-400 transition-color duration-100 -skew-x-12 overflow-clip group relative cursor-pointer shadow">

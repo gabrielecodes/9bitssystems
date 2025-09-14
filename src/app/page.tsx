@@ -1,22 +1,21 @@
-"use client";
-
 import { Border } from "./components/border";
 import { SectionInner } from "./components/sectioninner";
 import { SectionOuter } from "./components/sectionouter";
 import { Footer } from "./footer";
 import { Hero } from "./hero";
 import { Nav } from "./nav";
-
-import { Marquee, MarqueeContent, MarqueeFade, MarqueeItem } from "./components/marquee";
-import Image from "next/image";
-import Link from "next/link";
 import { BlackPixels } from "./components/blackpixels";
+import { Squares } from "./components/squares";
+import { Triangles } from "./components/triangles";
+import { Star } from "./components/start";
+import { CustomMarquqee } from "./marquee";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <Nav />
-      <main className="w-full min-h-screen select-none">
+      <main className="w-full min-h-screen select-non">
         <SectionOuter>
           <SectionInner>
             <Hero />
@@ -37,16 +36,7 @@ export default function Home() {
               <div className="mb-10 flex items-center gap-x-6">
                 <div className="w-full h-52 p-4 flex items-center justify-center bg-foreground relative group ">
                   <div className="group-hover:bg-[url('/gradient1.png')] bg-[length:100%_100%] absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
-                  <Image
-                    className="size-24 z-10"
-                    decoding="async"
-                    loading="lazy"
-                    width="96"
-                    height="96"
-                    sizes="48px"
-                    src="https://framerusercontent.com/images/CBVjTh7pyGAj1FZ0ptr3Ph5IWYo.svg"
-                    alt="Icon"
-                  ></Image>
+                  <Star />
                 </div>
               </div>
               <p className="backdrop-blur-lg">
@@ -68,16 +58,7 @@ export default function Home() {
               <div className="mb-10 flex items-center gap-x-6">
                 <div className="w-full h-52 p-4 flex items-center justify-center bg-foreground relative group">
                   <div className="group-hover:bg-[url('/gradient2.png')] bg-[length:100%_100%] absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
-                  <Image
-                    className="size-24 z-10"
-                    decoding="async"
-                    loading="lazy"
-                    width="96"
-                    height="96"
-                    sizes="48px"
-                    src="https://framerusercontent.com/images/5bR7Rvf7TDMaFqBptkkXvZTHgs.svg"
-                    alt="Icon"
-                  ></Image>
+                  <Triangles />
                 </div>
               </div>
               <p className="backdrop-blur-lg">
@@ -99,16 +80,7 @@ export default function Home() {
               <div className="mb-10 flex items-center gap-x-6">
                 <div className="w-full h-52 p-4 flex items-center justify-center bg-foreground relative group">
                   <div className="group-hover:bg-[url('/gradient3.png')] bg-[length:100%_100%] absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
-                  <Image
-                    className="size-24 z-10"
-                    decoding="async"
-                    loading="lazy"
-                    width="96"
-                    height="96"
-                    sizes="48px"
-                    src="https://framerusercontent.com/images/ZSjYh6efOX7SXRdKPn5JEqEQU4.svg"
-                    alt="Icon"
-                  ></Image>
+                  <Squares />
                 </div>
               </div>
               <p className="backdrop-blur-lg">
@@ -137,24 +109,22 @@ export default function Home() {
               </span>
             </h2>
             <div className="h-20 col-span-8"></div>
-            <h3 className="col-start-5 col-span-3 flex items-center text-justify">
+            <h3 className="col-start-5 col-span-3 flex items-center text-justify leading-8">
               We deliver tailored technological solutions so you have control, visibility, and security. We build
               systems that enable your teams to move faster—not lock them into complexity.
             </h3>
             <div className="h-16 col-span-8"></div>
             <p className="col-start-3 col-span-2 flex items-start text-justify">
-              Our goal is to help businesses automate and scale, delivering data strategies, solid cloud
-              infrastructures, and reliable systems. From crafting data roadmaps to building secure environments, we
-              turn chaotic data and systems into streamlined assets that drive productivity, reduce costs, and support
-              10x business growth—minimizing complexity and risk.
+              Our mission is to support businesses in automating and growing with confidence. We work alongside you to
+              create thoughtful data strategies, build reliable cloud infrastructures, and develop systems that just
+              work.
             </p>
             <p className="col-start-6 col-span-2 flex items-start text-justify">
-              We aim at delivering the best. That means proven technologies, clean architectures, and solutions tailored
-              to your real-world challenges. We build with intention, so you stay in control. Whether it&apos;s gaining
-              visibility across your data stack, scaling operations with confidence, or securing your cloud environment,
-              our focus is on long-term impact.
+              Our approach begins with listening closely to your needs, ensuring every solution fits your real-world
+              challenges. We combine proven technologies with thoughtful design, so you remain in control every step of
+              the way.
             </p>
-            <Marq />
+            <CustomMarquqee />
             <div className="h-40 col-span-8"></div>
           </SectionInner>
         </SectionOuter>
@@ -164,19 +134,3 @@ export default function Home() {
     </>
   );
 }
-
-const Marq = () => (
-  <div className="h-32 mt-20 col-start-2 col-end-8 flex size-full items-center justify-center bg-background">
-    <Marquee>
-      <MarqueeFade side="left" />
-      <MarqueeFade side="right" />
-      <MarqueeContent pauseOnHover={false}>
-        {new Array(10).fill(null).map((_, index) => (
-          <MarqueeItem className="h-32 w-32" key={index}>
-            <div className="w-full h-full bg-neutral-300"></div>
-          </MarqueeItem>
-        ))}
-      </MarqueeContent>
-    </Marquee>
-  </div>
-);

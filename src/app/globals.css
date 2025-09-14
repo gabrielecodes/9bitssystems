@@ -13,6 +13,16 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@font-face {
+  font-family: 'Styro';
+  src: url('/fonts/Styro-Variable.woff2') format('woff2');
+  font-display: swap;
+}
+
+.styro {
+  font-family: 'Styro', sans-serif;
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -52,15 +62,8 @@ p {
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
 }
 
-.dots {
-  /* background-image:radial-gradient(#727272 1px, transparent 0);
-  background-size: 20px 20px; */
-  /* transition: background-image 200ms, background-size 200ms, background-repeat 200ms; */
-}
-
 .dots:hover {
   background-image: url('/gradient1.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-
 }
