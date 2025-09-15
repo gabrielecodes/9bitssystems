@@ -2,7 +2,7 @@ import { Marquee, MarqueeContent, MarqueeFade, MarqueeItem } from "./components/
 
 function CustomMarquqee() {
   return (
-    <div className="h-32 mt-20 col-start-2 col-end-8 flex size-full items-center justify-center bg-background">
+    <div className="h-32 mt-20 invisible xl:visible xl:col-start-2 xl:col-end-8 flex size-full items-center justify-center bg-background">
       <Marquee>
         <MarqueeFade side="left" />
         <MarqueeFade side="right" />
