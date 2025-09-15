@@ -27,8 +27,8 @@ function Hero({ className }: { className?: string }) {
         </Link>
       </div>
       <div className="h-10 py-1 col-start-5 text-2xl text-center bg-foreground hover:bg-sky-400 transition-color duration-100 -skew-x-12 overflow-clip group relative cursor-pointer shadow">
-        <span className="w-full h-10 left-0 top-1 group-hover:top-20 group-hover:text-background transition-all duration-100 inline-block skew-x-12 absolute text-background">
-          <Link href="#contact" className="w-full h-full">
+        <span className="w-full h-10 left-0 top-1 group-hover:top-20 group-hover:text-background transition-all duration-100 inline-block skew-x-12 absolute">
+          <Link href="#contact" className="w-full h-full text-sky-400">
             Get in Touch
           </Link>
         </span>

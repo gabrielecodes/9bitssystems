@@ -10,6 +10,7 @@ import { Triangles } from "./components/triangles";
 import { Star } from "./components/start";
 import { CustomMarquqee } from "./marquee";
 import Link from "next/link";
+import { ReadMoreButton } from "./components/readmorebutton";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
         <Border />
         <SectionOuter>
           <SectionInner className="gap-x-0">
-            <div id="services" className="h-20 col-span-8"></div>
+            <div id="services" className="col-span-8"></div>
             <h2 className="h-20 ml-2 col-start-2 col-span-6 flex items-center">
               <span className="px-4 inline-block transform -skew-x-12 bg-neutral-800 text-background shadow">
                 <span className="font-semibold inline-block skew-x-12">Our Services</span>
@@ -43,14 +44,8 @@ export default function Home() {
                 You&apos;ll gain a modern data infrastructure that supports your team decision making and extracts
                 maximum value from your data—at speed and scale.
               </p>
-              <p className="h-20 ml-2 col-start-2 col-span-6 flex items-center">
-                <Link
-                  href={"#"}
-                  className="font-semibold border-b border-transparent hover:border-b hover:border-b-foreground"
-                >
-                  &#8627; Read More
-                </Link>
-              </p>
+              <br />
+              <ReadMoreButton />
             </div>
             {/* Service 2 */}
             <div className="h-[34rem] mt-20 p-6 col-start-4 col-span-2 border-y border-r border-neutral-200 bg-background">
@@ -63,16 +58,10 @@ export default function Home() {
               </div>
               <p className="backdrop-blur-lg">
                 We architect a solid foundation for your business, delivering a secure and scalable back-end and
-                establishing seamless integration with your development workflows.
+                establishing seamless integration with your workflows.
               </p>
-              <p className="h-20 ml-2 col-start-2 col-span-6 flex items-center">
-                <Link
-                  href={"#"}
-                  className="font-semibold border-b border-transparent hover:border-b hover:border-b-foreground"
-                >
-                  &#8627; Read More
-                </Link>
-              </p>
+              <br />
+              <ReadMoreButton />
             </div>
             {/* Service 3*/}
             <div className="h-[34rem] mt-20 p-6 col-start-6 col-span-2 border-y border-r border-neutral-200 bg-background">
@@ -87,14 +76,7 @@ export default function Home() {
                 Build your presence on the internet. Whether you&apos;re launching a new product or upgrading your tech
                 stack, we deliver back-end solutions built for performance, security, and growth.
               </p>
-              <p className="h-20 ml-2 col-start-2 col-span-6 flex items-center">
-                <Link
-                  href={"#"}
-                  className="font-semibold border-b border-transparent hover:border-b hover:border-b-foreground"
-                >
-                  &#8627; Read More
-                </Link>
-              </p>
+              <ReadMoreButton />
             </div>
             {/* */}
           </SectionInner>
@@ -131,7 +113,13 @@ export default function Home() {
         </SectionOuter>
         <Border />
         <SectionOuter>
-          <SectionInner className="gap-x-0 gap-y-0">
+          <SectionInner className=" gap-x-0 gap-y-0">
+            <div id="contact" className="col-span-8"></div>
+            <h2 className="h-20 ml-2 col-start-2 col-span-6 flex items-center">
+              <span className="px-4 inline-block transform -skew-x-12 bg-neutral-800 text-background shadow">
+                <span className="font-semibold inline-block skew-x-12">Contact Us</span>
+              </span>
+            </h2>
             <div className="h-fit mt-20 col-start-3 col-span-4 flex flex-col justify-around gap-y-0">
               <div className="h-8 col-start-3 col-span-4 grid grid-cols-4 border-y border-neutral-200">
                 <div className="w-full col-start-1 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
@@ -156,8 +144,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="h-96 col-start-3 col-span-4 bg-background border-r border-neutral-200 flex">
-                <div className="w-[35px] h-full flex flex-col *:h-8 *:border-b *:border-r *:border-neutral-200 *:last:border-b-0">
-                  {new Array(14).fill(null).map((_, idx) => <div></div>)}
+                <div className="invisible md:visible w-[32px] h-full flex flex-col *:h-8 *:border-b *:border-r *:border-neutral-200 *:last:border-b-0">
+                  {new Array(14).fill(null).map((_, idx) => <div key={idx}></div>)}
                 </div>
                 <div className="p-10 w-full flex items-center justify-center bg-neutral-100">
                   <div className="w-full h-full">
@@ -166,7 +154,7 @@ export default function Home() {
                     <div className="w-full h-48 mt-8 border border-neutral-200 bg-background"></div>
                   </div>
                 </div>
-                <div className="w-[35px] h-full flex flex-col *:h-8 *:border-b *:border-l *:border-neutral-200 *:last:border-b-0">
+                <div className="invisible md:visible w-[32px] h-full flex flex-col *:h-8 *:border-b *:border-l *:border-neutral-200 *:last:border-b-0">
                   {new Array(14).fill(null).map((_, idx) => <div key={idx}></div>)}
                 </div>
               </div>
@@ -193,6 +181,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div id="contact" className="col-span-8"></div>
             <BlackPixels />
           </SectionInner>
         </SectionOuter>

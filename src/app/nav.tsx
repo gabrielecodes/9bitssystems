@@ -11,11 +11,11 @@ function Nav() {
           N
         </Link>
         <ul className="w-full flex items-center gap-x-6 justify-end">
-          <li>
+          <li className="border-b border-foreground hover:border-background">
             <Link href={"#"}>About</Link>
           </li>
-          <li>
-            <Link href={"#"}>Contact</Link>
+          <li className="border-b border-foreground hover:border-background">
+            <Link href={"#contact"}>Contact</Link>
           </li>
         </ul>
       </div>
