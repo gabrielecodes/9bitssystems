@@ -1,6 +1,6 @@
 function WhitePixels() {
   return (
-    <div className="w-full h-28 grid grid-cols-8">
+    <div className="invisible xl:visible w-full h-28 grid grid-cols-8 bg-foreground *:border-r *:border-foreground">
       <div className="grid grid-cols-8">
         <div></div>
         <div></div>

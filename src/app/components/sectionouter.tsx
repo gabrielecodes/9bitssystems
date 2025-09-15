@@ -4,7 +4,7 @@ function SectionOuter({ children, className }: { children?: React.ReactNode; cla
   return (
     <div
       className={cn(
-        "min-h-screen relative grid grid-cols-8 [&>*:not(:last-child)]:border-r *:border-neutral-200 border-t border-neutral-200",
+        "w-screen min-h-screen relative flex xl:grid grid-cols-8 [&>*:not(:last-child)]:border-r *:border-neutral-200 border-t border-neutral-200",
         className
       )}
     >

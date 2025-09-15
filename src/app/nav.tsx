@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Nav() {
   return (
-    <nav className="w-1/2 h-14 px-8 rounded-b-md text-background bg-foreground flex items-center sticky top-0 left-1/2 -translate-x-1/2 z-20">
+    <nav className="w-full xl:w-1/2 h-14 px-8 xl:rounded-b-md text-background bg-foreground flex items-center sticky top-0 xl:left-1/2 xl:-translate-x-1/2 z-20">
       <div className="w-full flex items-center justify-between">
         <Link
           href={"#"}
@@ -11,6 +11,9 @@ function Nav() {
           N
         </Link>
         <ul className="w-full flex items-center gap-x-6 justify-end">
+          <li className="border-b border-foreground hover:border-background">
+            <Link href={"#"}>Services</Link>
+          </li>
           <li className="border-b border-foreground hover:border-background">
             <Link href={"#"}>About</Link>
           </li>
