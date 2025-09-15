@@ -43,7 +43,7 @@ function Footer() {
           </div>
           <div className="w-1/4 flex flex-col gap-y-2">
             <div>
-              <Link href="mailto:info@9bitssystems.com">info@9bitssystems.com</Link>
+              <Link href="mailto:info@ninebitssystems.com">info@ninebitssystems.com</Link>
             </div>
             <div>Menton, France.</div>
             <Link href={"https://linkedin.com/"}>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Nav() {
   return (
-    <nav className="w-1/2 h-14 px-8 rounded-b-md text-background bg-foreground flex items-center sticky top-0 left-1/2 -translate-x-1/2 z-10">
+    <nav className="w-1/2 h-14 px-8 rounded-b-md text-background bg-foreground flex items-center sticky top-0 left-1/2 -translate-x-1/2 z-20">
       <div className="w-full flex items-center justify-between">
         <Link
           href={"#"}

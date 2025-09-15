@@ -124,12 +124,79 @@ export default function Home() {
               challenges. We combine proven technologies with thoughtful design, so you remain in control every step of
               the way.
             </p>
+            <div className="h-20 col-span-8"></div>
             <CustomMarquqee />
             <div className="h-40 col-span-8"></div>
           </SectionInner>
         </SectionOuter>
+        <Border />
+        <SectionOuter>
+          <SectionInner className="gap-x-0 gap-y-0">
+            <div className="h-fit mt-20 col-start-3 col-span-4 flex flex-col justify-around gap-y-0">
+              <div className="h-8 col-start-3 col-span-4 grid grid-cols-4 border-y border-neutral-200">
+                <div className="w-full col-start-1 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
+                  {new Array(8).fill(null).map((_, index) => (
+                    <div key={index} className="h-full"></div>
+                  ))}
+                </div>
+                <div className="w-full col-start-2 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
+                  {new Array(8).fill(null).map((_, index) => (
+                    <div key={index} className="h-full"></div>
+                  ))}
+                </div>
+                <div className="w-full col-start-3 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
+                  {new Array(8).fill(null).map((_, index) => (
+                    <div key={index} className="h-full"></div>
+                  ))}
+                </div>
+                <div className="w-full col-start-4 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
+                  {new Array(8).fill(null).map((_, index) => (
+                    <div key={index} className="h-full"></div>
+                  ))}
+                </div>
+              </div>
+              <div className="h-96 col-start-3 col-span-4 bg-background border-r border-neutral-200 flex">
+                <div className="w-[35px] h-full flex flex-col *:h-8 *:border-b *:border-r *:border-neutral-200 *:last:border-b-0">
+                  {new Array(14).fill(null).map((_, idx) => <div></div>)}
+                </div>
+                <div className="p-10 w-full flex items-center justify-center bg-neutral-100">
+                  <div className="w-full h-full">
+                    <h2>Get in touch, there are no obligations.</h2>
+                    <h3>Tell us about your idea.</h3>
+                    <div className="w-full h-48 mt-8 border border-neutral-200 bg-background"></div>
+                  </div>
+                </div>
+                <div className="w-[35px] h-full flex flex-col *:h-8 *:border-b *:border-l *:border-neutral-200 *:last:border-b-0">
+                  {new Array(14).fill(null).map((_, idx) => <div key={idx}></div>)}
+                </div>
+              </div>
+              <div className="h-8 col-start-3 col-span-4 grid grid-cols-4 border-y border-neutral-200">
+                <div className="w-full col-start-1 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
+                  {new Array(8).fill(null).map((_, index) => (
+                    <div key={index} className="h-full"></div>
+                  ))}
+                </div>
+                <div className="w-full col-start-2 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
+                  {new Array(8).fill(null).map((_, index) => (
+                    <div key={index} className="h-full"></div>
+                  ))}
+                </div>
+                <div className="w-full col-start-3 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
+                  {new Array(8).fill(null).map((_, index) => (
+                    <div key={index} className="h-full"></div>
+                  ))}
+                </div>
+                <div className="w-full col-start-4 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
+                  {new Array(8).fill(null).map((_, index) => (
+                    <div key={index} className="h-full"></div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <BlackPixels />
+          </SectionInner>
+        </SectionOuter>
       </main>
-      <BlackPixels />
       <Footer />
     </>
   );

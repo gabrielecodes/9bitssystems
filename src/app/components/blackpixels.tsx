@@ -1,7 +1,7 @@
 function BlackPixels() {
   return (
-    <div className="w-full h-28 grid grid-cols-8">
-      <div className="grid grid-cols-8">
+    <div className="w-full h-28 grid grid-cols-8 col-start-1 col-end-9 absolute bottom-0">
+      <div className="h-28 col-start-1 col-span-1 grid grid-cols-8">
         <div></div>
         <div></div>
         <div></div>
@@ -36,7 +36,7 @@ function BlackPixels() {
         <div className="bg-foreground"></div>
       </div>
       {/* */}
-      <div className="grid grid-cols-8">
+      <div className="h-28 col-start-2 col-span-1 grid grid-cols-8">
         <div></div>
         <div></div>
         <div></div>
@@ -71,7 +71,7 @@ function BlackPixels() {
         <div></div>
       </div>
       {/* */}
-      <div className="grid grid-cols-8">
+      <div className="h-28 col-start-3 col-span-1 grid grid-cols-8">
         <div></div>
         <div></div>
         <div></div>
@@ -106,7 +106,7 @@ function BlackPixels() {
         <div></div>
       </div>
       {/* */}
-      <div className="grid grid-cols-8">
+      <div className="h-28 grid grid-cols-8">
         <div></div>
         <div></div>
         <div></div>
@@ -141,7 +141,7 @@ function BlackPixels() {
         <div></div>
       </div>
       {/* */}
-      <div className="grid grid-cols-8">
+      <div className="h-28 grid grid-cols-8">
         <div></div>
         <div></div>
         <div className="bg-foreground"></div>
@@ -176,7 +176,7 @@ function BlackPixels() {
         <div></div>
       </div>
       {/* */}
-      <div className="grid grid-cols-8">
+      <div className="h-28 grid grid-cols-8">
         <div></div>
         <div></div>
         <div></div>
@@ -211,7 +211,7 @@ function BlackPixels() {
         <div></div>
       </div>
       {/* */}
-      <div className="grid grid-cols-8">
+      <div className="h-28 grid grid-cols-8">
         <div></div>
         <div></div>
         <div></div>
@@ -246,7 +246,7 @@ function BlackPixels() {
         <div></div>
       </div>
       {/* */}
-      <div className="grid grid-cols-8">
+      <div className="h-28 grid grid-cols-8">
         <div></div>
         <div></div>
         <div></div>
