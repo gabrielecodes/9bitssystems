@@ -11,6 +11,7 @@ import { Star } from "./components/start";
 import { CustomMarquqee } from "./marquee";
 import Link from "next/link";
 import { ReadMoreButton } from "./components/readmorebutton";
+import ContactForm from "./components/form";
 
 export default function Home() {
   return (
@@ -24,8 +25,8 @@ export default function Home() {
         </SectionOuter>
         <Border />
         <SectionOuter>
-          <SectionInner className="gap-x-0">
-            <div id="services" className="col-span-8"></div>
+          <SectionInner className="h-fit gap-x-0">
+            <div id="services" className="h-20 col-span-8"></div>
             <h2 className="h-20 ml-2 col-start-2 col-span-6 flex items-center">
               <span className="px-4 inline-block transform -skew-x-12 bg-neutral-800 text-background shadow">
                 <span className="font-semibold inline-block skew-x-12">Our Services</span>
@@ -113,15 +114,16 @@ export default function Home() {
         </SectionOuter>
         <Border />
         <SectionOuter>
-          <SectionInner className=" gap-x-0 gap-y-0">
+          <SectionInner className="gap-x-0 gap-y-0">
+            <div className="h-20 col-span-8"></div>
             <div id="contact" className="col-span-8"></div>
             <h2 className="h-20 ml-2 col-start-2 col-span-6 flex items-center">
               <span className="px-4 inline-block transform -skew-x-12 bg-neutral-800 text-background shadow">
                 <span className="font-semibold inline-block skew-x-12">Contact Us</span>
               </span>
             </h2>
-            <div className="h-fit mt-20 col-start-3 col-span-4 flex flex-col justify-around gap-y-0">
-              <div className="h-8 col-start-3 col-span-4 grid grid-cols-4 border-y border-neutral-200">
+            <div className="p-0 mt-20 col-start-3 col-span-4 justify-around gap-y-0">
+              <div className="invisible md:visible h-8 col-start-3 col-span-4 grid grid-cols-4 border-y border-neutral-200">
                 <div className="w-full col-start-1 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
                   {new Array(8).fill(null).map((_, index) => (
                     <div key={index} className="h-full"></div>
@@ -143,22 +145,24 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-              <div className="h-96 col-start-3 col-span-4 bg-background border-r border-neutral-200 flex">
-                <div className="invisible md:visible w-[32px] h-full flex flex-col *:h-8 *:border-b *:border-r *:border-neutral-200 *:last:border-b-0">
-                  {new Array(14).fill(null).map((_, idx) => <div key={idx}></div>)}
-                </div>
+              <div className="col-start-3 col-span-4 bg-background border-r border-neutral-200 flex">
+                {/* <div className="invisible md:visible w-[32px] h-full flex flex-col *:h-8 *:border-b *:border-r *:border-neutral-200 *:last:border-b-0">
+                  {new Array(20).fill(null).map((_, idx) => <div key={idx}></div>)}
+                </div> */}
                 <div className="p-10 w-full flex items-center justify-center bg-neutral-100">
                   <div className="w-full h-full">
                     <h2>Get in touch, there are no obligations.</h2>
                     <h3>Tell us about your idea.</h3>
-                    <div className="w-full h-48 mt-8 border border-neutral-200 bg-background"></div>
+                    <div className="w-full mt-8 border border-neutral-200 bg-background">
+                      <ContactForm />
+                    </div>
                   </div>
                 </div>
-                <div className="invisible md:visible w-[32px] h-full flex flex-col *:h-8 *:border-b *:border-l *:border-neutral-200 *:last:border-b-0">
-                  {new Array(14).fill(null).map((_, idx) => <div key={idx}></div>)}
-                </div>
+                {/* <div className="invisible md:visible w-[32px] h-full flex flex-col *:h-8 *:border-b *:border-l *:border-neutral-200 *:last:border-b-0">
+                  {new Array(20).fill(null).map((_, idx) => <div key={idx}></div>)}
+                </div> */}
               </div>
-              <div className="h-8 col-start-3 col-span-4 grid grid-cols-4 border-y border-neutral-200">
+              <div className="invisible md:visible h-8 col-start-3 col-span-4 grid grid-cols-4 border-y border-neutral-200">
                 <div className="w-full col-start-1 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
                   {new Array(8).fill(null).map((_, index) => (
                     <div key={index} className="h-full"></div>
@@ -181,11 +185,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div id="contact" className="col-span-8"></div>
+            <div className="h-40 col-span-8"></div>
             <BlackPixels />
           </SectionInner>
         </SectionOuter>
-      </main>
+      </main >
       <Footer />
     </>
   );
