@@ -17,7 +17,7 @@ function Footer() {
           >
             NINE BITS SYSTEMS
           </h3>
-          <div className="mx-4 xl:mx-40 w-full flex xl:flex-row flex-col gap-y-4">
+          <div className="mx-4 xl:mx-40 flex xl:flex-row flex-col gap-y-4">
             <div className="w-full xl:w-1/2">
               <h3 className="font-bold">Small Brand, Large Delivery.</h3>
               <span className="inline-block md:w-[28rem] text-neutral-400">
@@ -33,12 +33,17 @@ function Footer() {
                   </Link>
                 </li>
                 <li className="w-fit group">
-                  <Link href={"/"} className="group-hover:border-b border-neutral-200">
+                  <Link href={"#services"} className="group-hover:border-b border-neutral-200">
+                    Services
+                  </Link>
+                </li>
+                <li className="w-fit group">
+                  <Link href={"#"} className="group-hover:border-b border-neutral-200">
                     About
                   </Link>
                 </li>
                 <li className="w-fit group">
-                  <Link href={"/"} className="group-hover:border-b border-neutral-200">
+                  <Link href={"#contact"} className="group-hover:border-b border-neutral-200">
                     Contact
                   </Link>
                 </li>
@@ -65,7 +70,6 @@ function Footer() {
         </div>
       </div>
     </footer>
-
   );
 }
 

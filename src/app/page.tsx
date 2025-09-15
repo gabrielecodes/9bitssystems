@@ -39,8 +39,8 @@ export default function Home() {
               </div>
             </div>
             <p>
-              You&apos;ll gain a modern data infrastructure that supports your team decision making and extracts
-              maximum value from your data—at speed and scale.
+              You&apos;ll gain a modern data infrastructure that supports your team decision making and extracts maximum
+              value from your data—at speed and scale.
             </p>
             <ReadMoreButton />
           </div>
@@ -73,8 +73,8 @@ export default function Home() {
               </div>
             </div>
             <p>
-              Whether you&apos;re launching a new product or upgrading your tech
-              stack, we deliver back-end solutions built for performance, security, and growth.
+              Whether you&apos;re launching a new product or upgrading your tech stack, we deliver back-end solutions
+              built for performance, security, and growth.
             </p>
             <ReadMoreButton />
           </div>
@@ -83,7 +83,7 @@ export default function Home() {
       </SectionOuter>
       <Border />
       <SectionOuter className="h-[46rem] xl:h-[44rem]">
-        <SectionInner className="h-[46rem] xl:h-[44rem] gap-x-0">
+        <SectionInner className="h-[46rem] xl:h-[44rem] gap-x-0 xl:px-0 px-3">
           <div className="h-20 xl:col-span-8"></div>
           <h2 className="h-20 ml-2 col-start-2 col-span-6 flex items-center">
             <span className="px-4 inline-block transform -skew-x-12 bg-neutral-800 text-background">
@@ -92,14 +92,15 @@ export default function Home() {
           </h2>
           <div className="h-20 xl:col-span-8"></div>
           <h3 className="w-full xl:col-start-3 xl:col-span-3 flex items-start text-justify leading-8">
-            We deliver tailored technological solutions so you have control, visibility, and security. We build
-            systems that enable your teams to move faster—not lock them into complexity. Many businesses are dragged down by unreliable technology and broken processes &mdash; we help you untangle the complexity and build systems that actually work for you.
+            We deliver tailored technological solutions so you have control, visibility, and security. We build systems
+            that enable your teams to move faster—not lock them into complexity. Many businesses are dragged down by
+            unreliable technology and broken processes &mdash; we help you untangle the complexity and build systems
+            that actually work for you.
           </h3>
           <div className="h-16 col-span-8"></div>
           <p className="col-start-3 col-span-2 flex items-start text-justify">
             Our mission is to support businesses in automating and growing with confidence. We work alongside you to
-            create thoughtful data strategies, build reliable cloud infrastructures, and develop systems that just
-            work.
+            create thoughtful data strategies, build reliable cloud infrastructures, and develop systems that just work.
           </p>
           <p className="mt-8 xl:mt-0 col-start-6 col-span-2 flex items-start text-justify">
             Our approach begins with listening closely to your needs, ensuring every solution fits your real-world
@@ -145,14 +146,13 @@ export default function Home() {
                 ))}
               </div>
             </div> */}
-            <div className="bg-background border-r border-y border-neutral-200 flex relative">
-
+            <div className="w-full bg-background border-r border-y border-neutral-200 flex relative xl:overflow-visible overflow-x-clip">
               <Plus className="-left-5 -top-5" />
               <Plus className="left-[calc(100%-1.25rem)] -top-5" />
               <Plus className="-left-5 top-[calc(100%-1.25rem)]" />
               <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)]" />
 
-              <div className="p-10 flex items-center justify-center bg-neutral-100">
+              <div className="w-full p-10 flex items-center justify-center bg-neutral-100">
                 <div className="w-full h-full">
                   <h2>Get in touch, there are no obligations.</h2>
                   <h3>Tell us about your idea.</h3>
@@ -187,14 +187,21 @@ export default function Home() {
           </div>
         </SectionInner>
       </SectionOuter>
-    </main >
+    </main>
   );
 }
 
-
 function Plus({ className }: { className?: string }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#262626"
-      className={cn("h-10 w-10 absolute", className)}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6"></path></svg>
-  )
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="#262626"
+      className={cn("h-10 w-10 absolute", className)}
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6"></path>
+    </svg>
+  );
 }

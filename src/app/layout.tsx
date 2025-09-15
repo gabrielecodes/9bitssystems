@@ -29,7 +29,9 @@ export default function RootLayout({
         <Nav />
         {children}
         <div className="w-full h-40 grid grid-cols-8 *:border-r *:border-neutral-200">
-          {new Array(8).fill(null).map((_, idx) => <div key={idx}></div>)}
+          {new Array(8).fill(null).map((_, idx) => (
+            <div key={idx}></div>
+          ))}
         </div>
         <Footer />
       </body>
