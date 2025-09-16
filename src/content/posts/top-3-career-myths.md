@@ -1,29 +1,23 @@
 ---
-title: "Top 3 Career Truths in Data Engineering"
+title: "3 Good Reasons to have a Data Strategy"
 date: "2025-09-10"
-excerpt: "Beyond the hype — focus on what’s real and avoid burning out"
+excerpt: "Your data can be a superpower - or your bane. Here's 3 reasons why you should have a data strategy."
 tags: ["Data Engineering", "Career"]
+image: "graphs.jpg"
+alt: "graphs on a computer"
 ---
 
-### You don’t need programming skills.
+Technical debt is quite widespread in our fast-paced world. Technology changes quickly and many companies struggle to catch up.
+Some are stuck at the start line. We've worked on the front lines with these companies for years, either as employees or consultants, and the one universal truth we've discovered is this: no matter the size, a company that fails to implement a serious data strategy is fighting an uphill battle in the modern world.
 
-Reality: Programming is core — whether it’s writing ETL/ELT pipelines, transforming data, dealing with schemas, handling errors, or automating tasks. Even tools that seem “no-code” often hide complexity or require scripting to customize. Employers expect comfort with languages like Python, SQL, or Scala.
-
-### There is no glory.
-
-I think this is particularily true in data engineering (DE). When you perform your job well, you're often invisible to the business. For the past 10-15 years apps have been the thing. Software engineers were highly sought for. Nowadays with AI, ML engineers are at the top of the charts. Code is (and has been) like black magic that makes money apper. It's typically not the case with DE &mdash; as long as everything is functioning as expected, the underlying work goes largely unnoticed.
 <br/>
-However you are exposed to the negatives and data engineers can quickly be blamed for problems. If a Kafka queue begins to fail or a data ingestion job breaks due to an upstream change, the responsibility often falls to the data engineer.
-It's not all bad though &mdash; while data engineering can be technically rewarding, it's important to recognize that the career can be difficult once you encounter your first major outage.
 
-### Try to give visibility to your work.
+Whether it’s a small startup or a big fintech, the symptoms of a missing data strategy are remarkably consistent. For many of our clients, the primary struggle is a **lack of agility**. When the leadership team needs to understand the performance of the company, from the large summary figures, to the details of the product, they're left waiting weeks for a report that's pieced together from half a dozen different systems, each with its own data format and a _different version of the truth_. By the time they get the answers, the opportunity has often passed.
 
-When you accomplish something significant, make sure to celebrate it. And don't just celebrate internally. Share the success with your team, your users, and your boss.
 <br/>
-This can be as simple as a concise email. Some companies have channels in chat apps for that. It might feel awkward, but the return on investment is significant. When you communicate your accomplishments, people begin to see your work as valuable and tangible. This isn't always easy to do &mdash; it depends on your working environment, but it's something worth thinking about.
 
-### Be aware of the technical challenges
+Another major struggle is **inefficiency**. Many teams, from marketing to supply chain, wasting countless hours on manual data cleanup and reconciliation. They're basically acting as human data pipelines, trying to stitch together information that should be flowing seamlessly. This isn't just a waste of money, it makes daily work a struggle.
 
-I see data engineering as inherently less stable domain than traditional software engineering. The ground is more likely to shift beneath your feet. A big part of your job is dependent of changes coming from other teams. It's easy to be caught off-guard by unannounced changes.
 <br/>
-Check if there is a communication channel specifically dedicated to changes, in particular critical changes. The criticality should convince people to participate and use that channel. Test as much as possible.
+
+Finally, and perhaps most critically, is the struggle with **compliance and security**. In today's regulatory environment, with standards like GDPR and CCPA, a solid _data strategy_ cannot be an afterthought. Companies that lack data governance are at risk.

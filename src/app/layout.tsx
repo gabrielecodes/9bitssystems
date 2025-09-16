@@ -24,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="max-w-screen">
-      <body className={`${font.className} antialiased`}>
+    <html lang="en" className="max-w-screen bg-[url('/bg.jpg')]">
+      <body className={`${font.className} antialiased -mt-14`}>
         <Nav />
         {children}
         <div className="w-full h-40 grid grid-cols-8 *:border-r *:border-neutral-200">

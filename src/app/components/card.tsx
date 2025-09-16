@@ -3,14 +3,13 @@ import { useMotionValue, MotionValue } from "motion/react";
 import React, { useState, useEffect } from "react";
 import { useMotionTemplate, motion } from "motion/react";
 import { cn } from "../utils";
-import { Squares } from "./squares";
 
 export const EvervaultCard = ({
   icon,
   background,
   className,
 }: {
-  icon: React.ReactNode,
+  icon: React.ReactNode;
   background?: string;
   className?: string;
 }) => {
@@ -35,9 +34,7 @@ export const EvervaultCard = ({
   }
 
   return (
-    <div
-      className={cn("w-full bg-foreground aspect-square flex items-center justify-center relative", className)}
-    >
+    <div className={cn("w-full bg-foreground aspect-square flex items-center justify-center relative", className)}>
       <div
         onMouseMove={handleMouseMove}
         className="group/card w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full"
@@ -71,7 +68,10 @@ export function CardPattern({
     <div className="pointer-events-none">
       <div className="absolute inset-0 [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
       <motion.div
-        className={cn("absolute inset-0 opacity-0 group-hover/card:opacity-100 backdrop-blur-xl transition duration-300", background)}
+        className={cn(
+          "absolute inset-0 opacity-0 group-hover/card:opacity-100 backdrop-blur-xl transition duration-300",
+          background
+        )}
         style={style}
       />
       <motion.div className="absolute inset-0 opacity-0 mix-blend-overlay  group-hover/card:opacity-100" style={style}>
