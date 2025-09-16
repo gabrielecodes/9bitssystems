@@ -9,6 +9,7 @@ import { ReadMoreButton } from "./components/readmorebutton";
 import ContactForm from "./components/form";
 import { cn } from "./utils";
 import { EvervaultCard } from "./components/card";
+import { Squares } from "./components/squares";
 
 export default function Home() {
   return (
@@ -27,68 +28,45 @@ export default function Home() {
               <span className="font-semibold inline-block skew-x-12">Our Services</span>
             </span>
           </h2>
-          {/* Service 1 */}
-          <div className="max-w-4/5 xl:max-w-full xl:w-full xl:h-[34rem] h-[40rem] mt-20 p-6 col-start-2 col-span-2 border-y border-x xl:border-r xl:border-l-0 border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between">
-            <div>
-              <h2 className="mb-10">Data Strategy</h2>
-              <div className="mb-10 flex items-center gap-x-6">
-                <div className="w-full h-52 p-4 flex items-center justify-center bg-foreground relative group ">
-                  <div className="bg-[url('/gradient1.png')] bg-[length:100%_100%] absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out"></div>
-                  <Star />
-                </div>
-              </div>
-            </div>
-            <p>
+          {/* Service 1*/}
+          <div className="max-w-4/5 xl:max-w-full xl:w-full xl:h-[44rem] h-[40rem] xl:mt-20 p-6 col-start-2 col-span-2 xl:border-y border-b border-x xl:border-r xl:border-l-0 border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative">
+            <Plus className="-left-5 -top-5" />
+            <Plus className="left-[calc(100%-1.25rem)] -top-5 z-10" />
+            <Plus className="-left-5 top-[calc(100%-1.25rem)]" />
+            <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)] z-10" />
+            <h2 className="mb-10">Data Strategy</h2>
+            <EvervaultCard background="bg-[url('/gradient1.png')] bg-[length:100%_100%]" className="mb-10" icon={<Star />} />
+            <p className="mb-6">
               You&apos;ll gain a modern data infrastructure that supports your team decision making and extracts maximum
               value from your data—at speed and scale.
             </p>
             <ReadMoreButton />
           </div>
-          {/* Service 2 */}
-          <div className="max-w-4/5 xl:max-w-full xl:w-full xl:h-[34rem] h-[40rem] xl:mt-20 p-6 col-start-4 col-span-2 xl:border-y border-b border-x xl:border-r xl:border-l-0 border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between">
-            <div>
-              <h2 className="mb-10">Cloud Infrastructure</h2>
-              <div className="mb-10 flex items-center gap-x-6">
-                <div className="w-full h-52 p-4 flex items-center justify-center bg-foreground relative group">
-                  <div className="bg-[url('/gradient2.png')] bg-[length:100%_100%] absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out"></div>
-                  <Triangles />
-                </div>
-              </div>
-            </div>
-            <p>
+          {/* Service 2*/}
+          <div className="max-w-4/5 xl:max-w-full xl:w-full xl:h-[44rem] h-[40rem] xl:mt-20 p-6 col-start-4 col-span-2 xl:border-y border-b border-x xl:border-r xl:border-l-0 border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative">
+            <Plus className="left-[calc(100%-1.25rem)] -top-5 z-10" />
+            <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)] z-10" />
+            <h2 className="mb-10">Cloud Infrastructure</h2>
+            <EvervaultCard background="bg-[url('/gradient2.png')] bg-[length:100%_100%]" className="mb-10" icon={<Triangles />} />
+            <p className="mb-6">
               We architect a solid foundation for your business, delivering a secure and scalable back-end and
               establishing seamless integration with your workflows.
             </p>
             <ReadMoreButton />
           </div>
           {/* Service 3*/}
-          {/* <div className="max-w-4/5 xl:max-w-full xl:w-full xl:h-[34rem] h-[40rem] xl:mt-20 p-6 col-start-6 col-span-2 xl:border-y border-b border-x xl:border-r xl:border-l-0 border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between">
-            <div>
-              <h2 className="mb-10">Software Development</h2>
-              <div className="mb-10 flex items-center gap-x-6">
-                <div className="w-full h-52 p-4 flex items-center justify-center bg-foreground relative group">
-                  <div className="bg-[url('/gradient3.png')] bg-[length:100%_100%] absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out"></div>
-                  <Squares />
-                </div>
-              </div>
-            </div>
-            <p>
-              Whether you&apos;re launching a new product or upgrading your tech stack, we deliver back-end solutions
-              built for performance, security, and growth.
-            </p>
-            <ReadMoreButton />
-          </div> */}
-          {/* Service 3*/}
-          <div className="max-w-4/5 xl:max-w-full xl:w-full xl:h-[42rem] h-[40rem] xl:mt-20 p-6 col-start-6 col-span-2 xl:border-y border-b border-x xl:border-r xl:border-l-0 border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between">
+          <div className="max-w-4/5 xl:max-w-full xl:w-full xl:h-[44rem] h-[40rem] xl:mt-20 p-6 col-start-6 col-span-2 xl:border-y border-b border-x xl:border-r xl:border-l-0 border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative">
+            <Plus className="left-[calc(100%-1.25rem)] -top-5" />
+            <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)]" />
             <h2 className="mb-10">Software Development</h2>
-            <EvervaultCard background="bg-[url('/gradient3.png')] bg-[length:100%_100%]" className={""} />
-            <p>
+            <EvervaultCard background="bg-[url('/gradient3.png')] bg-[length:100%_100%]" className="mb-10" icon={<Squares />} />
+            <p className="mb-6">
               Whether you&apos;re launching a new product or upgrading your tech stack, we deliver back-end solutions
               built for performance, security, and growth.
             </p>
             <ReadMoreButton />
           </div>
-          <div id="services" className="h-20 col-span-8"></div>
+          <div className="h-20 col-span-8"></div>
           {/* */}
         </SectionInner>
       </SectionOuter>
@@ -135,34 +113,11 @@ export default function Home() {
           </h2>
 
           <div className="mt-20 xl:col-start-3 xl:col-span-4 gap-y-0">
-            {/* <div className="invisible md:visible h-8 col-start-3 col-span-4 grid grid-cols-4 border-y border-neutral-200">
-              <div className="w-full col-start-1 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
-                {new Array(8).fill(null).map((_, index) => (
-                  <div key={index} className="h-full"></div>
-                ))}
-              </div>
-              <div className="w-full col-start-2 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
-                {new Array(8).fill(null).map((_, index) => (
-                  <div key={index} className="h-full"></div>
-                ))}
-              </div>
-              <div className="w-full col-start-3 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
-                {new Array(8).fill(null).map((_, index) => (
-                  <div key={index} className="h-full"></div>
-                ))}
-              </div>
-              <div className="w-full col-start-4 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
-                {new Array(8).fill(null).map((_, index) => (
-                  <div key={index} className="h-full"></div>
-                ))}
-              </div>
-            </div> */}
             <div className="w-full bg-background border-r border-y border-neutral-200 flex relative xl:overflow-visible overflow-x-clip">
               <Plus className="-left-5 -top-5" />
               <Plus className="left-[calc(100%-1.25rem)] -top-5" />
               <Plus className="-left-5 top-[calc(100%-1.25rem)]" />
               <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)]" />
-
               <div className="w-full p-10 flex items-center justify-center bg-neutral-100">
                 <div className="w-full h-full">
                   <h2>Get in touch, there are no obligations.</h2>
@@ -173,28 +128,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <div className="invisible md:visible h-8 col-start-3 col-span-4 grid grid-cols-4 border-y border-neutral-200">
-              <div className="w-full col-start-1 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
-                {new Array(8).fill(null).map((_, index) => (
-                  <div key={index} className="h-full"></div>
-                ))}
-              </div>
-              <div className="w-full col-start-2 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
-                {new Array(8).fill(null).map((_, index) => (
-                  <div key={index} className="h-full"></div>
-                ))}
-              </div>
-              <div className="w-full col-start-3 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
-                {new Array(8).fill(null).map((_, index) => (
-                  <div key={index} className="h-full"></div>
-                ))}
-              </div>
-              <div className="w-full col-start-4 col-span-1 grid grid-cols-8 *:border-r *:border-neutral-200 *:last:border-r-0">
-                {new Array(8).fill(null).map((_, index) => (
-                  <div key={index} className="h-full"></div>
-                ))}
-              </div>
-            </div> */}
           </div>
         </SectionInner>
       </SectionOuter>

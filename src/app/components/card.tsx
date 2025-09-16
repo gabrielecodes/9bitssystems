@@ -6,11 +6,11 @@ import { cn } from "../utils";
 import { Squares } from "./squares";
 
 export const EvervaultCard = ({
-  text,
+  icon,
   background,
   className,
 }: {
-  text?: string;
+  icon: React.ReactNode,
   background?: string;
   className?: string;
 }) => {
@@ -36,7 +36,7 @@ export const EvervaultCard = ({
 
   return (
     <div
-      className={cn("bg-foreground aspect-square flex items-center justify-center w-full h-full relative", className)}
+      className={cn("w-full bg-foreground aspect-square flex items-center justify-center relative", className)}
     >
       <div
         onMouseMove={handleMouseMove}
@@ -45,7 +45,7 @@ export const EvervaultCard = ({
         <CardPattern mouseX={mouseX} mouseY={mouseY} randomString={randomString} background={background} />
         <div className="relative z-10 flex items-center justify-center">
           <div className="relative h-44 w-44 flex items-center justify-center text-white font-bold text-4xl">
-            <Squares />
+            {icon}
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@ export function CardPattern({
     <div className="pointer-events-none">
       <div className="absolute inset-0 [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
       <motion.div
-        className="absolute inset-0 bg-gradient-to-r from-green-500 to-blue-700 opacity-0  group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
+        className={cn("absolute inset-0 opacity-0 group-hover/card:opacity-100 backdrop-blur-xl transition duration-500", background)}
         style={style}
       />
       <motion.div className="absolute inset-0 opacity-0 mix-blend-overlay  group-hover/card:opacity-100" style={style}>
