@@ -71,11 +71,11 @@ export function CardPattern({
     <div className="pointer-events-none">
       <div className="absolute inset-0 [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
       <motion.div
-        className={cn("absolute inset-0 opacity-0 group-hover/card:opacity-100 backdrop-blur-xl transition duration-500", background)}
+        className={cn("absolute inset-0 opacity-0 group-hover/card:opacity-100 backdrop-blur-xl transition duration-300", background)}
         style={style}
       />
       <motion.div className="absolute inset-0 opacity-0 mix-blend-overlay  group-hover/card:opacity-100" style={style}>
-        <p className="absolute inset-x-0 text-xs h-full break-words whitespace-pre-wrap text-white font-mono font-bold transition duration-500">
+        <p className="absolute inset-x-0 text-xs h-full break-words whitespace-pre-wrap text-white font-mono font-bold transition duration-300">
           {randomString}
         </p>
       </motion.div>

@@ -4,8 +4,8 @@ import { serif } from "./layout";
 
 function Hero({ className }: { className?: string }) {
   return (
-    <>
-      <div className={cn("w-full mt-10 xl:mt-40 col-start-3 col-span-4 flex flex-col items-center justify-center group", className)}>
+    <div className="col-start-3 col-span-4">
+      <div className={cn("w-full mt-10 xl:mt-40 flex flex-col items-center justify-center group", className)}>
         <div className="h-fit mb-6 py-1 px-3 col-start-3 col-span-2 rounded-full bg-neutral-200 flex items-baseline gap-x-2">
           <span className="w-3 h-3 rounded-full bg-sky-500 animate-pulse"></span>
           <p>Consulting Services Within IT & Management</p>
@@ -15,7 +15,7 @@ function Hero({ className }: { className?: string }) {
           We help you build a solid technological foundation for your business &mdash; with reliable, secure and modern solutions
         </h3>
       </div>
-      <div className="mt-10 xl:mt-20 w-full flex flex-col gap-y-4 col-start-4 col-span-2 gap-x-4 xl:grid xl:grid-cols-2 items-center justify-center">
+      <div className="mt-10 xl:mt-20 w-1/2 flex xl:mx-auto xl:flex-row flex-col gap-y-4 col-start-4 col-span-2 gap-x-4 items-center justify-center">
         <div className="w-42 xl:w-full h-10 py-1 col-start-1 col-span-1 text-2xl text-center bg-foreground hover:bg-sky-400 transition-color duration-100 -skew-x-12 overflow-clip group relative cursor-pointer">
           <span className="w-full h-10 left-0 top-1 group-hover:top-20 group-hover:text-background transition-all duration-100 inline-block skew-x-12 absolute text-background">
             <Link href="#services" className="w-full h-full">
@@ -41,7 +41,7 @@ function Hero({ className }: { className?: string }) {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
