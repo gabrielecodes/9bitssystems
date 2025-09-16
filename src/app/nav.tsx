@@ -12,7 +12,7 @@ function Nav() {
         </Link>
         <ul className="w-full flex items-center gap-x-6 justify-end">
           <li className="border-b border-foreground hover:border-background">
-            <Link href={"#"}>Services</Link>
+            <Link href={"/#services"}>Services</Link>
           </li>
           <li className="border-b border-foreground hover:border-background">
             <Link href={"/blog"}>Blog</Link>
@@ -21,7 +21,7 @@ function Nav() {
             <Link href={"#"}>About</Link>
           </li>
           <li className="border-b border-foreground hover:border-background">
-            <Link href={"#contact"}>Contact</Link>
+            <Link href={"/#contact"}>Contact</Link>
           </li>
         </ul>
       </div>

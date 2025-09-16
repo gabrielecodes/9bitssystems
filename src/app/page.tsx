@@ -7,7 +7,7 @@ import { Star } from "./components/start";
 import { CustomMarquqee } from "./marquee";
 import { ReadMoreButton } from "./components/readmorebutton";
 import ContactForm from "./components/form";
-import { cn } from "./utils";
+import Plus from "./components/plus";
 import { EvervaultCard } from "./components/card";
 import { Squares } from "./components/squares";
 
@@ -132,20 +132,5 @@ export default function Home() {
         </SectionInner>
       </SectionOuter>
     </main>
-  );
-}
-
-function Plus({ className }: { className?: string }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="#262626"
-      className={cn("h-10 w-10 absolute", className)}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6"></path>
-    </svg>
   );
 }
