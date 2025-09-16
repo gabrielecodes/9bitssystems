@@ -2,13 +2,13 @@ import { Border } from "./components/border";
 import { SectionInner } from "./components/sectioninner";
 import { SectionOuter } from "./components/sectionouter";
 import { Hero } from "./hero";
-import { Squares } from "./components/squares";
 import { Triangles } from "./components/triangles";
 import { Star } from "./components/start";
 import { CustomMarquqee } from "./marquee";
 import { ReadMoreButton } from "./components/readmorebutton";
 import ContactForm from "./components/form";
 import { cn } from "./utils";
+import { EvervaultCard } from "./components/card";
 
 export default function Home() {
   return (
@@ -62,7 +62,7 @@ export default function Home() {
             <ReadMoreButton />
           </div>
           {/* Service 3*/}
-          <div className="max-w-4/5 xl:max-w-full xl:w-full xl:h-[34rem] h-[40rem] xl:mt-20 p-6 col-start-6 col-span-2 xl:border-y border-b border-x xl:border-r xl:border-l-0 border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between">
+          {/* <div className="max-w-4/5 xl:max-w-full xl:w-full xl:h-[34rem] h-[40rem] xl:mt-20 p-6 col-start-6 col-span-2 xl:border-y border-b border-x xl:border-r xl:border-l-0 border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between">
             <div>
               <h2 className="mb-10">Software Development</h2>
               <div className="mb-10 flex items-center gap-x-6">
@@ -77,7 +77,18 @@ export default function Home() {
               built for performance, security, and growth.
             </p>
             <ReadMoreButton />
+          </div> */}
+          {/* Service 3*/}
+          <div className="max-w-4/5 xl:max-w-full xl:w-full xl:h-[42rem] h-[40rem] xl:mt-20 p-6 col-start-6 col-span-2 xl:border-y border-b border-x xl:border-r xl:border-l-0 border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between">
+            <h2 className="mb-10">Software Development</h2>
+            <EvervaultCard background="bg-[url('/gradient3.png')] bg-[length:100%_100%]" className={""} />
+            <p>
+              Whether you&apos;re launching a new product or upgrading your tech stack, we deliver back-end solutions
+              built for performance, security, and growth.
+            </p>
+            <ReadMoreButton />
           </div>
+          <div id="services" className="h-20 col-span-8"></div>
           {/* */}
         </SectionInner>
       </SectionOuter>
@@ -92,10 +103,10 @@ export default function Home() {
           </h2>
           <div className="h-20 xl:col-span-8"></div>
           <h3 className="w-full xl:col-start-3 xl:col-span-3 flex items-start text-justify leading-8">
-            We deliver tailored technological solutions so you have control, visibility, and security. We build systems
-            that enable your teams to move faster—not lock them into complexity. Many businesses are dragged down by
-            unreliable technology and broken processes &mdash; we help you untangle the complexity and build systems
-            that actually work for you.
+            We deliver tailored technological solutions with your goals at the center. We build systems that enable your
+            teams to move faster — not lock them into complexity. Many businesses are dragged down by unreliable
+            technology and broken processes &mdash; we help you untangle the complexity and build systems that actually
+            work for you.
           </h3>
           <div className="h-16 col-span-8"></div>
           <p className="col-start-3 col-span-2 flex items-start text-justify">
