@@ -41,7 +41,7 @@ export const EvervaultCard = ({
       >
         <CardPattern mouseX={mouseX} mouseY={mouseY} randomString={randomString} background={background} />
         <div className="relative z-10 flex items-center justify-center">
-          <div className="relative h-44 w-44 flex items-center justify-center text-white font-bold text-4xl">
+          <div className="relative h-44 w-44 flex items-center justify-center text-white font-bold text-4xl group-hover/container:scale-110 transition duration-100 ease-in-out">
             {icon}
           </div>
         </div>
