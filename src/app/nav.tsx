@@ -8,10 +8,10 @@ function Nav() {
       <Plus className="left-[calc(100%-1.25rem)] -top-5 z-10" />
       <Plus className="-left-5 top-[calc(100%-1.25rem)]" />
       <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)] z-10" />
-      <div className="w-full h-full ml-4 my-1 border-y border-l border-neutral-200 flex items-center">
+      <div className="w-full h-full my-1 pl-4 border-y border-l border-neutral-200 flex items-center">
         <Link
           href={"/"}
-          className="w-10 rounded-md text-4xl font-black text-background bg-foreground styro text-center hover:text-foreground hover:bg-background transition-colors duration-[150ms]"
+          className="w-10 rounded-m text-4xl font-black text-background bg-foreground styro text-center hover:text-foreground hover:bg-background transition-colors duration-[150ms]"
         >
           N
         </Link>

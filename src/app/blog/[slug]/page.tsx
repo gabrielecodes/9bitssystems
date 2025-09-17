@@ -3,6 +3,7 @@
 import { notFound } from "next/navigation";
 import { getPostData, type Params, type Post } from "@/app/functions";
 import { Plus } from "@/app/components/plus";
+import { array } from "zod";
 
 export default async function Blog({ params }: Params) {
   const { slug } = await params;
@@ -10,8 +11,12 @@ export default async function Blog({ params }: Params) {
 
   if (!post) return notFound();
 
+  const dateArr = new Date(post.frontmatter["date"] as string).toDateString().split(" ")
+  dateArr.shift()
+  const date = dateArr.join(" ");
+
   return (
-    <article className="mt-40">
+    <article className="mt-40 border-b border-neutral-200">
       <h1 className="p-4 mb-8 border-y border-neutral-200 relative checkerboard-border" style={{ fontSize: "48px" }}>
         <Plus className="-left-5 -top-5" />
         <Plus className="left-[calc(100%-1.25rem)] -top-5" />
@@ -21,7 +26,7 @@ export default async function Blog({ params }: Params) {
       </h1>
       <div className="w-full px-4 mb-8">
         <h3 className="mb-2">{post.frontmatter["excerpt"] as string}</h3>
-        <p className="text-end">{post.frontmatter["date"] as string}</p>
+        <p className="text-end">{date}</p>
       </div>
       <div className="px-4 [&>h3]:mt-6 [&>h3]:mb-4">{post.content}</div>
     </article>

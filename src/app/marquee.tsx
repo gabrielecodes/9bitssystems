@@ -12,11 +12,11 @@ import Gemini from "./components/icons/gemini";
 
 function CustomMarquqee() {
   return (
-    <div className="h-32 mt-20 invisible xl:visible xl:col-start-2 xl:col-end-8 flex size-full items-center justify-center bg-background">
+    <div className="xl:h-32 xl:-ml-[1px] xl:mt-20 xl:px-60 invisible xl:visible xl:col-start-1 xl:col-end-9 xl:w-[calc(100%+1px)] flex size-full items-center justify-center bg-background border border-neutral-200">
       <Marquee>
         <MarqueeFade side="left" />
         <MarqueeFade side="right" />
-        <MarqueeContent pauseOnHover={false} className="border border-neutral-200" autoFill={false}>
+        <MarqueeContent pauseOnHover={false} autoFill={false}>
           <MarqueeItem className="h-fit w-32 m-2 p-2">
             <GoogleCloud fill={"#00000023"} />
           </MarqueeItem>

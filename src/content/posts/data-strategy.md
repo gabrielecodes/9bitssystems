@@ -1,5 +1,5 @@
 ---
-title: "3 Good Reasons to Have a Solid Data Strategy"
+title: "Data Strategy And Why You Need It."
 date: "2025-09-10"
 subtitle: "Every modern company should have a data strategy. Here are 3 reasons why."
 excerpt: "Every modern company needs a data strategy to drive informed decisions, gain competitive advantage, and ensure data security and compliance in an increasingly digital and data-driven business environment."
@@ -8,8 +8,12 @@ image: "graphs.jpg"
 alt: "graphs on a computer"
 ---
 
+## Why Having a Data Strategy
+
+<br/>
+
 Technical debt is quite widespread in our fast-paced world. Technology changes quickly and many companies struggle to catch up.
-Some are stuck at the start line. We've worked on the front lines with these companies for years, either as employees or consultants, and the one universal truth we've discovered is this: no matter the size, a company that fails to implement a serious data strategy is fighting an uphill battle in the modern world.
+Many companies have competences in developing their product or service and that's where thei pour most of their resources. In this environment technology tends to become an aftertought and fixing things later can be painful. We've worked on the front lines with these companies for years, either as employees or consultants, and the one universal truth we've discovered is this: no matter the size, a company that fails to implement a serious data strategy is fighting an uphill battle in the modern world.
 
 <br/>
 
@@ -22,3 +26,7 @@ Another major struggle is **inefficiency**. Many teams, from marketing to supply
 <br/>
 
 Finally, and perhaps most critically, is the struggle with **compliance and security**. In today's regulatory environment, with standards like GDPR and CCPA, a solid _data strategy_ cannot be an afterthought. Companies that lack data governance are at risk.
+
+<br/>
+
+## The components of a Data Strategy
