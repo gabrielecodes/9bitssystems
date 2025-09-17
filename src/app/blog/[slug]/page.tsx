@@ -2,7 +2,7 @@
 
 import { notFound } from "next/navigation";
 import { getPostData, type Params, type Post } from "@/app/functions";
-import Plus from "@/app/components/plus";
+import { Plus } from "@/app/components/plus";
 
 export default async function Blog({ params }: Params) {
   const { slug } = await params;

@@ -1,7 +1,8 @@
 ---
-title: "3 Good Reasons to have a Data Strategy"
+title: "3 Good Reasons to Have a Solid Data Strategy"
 date: "2025-09-10"
-excerpt: "Your data can be a superpower - or your bane. Here's 3 reasons why you should have a data strategy."
+subtitle: "Every modern company should have a data strategy. Here are 3 reasons why."
+excerpt: "Every modern company needs a data strategy to drive informed decisions, gain competitive advantage, and ensure data security and compliance in an increasingly digital and data-driven business environment."
 tags: ["Data Engineering", "Career"]
 image: "graphs.jpg"
 alt: "graphs on a computer"

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { cn } from "./utils";
 import { serif } from "./layout";
-import Plus from "./components/plus";
+import { Plus } from "./components/plus";
 
 function Hero({ className }: { className?: string }) {
   return (

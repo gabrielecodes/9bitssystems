@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Plus from "./components/plus";
+import { Plus } from "./components/plus";
 
 function Nav() {
   return (

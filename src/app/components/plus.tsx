@@ -1,6 +1,6 @@
 import { cn } from "../utils";
 
-export default function Plus({ className }: { className?: string }) {
+function Plus({ className }: { className?: string }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -14,3 +14,6 @@ export default function Plus({ className }: { className?: string }) {
         </svg>
     );
 }
+
+
+export { Plus }
