@@ -1,6 +1,5 @@
 "use client";
-import { useMotionValue, MotionValue } from "motion/react";
-import React, { useState, useEffect, useRef } from "react";
+
 import { useMotionTemplate, motion } from "motion/react";
 import { cn } from "../utils";
 

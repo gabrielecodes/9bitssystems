@@ -4,7 +4,7 @@ import { compileMDX } from 'next-mdx-remote/rsc';
 
 export const POSTS_DIR = path.join(process.cwd(), 'src', 'content', 'posts');
 
-export type Params = {
+export type PageProps = {
   params: {
     slug: string;
   };

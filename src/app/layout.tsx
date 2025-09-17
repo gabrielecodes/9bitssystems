@@ -1,6 +1,5 @@
 import { getMetadata } from "./seo";
 import { Manrope, Instrument_Serif } from "next/font/google";
-// import { Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import { Metadata } from "next";
 import { Nav } from "./nav";
@@ -16,7 +15,7 @@ const font = Manrope({
   subsets: ["latin"],
 });
 
-const metadata: Metadata = getMetadata();
+export const metadata: Metadata = getMetadata();
 
 export default function RootLayout({
   children,
@@ -24,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="max-w-screen bg-[url('/bg.jpg')]">
-      <body className={`${font.className} antialiased -mt-14`}>
+    <html lang="en">
+      <body className={`${font.className} bg-[url('/bg.jpg')] antialiased -mt-14`}>
         <Nav />
         {children}
         <div className="w-full h-40 grid grid-cols-8 *:border-r *:border-neutral-200">
