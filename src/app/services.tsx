@@ -3,7 +3,7 @@ import { Plus } from "./components/plus"
 import { Triangles } from "./components/triangles"
 import { Star } from "./components/start"
 import { Squares } from "./components/squares"
-import { EvervaultCard } from "./components/card"
+import { ServiceCard } from "./components/card"
 
 export default function Services() {
   return (
@@ -26,7 +26,7 @@ export default function Services() {
 
         <div className="max-w-4/5 xl:max-w-full xl:w-1/3 xl:h-full h-[40rem] xl:mt20 p-6 col-start-2 col-span-2 xl:border-y border-b border-x xl:border-x border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative group/container hover:-translate-y-2 hover:bg-white transition transform duration-200 ease-in-out shadow-lg hover:shadow-none">
           <h2 className="mb-10">Data Strategy</h2>
-          <EvervaultCard
+          <ServiceCard
             background="bg-[url('/gradient1.png')] bg-[length:100%_100%]"
             className="mb-10"
             icon={<Star />}
@@ -40,7 +40,7 @@ export default function Services() {
         {/* Service 2*/}
         <div className="max-w-4/5 xl:max-w-full xl:w-1/3 xl:h-full h-[40rem] xl:mt20 p-6 col-start-4 col-span-2 xl:border-y border-b border-x xl:border border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative group/container hover:-translate-y-2 hover:bg-white transition transform duration-200 ease-in-out shadow-lg hover:shadow-none">
           <h2 className="mb-10">Cloud Infrastructure</h2>
-          <EvervaultCard
+          <ServiceCard
             background="bg-[url('/gradient2.png')] bg-[length:100%_100%]"
             className="mb-10"
             icon={<Triangles />}
@@ -54,7 +54,7 @@ export default function Services() {
         {/* Service 3*/}
         <div className="max-w-4/5 xl:max-w-full xl:w-1/3 xl:h-full h-[40rem] xl:mt20 p-6 col-start-6 col-span-2 xl:border-y border-b border-x xl:border border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative group/container hover:-translate-y-2 hover:bg-white transition transform duration-200 ease-in-out shadow-lg hover:shadow-none">
           <h2 className="mb-10">Software Development</h2>
-          <EvervaultCard
+          <ServiceCard
             background="bg-[url('/gradient3.png')] bg-[length:100%_100%]"
             className="mb-10"
             icon={<Squares />}

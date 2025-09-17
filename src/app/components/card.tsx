@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useMotionTemplate, motion } from "motion/react";
 import { cn } from "../utils";
 
-export const EvervaultCard = ({
+export const ServiceCard = ({
   icon,
   background,
   className,

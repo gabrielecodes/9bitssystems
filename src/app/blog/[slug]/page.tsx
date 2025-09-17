@@ -23,7 +23,7 @@ export default async function Blog({ params }: Params) {
         <h3 className="mb-2">{post.frontmatter["excerpt"] as string}</h3>
         <p className="text-end">{post.frontmatter["date"] as string}</p>
       </div>
-      <div className="px-4 [&>h3]:mt-6 [&>h3]:mb-4 ">{post.content}</div>
+      <div className="px-4 [&>h3]:mt-6 [&>h3]:mb-4">{post.content}</div>
     </article>
   );
 }
