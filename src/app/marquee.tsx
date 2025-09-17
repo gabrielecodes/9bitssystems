@@ -1,4 +1,8 @@
 import { Marquee, MarqueeContent, MarqueeFade, MarqueeItem } from "./components/marquee";
+import GoogleCloud from "./components/icons/gcp";
+import Kubernetes from "./components/icons/kubernetes";
+
+const Icons = [GoogleCloud, Kubernetes];
 
 function CustomMarquqee() {
   return (
@@ -6,12 +10,14 @@ function CustomMarquqee() {
       <Marquee>
         <MarqueeFade side="left" />
         <MarqueeFade side="right" />
-        <MarqueeContent pauseOnHover={false}>
-          {new Array(10).fill(null).map((_, index) => (
-            <MarqueeItem className="h-32 w-32" key={index}>
-              <div className="w-full h-full bg-neutral-300"></div>
+        <MarqueeContent pauseOnHover={false} className="border border-neutral-200" autoFill={false}>
+          <MarqueeItem className="h-fit w-32 m-2 p-2">
+            <GoogleCloud />
+          </MarqueeItem>
+          {/* {new Array(10).fill(null).map((_, index) => (
+            <MarqueeItem className="h-32 w-32 bg-[url('/bg.jpg')] m-0 px-2" key={index}>
             </MarqueeItem>
-          ))}
+          ))} */}
         </MarqueeContent>
       </Marquee>
     </div>
