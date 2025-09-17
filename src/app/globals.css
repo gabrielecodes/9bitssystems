@@ -9,8 +9,10 @@
   --color-background: oklch(1 0 0);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-border: oklch(92.2% 0 0);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-serif);
 }
 
 @font-face {
@@ -46,7 +48,6 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
-  /* 36px */
   letter-spacing: -0.03em;
 }
 
@@ -80,3 +81,28 @@ p {
   /* repeating-linear-gradient(180deg, #e5e5e5 0, #e5e5e5 1px, transparent 1px, transparent 20px); */
 
 }
+
+#post-content ul {
+  list-style-type: square;
+  margin-left: 0;
+}
+
+#post-content ol {
+  list-style-type: square;
+  margin-left: 0;
+}
+
+#post-content li {
+  margin-left: 1rem;
+}
+
+#post-content p {
+  line-height: 1.7rem;
+}
+
+td {
+  padding-left: .5rem;
+  padding-right: 1rem;
+  border-right: 1px solid #e5e5e5;
+}
+

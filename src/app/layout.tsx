@@ -8,6 +8,7 @@ import { Footer } from "./footer";
 export const serif = Instrument_Serif({
   weight: "400",
   subsets: ["latin"],
+  variable: "--font-serif",
 });
 
 const font = Manrope({

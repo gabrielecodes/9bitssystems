@@ -4,15 +4,22 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { getAllPosts, type Post } from "@/app/functions";
-import { PageProps } from "@/app/functions";
+import { Plus } from "../components/plus";
+import { serif } from "../layout";
 
-export default async function Blog({ params }: PageProps) {
+export default async function Blog() {
   // fetch all the posts
   const posts = (await getAllPosts()) as Post[];
 
   return (
     <div className="h-full">
-      <h1>Blog</h1>
+      <div className="mt-40 relative border-y border-border bg-[repeating-linear-gradient(135deg,_#e5e5e5_0px,_#e5e5e5_2px,_transparent_2px,_transparent_10px)]">
+        <Plus className="-left-5 -top-5" />
+        <Plus className="left-[calc(100%-1.25rem)] -top-5 z-10" />
+        <Plus className="-left-5 top-[calc(100%-1.25rem)]" />
+        <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)] z-10" />
+        <h1 className={`${serif.className} ml-4 h-40 flex items-center`}>Blog</h1>
+      </div>
       <div className="h-20 w-full"></div>
       <div className="w-full flex flex-wrap">
         {posts ? posts.map((post, index) => <PostCard key={post.slug} post={post} index={index} />) : <h3>No posts</h3>}
@@ -21,39 +28,6 @@ export default async function Blog({ params }: PageProps) {
   );
 }
 
-// export type Article = {
-//   title: string;
-//   subtitle: string;
-// };
-
-// const articles: Article[] = [
-//   {
-//     title: "Top 3 Career Myths in Data Engineering",
-//     subtitle: "Beyond the hype — focus on what’s real and avoid burning out",
-//   },
-//   {
-//     title: "Modern Data Stack: What You Need to Know",
-//     subtitle: "A breakdown of the tools powering today’s cloud-native data platforms",
-//   },
-//   {
-//     title: "Streaming vs. Batch Processing",
-//     subtitle: "Choosing the right data processing approach for your use case",
-//   },
-//   {
-//     title: "Orchestrating Data Workflows with Airflow",
-//     subtitle: "A guide to managing complex dependencies in your data pipelines",
-//   },
-//   {
-//     title: "Introduction to Data Lakes and Lakehouses",
-//     subtitle: "How organizations are unifying storage and compute for big data workloads",
-//   },
-//   {
-//     title: "Scaling Data Transformations with dbt",
-//     subtitle: "How analytics engineering is changing the way teams work with data",
-//   },
-// ];
-
-/* eslint-disable  @typescript-eslint/no-explicit-any */
 function PostCard({ post, index }: { post: any; index: number }) {
   function isEven(num: number) {
     return num % 2 === 0;
@@ -62,8 +36,9 @@ function PostCard({ post, index }: { post: any; index: number }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className={`${isEven(index) ? "mr-4" : ""
-        } mb-4 w-full xl:w-[calc(50%-0.5rem)] h-[24rem] p-4 bg-background hover:bg-white shadow-lg hover:shadow-none transition transform hover:-translate-y-1 duration-200 ease-in-out flex flex-col border border-neutral-500`}
+      className={`${
+        isEven(index) ? "mr-4" : ""
+      } mb-4 w-full xl:w-[calc(50%-0.5rem)] h-[28rem] p-4 bg-background hover:bg-white shadow-lg hover:shadow-none transition transform hover:-translate-y-1 duration-200 ease-in-out flex flex-col border border-neutral-500`}
     >
       <div className="h-1/2 mb-2 border border-neutral-500">
         <Image
