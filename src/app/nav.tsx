@@ -3,7 +3,7 @@ import { Plus } from "./components/plus";
 
 function Nav() {
   return (
-    <nav className="xl:w-1/2 h-14 bg-[url('/bg.jpg')] flex items-center sticky top-4 xl:left-[calc(50%-1px)] xl:-translate-x-1/2 z-20 overflow-clip">
+    <nav className="xl:w-1/2 h-14 bg-[url('/bg.jpg')] flex items-center sticky top-4 xl:left-[calc(50%-1px)] xl:-translate-x-1/2 z-100 overflow-clip">
       <Plus className="-left-5 -top-5" />
       <Plus className="left-[calc(100%-1.25rem)] -top-5 z-10" />
       <Plus className="-left-5 top-[calc(100%-1.25rem)]" />

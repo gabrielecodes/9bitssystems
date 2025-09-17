@@ -61,7 +61,7 @@ function PostCard({ post, index }: { post: any; index: number }) {
     <Link
       href={`/blog/${post.slug}`}
       className={`${isEven(index) ? "mr-4" : ""
-        } mb-4 w-full xl:w-[calc(50%-0.5rem)] h-[24rem] p-4 bg-neutral-200 hover:bg-sky-400 transition-color duration-200 ease-in-out flex flex-col border border-neutral-500`}
+        } mb-4 w-full xl:w-[calc(50%-0.5rem)] h-[24rem] p-4 bg-background hover:bg-wihte shadow-lg hover:shadow-none transition transform hover:-translate-y-1 hover:bg-background duration-200 ease-in-out flex flex-col border border-neutral-500`}
     >
       <div className="h-1/2 mb-2 border border-neutral-500">
         <Image
