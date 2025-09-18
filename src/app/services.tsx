@@ -43,7 +43,7 @@ export default function Services() {
       <div id="services" className="h-20 col-span-8"></div>
       <h2 className="h-20 ml-2 col-start-2 col-span-6">
         <span className="px-4 inline-block transform -skew-x-12 bg-neutral-800 text-background">
-          <span className="font-semibold inline-block skew-x-12">Our Services</span>
+          <span className="font-semibold inline-block skew-x-12">What I Do</span>
         </span>
       </h2>
       {/* Service 1*/}
@@ -87,7 +87,7 @@ export default function Services() {
             randomString={randomString}
           />
           <p className="mb-6">
-            We architect a solid foundation for your business, delivering a secure and scalable back-end and
+            I architect a solid foundation for your business, delivering a secure and scalable back-end and
             establishing seamless integration with your workflows.
           </p>
           <ReadMoreButton />
@@ -106,7 +106,7 @@ export default function Services() {
             randomString={randomString}
           />
           <p className="mb-6">
-            Whether you&apos;re launching a new product or upgrading your tech stack, we deliver back-end solutions
+            Whether you&apos;re launching a new product or upgrading your tech stack, I deliver back-end solutions
             built for performance, security, and growth.
           </p>
           <ReadMoreButton />

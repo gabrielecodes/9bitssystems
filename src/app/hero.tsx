@@ -38,8 +38,7 @@ function Hero({ className }: { className?: string }) {
           </span>.
         </h1>
         <h3 className="w-[75%] text-center text-neutral-400">
-          We help you build a solid technological foundation for your business &mdash; with reliable, secure and modern
-          solutions
+          I help businesses build a solid technological foundation &mdash; with reliable, secure, and modern solutions.
         </h3>
       </div>
       <div className="mt-10 xl:mt-20 w-1/2 flex xl:mx-auto xl:flex-row flex-col gap-y-4 col-start-4 col-span-2 gap-x-4 items-center justify-center">
