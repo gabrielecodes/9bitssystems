@@ -12,7 +12,7 @@ function Hero({ className }: { className?: string }) {
       </div>
       <div
         className={cn(
-          "w-full mt-10 py-10 flex flex-col items-center justify-center group border-y border-r border-neutral-200 relative bg-[url('/bg.jpg')]",
+          "w-full mt-10 py-10 flex flex-col items-center justify-center group border-y border-r border-neutral-200 relative bg-white",
           className
         )}
       >
@@ -23,19 +23,35 @@ function Hero({ className }: { className?: string }) {
         <h1 className="w-full mb-6 text-center leading-24">
           Scale{" "}
           <span className={`${serif.className} relative`}>
-            <svg viewBox="0 0 55 24" xmlns="http://www.w3.org/2000/svg" className="w-full h-full block absolute z-0 bottom-0 left-0" stroke="#00a6f4" strokeWidth={2} fill="none">
+            <svg
+              viewBox="0 0 55 24"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-full h-full block absolute z-0 bottom-0 left-0"
+              stroke="#00a6f4"
+              strokeWidth={2}
+              fill="none"
+            >
               <path d="M0 20 C12.5 18 37.5 16 50 20" />
             </svg>
             <span className="relative z-20">Smarter</span>
-          </span>.
+          </span>
+          .
           <br />
           Build{" "}
           <span className={`${serif.className} relative`}>
-            <svg viewBox="0 0 45 24" xmlns="http://www.w3.org/2000/svg" className="w-full h-full block absolute z-0 bottom-0 left-0" stroke="#00a6f4" strokeWidth={2} fill="none">
+            <svg
+              viewBox="0 0 45 24"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-full h-full block absolute z-0 bottom-0 left-0"
+              stroke="#00a6f4"
+              strokeWidth={2}
+              fill="none"
+            >
               <path d="M0 20 C10 19 32 18 50 21" />
             </svg>
             <span className="relative z-20">Faster</span>
-          </span>.
+          </span>
+          .
         </h1>
         <h3 className="w-[75%] text-center text-neutral-400">
           I help businesses build a solid technological foundation &mdash; with reliable, secure, and modern solutions.

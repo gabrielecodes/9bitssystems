@@ -21,8 +21,12 @@ export default async function Blog() {
         <h1 className={`${serif.className} ml-4 h-40 flex items-center`}>Blog</h1>
       </div>
       <div className="p-4 w-full flex flex-wrap crossed-lines-gradient">
-        <div className="w-full h-full border border-neutral-300 bg-[url('/bg.jpg')]">
-          {posts ? posts.map((post, index) => <PostCard key={post.slug} post={post} index={index} />) : <h3>No posts</h3>}
+        <div className="w-full h-full border border-neutral-300 bg-[url('/b3.jpg')]">
+          {posts ? (
+            posts.map((post, index) => <PostCard key={post.slug} post={post} index={index} />)
+          ) : (
+            <h3>No posts</h3>
+          )}
         </div>
       </div>
     </div>
@@ -35,16 +39,13 @@ function PostCard({ post, index }: { post: any; index: number }) {
   }
 
   return (
-    <Link
-      href={`/blog/${post.slug}`}
-      className="w-full h-[28rem] flex flex-col bg-white group"
-    >
+    <Link href={`/blog/${post.slug}`} className="w-full h-[28rem] flex flex-col bg-white group">
       <div className="w-full h-8 border-b border-border flex">
         <div className="w-[calc(2.25rem+1px)] h-full border-r border-border"></div>
         <div className="w-full h-full"></div>
         <div className="w-[calc(2.25rem-1px)] h-full border-l border-border"></div>
       </div>
-      <div className="w-[calc(100%-4rem)] h-[24rem] mx-auto xl:p-8 p-4 relative border-x border-border flex xl:flex-row flex-col gap-x-6 bg-[url('/bg.jpg')] overflow-hidden">
+      <div className="w-[calc(100%-4rem)] h-[24rem] mx-auto xl:p-8 p-4 relative border-x border-border flex xl:flex-row flex-col gap-x-6 bg-[url('/bg3.jpg')] overflow-hidden">
         <Plus className="size-6 group-hover:text-neutral-400 transition-all duration-200 ease-in-out -left-3 -top-3" />
         <Plus className="size-6 group-hover:text-neutral-400 transition-all duration-200 ease-in-out left-[calc(100%-0.75rem)] -top-3 z-10" />
         <Plus className="size-6 group-hover:text-neutral-400 transition-all duration-200 ease-in-out -left-3 top-[calc(100%-0.75rem)]" />

@@ -35,7 +35,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
       },
     },
     description: post.frontmatter["excerpt"],
-  }
+  };
 
   return (
     <>
@@ -43,7 +43,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
           }}
         />
       </Head>
@@ -59,7 +59,6 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
           {post.frontmatter["title"] as string}
         </h1>
         <div className="w-fit px-20 py-10 bg-white">
-
           <div className="overflow-clip">
             <div className="p-8 text-2xl tracking-tight relative border border-border">
               <Plus className="-left-5 -top-5" />
@@ -72,7 +71,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
               <div className="p-8 border-b border-x border-border flex xl:flex-row flex-col items-center justify-between relative">
                 <Plus className="-left-5 top-[calc(100%-1.25rem)] z-10" />
                 <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)] z-10" />
-                <div>Written by Gabriele C.</div>
+                <div>Written by {post.frontmatter["author"] as string}</div>
                 <p className="text-end">{date}</p>
               </div>
             </div>

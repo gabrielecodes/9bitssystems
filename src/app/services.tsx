@@ -41,15 +41,15 @@ export default function Services() {
   return (
     <>
       <div id="services" className="h-20 col-span-8"></div>
-      <h2 className="h-20 ml-2 col-start-2 col-span-6">
-        <span className="px-4 inline-block transform -skew-x-12 bg-neutral-800 text-background">
-          <span className="font-semibold inline-block skew-x-12">What I Do</span>
+      <h2 className="h-20 ml-2 col-start-2 col-span-1">
+        <span className="w-full mx-auto text-center inline-block transform bg-foreground text-background font-semibold">
+          What I Do
         </span>
       </h2>
       {/* Service 1*/}
       <div className="h-10 col-start-1 col-span-8"></div>
       <div className="h-full col-start-1 col-span-1 border-y border-neutral-200"></div>
-      <div className="h-full p-8 col-start-2 col-span-6 bg-[url('/bg.jpg')] border border-l-0 border-neutral-200 flex gap-x-8 justify-between items-center relative">
+      <div className="h-full p-8 col-start-2 col-span-6 crossed-lines-gradient2 border border-l-0 border-neutral-200 flex gap-x-8 justify-between items-center relative">
         <Plus className="-left-5 -top-5" />
         <Plus className="left-[calc(100%-1.25rem)] -top-5 z-10" />
         <Plus className="-left-5 top-[calc(100%-1.25rem)]" />
@@ -87,8 +87,8 @@ export default function Services() {
             randomString={randomString}
           />
           <p className="mb-6">
-            I architect a solid foundation for your business, delivering a secure and scalable back-end and
-            establishing seamless integration with your workflows.
+            I architect a solid foundation for your business, delivering a secure and scalable back-end and establishing
+            seamless integration with your workflows.
           </p>
           <ReadMoreButton />
         </div>
@@ -106,8 +106,8 @@ export default function Services() {
             randomString={randomString}
           />
           <p className="mb-6">
-            Whether you&apos;re launching a new product or upgrading your tech stack, I deliver back-end solutions
-            built for performance, security, and growth.
+            Whether you&apos;re launching a new product or upgrading your tech stack, I deliver back-end solutions built
+            for performance, security, and growth.
           </p>
           <ReadMoreButton />
         </div>

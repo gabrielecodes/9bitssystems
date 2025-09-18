@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
+  --background: #fff;
   --foreground: #262626;
 }
 
@@ -114,6 +114,13 @@ td {
 
 .crossed-lines-gradient2 {
   background-image:
-    repeating-linear-gradient(135deg, #e5e5e5 0px, #e5e5e5 .5px, transparent .5px, transparent 2px),
-    repeating-linear-gradient(45deg, #e5e5e5 0px, #e5e5e5 .5px, transparent .5px, transparent 2px);
+    repeating-linear-gradient(135deg, #e5e5e5 0px, #e5e5e5 .5px, transparent .5px, transparent 3px),
+    repeating-linear-gradient(45deg, #e5e5e5 0px, #e5e5e5 .5px, transparent .5px, transparent 3px);
+}
+
+blockquote {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  font-style: italic;
 }
