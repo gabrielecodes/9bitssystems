@@ -1,6 +1,9 @@
 function BlackPixels() {
   return (
-    <div id="blackpixels" className="invisible xl:visible w-full h-28 grid grid-cols-8 col-start-1 col-end-9 *:border-r *:border-neutral-200">
+    <div
+      id="blackpixels"
+      className="invisible xl:visible w-full h-28 grid grid-cols-8 col-start-1 col-end-9 *:border-r *:border-border"
+    >
       <div className="h-28 col-start-1 col-span-1 grid grid-cols-8">
         <div></div>
         <div></div>

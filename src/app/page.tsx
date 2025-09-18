@@ -16,14 +16,14 @@ export default function Home() {
         </SectionInner>
       </SectionOuter>
       <Border />
-      <SectionOuter className="mb-20 xl:mb-0">
+      <SectionOuter className="mb-20 xl:mb-0 xl:h-[70rem]">
         <SectionInner className="xl:h-fit gap-x-0">
           <Services />
         </SectionInner>
       </SectionOuter>
       <Border />
-      <SectionOuter className="h-[46rem] xl:h-[44rem]">
-        <SectionInner className="h-[46rem] xl:h-[44rem] gap-x-0 xl:px-0 px-3">
+      <SectionOuter>
+        <SectionInner className=" gap-x-0 xl:px-0 px-3">
           <div className="h-20 xl:col-span-8"></div>
           <h2 className="h-20 ml-2 col-start-2 col-span-6 flex items-center">
             <span className="px-4 inline-block transform -skew-x-12 bg-neutral-800 text-background">
@@ -34,35 +34,33 @@ export default function Home() {
           <div className="h-full col-start-2 col-span-6 grid grid-cols-6 bg-[repeating-linear-gradient(135deg,_#e5e5e5_0px,_#e5e5e5_2px,_transparent_2px,_transparent_10px)] border-y border-neutral-200">
             <div className="my-8 py-4 px-8 col-start-2 col-span-4 bg-white border-y border-r border-neutral-200 shadow-lg">
               <h3 className="w-full xl:col-start-3 xl:col-span-3 flex items-start text-justify leading-8">
-                Our solutions are designed with your goals at the center. We build systems that enable your
-                teams to move faster — not lock them into complexity. Many businesses are dragged down by unreliable
-                technology and broken processes &mdash; we help you untangle the complexity and build systems that actually
-                work for you.
+                Our solutions are designed with your goals at the center. We build systems that enable your teams to
+                move faster — not lock them into complexity. Many businesses are dragged down by unreliable technology
+                and broken processes &mdash; we help you untangle the complexity and build systems that actually work
+                for you.
               </h3>
               <div className="h-16 col-span-8"></div>
               <div className="flex items-center gap-x-8">
                 <p className="col-start-3 col-span-2 flex items-start text-justify">
-                  Our mission is to support businesses in automating and growing with confidence. We work alongside you to
-                  create thoughtful data strategies, build reliable cloud infrastructures, and develop systems that just work.
+                  Our mission is to support businesses in automating and growing with confidence. We work alongside you
+                  to create thoughtful data strategies, build reliable cloud infrastructures, and develop systems that
+                  just work.
                 </p>
                 <p className="mt-8 xl:mt-0 col-start-6 col-span-2 flex items-start text-justify">
                   Our approach begins with listening closely to your needs, ensuring every solution fits your real-world
-                  challenges. We combine proven technologies with thoughtful design, so you remain in control every step of
-                  the way.
+                  challenges. We combine proven technologies with thoughtful design, so you remain in control every step
+                  of the way.
                 </p>
               </div>
             </div>
           </div>
-          <div className="h-0 xl:h-20 xl:col-span-8"></div>
           <CustomMarquqee />
-          <div className="h-0 xl:h-40 xl:col-span-8"></div>
         </SectionInner>
       </SectionOuter>
       <Border />
-      <SectionOuter className="h-[46rem] xl:h-[40rem]">
+      <SectionOuter>
         <SectionInner className="gap-x-0 gap-y-0">
           <div id="contact" className="h-20 col-span-8"></div>
-
           <h2 className="h-20 ml-2 col-start-2 col-span-6 flex items-center">
             <span className="px-4 inline-block transform -skew-x-12 bg-neutral-800 text-background">
               <span className="font-semibold inline-block skew-x-12">Contact Us</span>

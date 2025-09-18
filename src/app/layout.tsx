@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={`${font.className} bg-[url('/bg.jpg')] antialiased -mt-14`}>
         <Nav />
         {children}
-        <div className="w-full h-40 grid grid-cols-8 *:border-r *:border-neutral-200">
+        <div className="w-full h-40 grid grid-cols-8 *:border-r *:border-border">
           {new Array(8).fill(null).map((_, idx) => (
             <div key={idx}></div>
           ))}
