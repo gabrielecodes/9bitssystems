@@ -16,7 +16,7 @@ function Nav() {
           N
         </Link>
       </div>
-      <div className="w-full h-full pr-4 border-y border-border flex items-center justify-between">
+      <div className="w-full h-full pr-4 border-y border-r border-border flex items-center justify-between">
         <ul className="w-full flex items-center gap-x-6 justify-end">
           <li className="border-b border-background hover:border-foreground">
             <Link href={"/#services"}>Services</Link>

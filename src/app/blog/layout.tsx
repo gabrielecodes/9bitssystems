@@ -5,7 +5,7 @@ import { Border } from "../components/border";
 
 export default async function BlogLayout({ children }: { children: React.ReactNode }) {
   return (
-    <section className="xl:mx-0 mx-4 flex xl:grid xl:grid-cols-8 selection:bg-sky-400 bg-[url('/bg3.jpg')]">
+    <section className="xl:mx-0 mx-4 flex xl:grid xl:grid-cols-8 selection:bg-sky-300 bg-[url('/bg3.jpg')]">
       <div className="xl:w-full w-0">
         <div className="w-full h-40"></div>
         <div className="w-full h-40 border-t border-border"></div>
