@@ -5,22 +5,26 @@ import { BlackPixels } from "./components/blackpixels";
 
 function Footer() {
   return (
-    <footer className="w-full h-[calc(100vh-7rem)] xl:relative overflow-clip">
+    <footer className="w-full h-screen xl:relative overflow-clip">
       <BlackPixels />
       <WhitePixels />
       <div className="h-full bg-foreground">
         <div className="flex flex-col justify-between bg-foreground text-background">
           <div className="w-full h-20"></div>
-          <h3
-            className="mx-4 xl:mx-40 h-28 font-bold text-[3.5rem] styro tracking-widest"
-            style={{ fontSize: "3.5rem", letterSpacing: "0.09em" }}
+          <div
+            className="w-fit mx-2 xl:ml-52 xl:mx-40 h-28 font-bold styro scale-x-150"
+            style={{ fontSize: "3.5rem", fontWeight: 900, letterSpacing: "0.01em" }}
           >
-            NINE BITS SYSTEMS
-          </h3>
-          <div className="mx-4 xl:mx-40 flex xl:flex-row flex-col gap-y-4">
+            <div className="leading-12">
+              <span style={{ letterSpacing: "0.022em" }}>NINE BITS</span>
+              <br />
+              SYSTEMS
+            </div>
+          </div>
+          <div className="mx-2 xl:mx-40 flex xl:flex-row flex-col gap-y-4">
             <div className="w-full xl:w-1/2">
               <h3 className="font-bold">Small Brand, Large Delivery.</h3>
-              <span className="inline-block md:w-[28rem] text-neutral-400">
+              <span className="inline-block xl:w-[28rem] text-neutral-400">
                 My goal is to support businesses in automating and growing with confidence. I work alongside you to
                 create thoughtful data strategies, build reliable cloud infrastructures, and develop systems that just
                 work.
@@ -61,11 +65,11 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="invisible xl:visible flex justify-between font-black text-[400px] styro bg-foreground">
-          <div className="absolute -bottom-60 bg-gradient-to-t from-background via-neutral-600 to-foreground text-transparent bg-clip-text">
+        <div className="w-0 xl:full invisible xl:visible flex justify-between font-black text-[400px] styro bg-background">
+          <div className="absolute -bottom-60 bg-gradient-to-t from-background via-neutral-400 to-neutral-200 text-transparent bg-clip-text">
             N I N E
           </div>
-          <div className="absolute -bottom-60 right-0 bg-gradient-to-t from-background via-neutral-600 to-foreground text-transparent bg-clip-text">
+          <div className="absolute -bottom-60 right-0 bg-gradient-to-t from-background via-neutral-400 to-neutral-200 text-transparent bg-clip-text">
             B I T S
           </div>
         </div>

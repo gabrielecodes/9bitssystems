@@ -1,25 +1,20 @@
 // import Link from "next/link";
 import { cn } from "./utils";
 import { serif } from "./layout";
-import { Plus } from "./components/plus";
+// import { Plus } from "./components/plus";
 
 function Hero({ className }: { className?: string }) {
   return (
     <div className="xl:mt-0 mt-10 flex flex-col justify-around">
-      <div className="w-fit h-fit mx-auto xl:mt-32 mt-10 py-1 px-3 col-start-3 col-span-2 rounded-full bg-neutral-200 flex items-baseline gap-x-2">
-        <span className="w-3 h-3 rounded-full bg-sky-500 animate-pulse"></span>
+      <div className="w-fit h-fit mx-auto xl:mt-32 mt-10 py-1 px-3 rounded-full bg-border flex items-baseline gap-x-2">
+        <span className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
         <p>Consulting Services Within IT & Management</p>
       </div>
-      <div
-        className={cn(
-          "w-full mt-10 py-10 flex flex-col items-center justify-center group border-y border-border relative bg-white",
-          className
-        )}
-      >
-        <Plus className="-left-5 -top-5" />
+      <div className={cn("w-full mt-10 py-10 flex flex-col items-center justify-center group relative", className)}>
+        {/* <Plus className="-left-5 -top-5" />
         <Plus className="left-[calc(100%-1.25rem)] -top-5 z-10" />
         <Plus className="-left-5 top-[calc(100%-1.25rem)]" />
-        <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)] z-10" />
+        <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)] z-10" /> */}
         <h1 className="w-full mb-6 text-center leading-24">
           Scale{" "}
           <span className={`${serif.className} relative`}>
@@ -27,7 +22,7 @@ function Hero({ className }: { className?: string }) {
               viewBox="0 0 55 24"
               xmlns="http://www.w3.org/2000/svg"
               className="w-full h-full block absolute z-0 bottom-0 left-0"
-              stroke="#00a6f4"
+              stroke="#00bc7d"
               strokeWidth={2}
               fill="none"
             >
@@ -43,7 +38,7 @@ function Hero({ className }: { className?: string }) {
               viewBox="0 0 45 24"
               xmlns="http://www.w3.org/2000/svg"
               className="w-full h-full block absolute z-0 bottom-0 left-0"
-              stroke="#00a6f4"
+              stroke="#00bc7d"
               strokeWidth={2}
               fill="none"
             >

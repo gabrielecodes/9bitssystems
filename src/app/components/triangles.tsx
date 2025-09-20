@@ -1,6 +1,14 @@
-function Triangles() {
+import { cn } from "../utils";
+
+function Triangles({ className }: { className: string }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="none" className="absolute z-10">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="96"
+      height="96"
+      fill="none"
+      className={cn("absolute z-10", className)}
+    >
       <g fill="#fff" fillRule="evenodd" clipPath="url(#a)" clipRule="evenodd">
         <path d="M96 0H48l48 48V0ZM48 0H0l48 48V0Zm0 48H0l48 48V48Zm48 0H48l48 48V48Z" />
       </g>

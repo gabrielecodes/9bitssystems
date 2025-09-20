@@ -6,10 +6,69 @@ import Services from "./services";
 
 export default function Home() {
   return (
-    <main className="xl:mx-10 mx-2 select-none bg-[url('/bg3.jpg')] border-x border-border">
+    <main className="xl:mx-10 mx-2 select-none border-x border-border text-foreground">
       <Hero />
       <CustomMarquqee />
       <Services />
+
+      <div id="experience" className="w-full h-20"></div>
+      <h2 className="w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold">
+        Experience
+      </h2>
+
+      <div className="w-full h-20"></div>
+      <div className="w-full h-96 xl:flex xl:justify-center">
+        <div className="w-1/3 border-r border-border">
+          <div className="h-40 w-full" />
+          {/* */}
+          <div className="mr-6 w-fit float-right">
+            <h3 className="relative">
+              <div className="w-4 h-4 top-3 -right-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground flex" />
+              Senior Data Engineer<p className="ml-4 inline-block">Feb 2023 - Apr 2024</p>
+            </h3>
+            <ul className="list-disc *:flex [&_p]:ml-2 text-right">
+              <li>
+                Work: <p>Data Engineering</p>
+              </li>
+              <li>
+                Provider: <p>GCP, AWS</p>
+              </li>
+              <li>
+                Tools: <p>Airflow, BigQuery, Kubernetes, dbt </p>
+              </li>
+              <li>
+                Languages: <p>Python, SQL</p>
+              </li>
+            </ul>
+          </div>
+          {/* */}
+        </div>
+
+        <div className="w-1/3 border-l border-border">
+          {/* */}
+          <div className="h-40 ml-6">
+            <h3 className="relative">
+              <div className="w-4 h-4 top-3 -left-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground flex" />
+              Automation Manager<p className="ml-4 inline-block">Apr 2024 - Present</p>
+            </h3>
+            <ul className="list-disc *:flex [&_p]:ml-2">
+              <li>
+                Work: <p>Data Engineering & Analytics</p>
+              </li>
+              <li>
+                Provider: <p>GCP</p>
+              </li>
+              <li>
+                Tools: <p>Gemini, DocumentAI, SQL Server, Docker, Terraform</p>
+              </li>
+              <li>
+                Languages: <p>Python, SQL</p>
+              </li>
+            </ul>
+          </div>
+          {/* */}
+        </div>
+      </div>
 
       {/* <div className="h-fit"></div>
       <h2 className="w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold">
@@ -45,15 +104,15 @@ export default function Home() {
       </h2>
 
       <div className="mt-20 pb-20 xl:col-start-3 xl:col-span-4 gap-y-0 flex justify-center">
-        <div className="w-1/2 bg-background border border-neutral-200 flex relative xl:overflow-visible overflow-x-clip">
+        <div className="xl:w-1/2 w-full bg-background border border-neutral-200 flex relative xl:overflow-visible overflow-x-clip">
           <Plus className="-left-5 -top-5" />
           <Plus className="left-[calc(100%-1.25rem)] -top-5" />
           <Plus className="-left-5 top-[calc(100%-1.25rem)]" />
           <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)]" />
-          <div className="w-full p-10 flex items-start justify-center gap-x-10 bg-neutral-100">
+          <div className="w-full xl:p-10 p-2 flex xl:flex-row flex-col items-start justify-center gap-x-10 bg-neutral-100">
             <div className="w-full h-full">
               <h2 className="mb-4">Tell me about your idea, there are no obligations.</h2>
-              <p>
+              <p className="mb-4">
                 I craft solutions that prioritize your goals, drawing on almost a decade of experience as a data
                 engineering and analytics in the financial and service industries. I build systems that enable your
                 teams to move faster — not lock them into complexity. Many businesses are dragged down by unreliable

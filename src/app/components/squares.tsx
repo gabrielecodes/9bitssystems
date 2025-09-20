@@ -1,6 +1,14 @@
-function Squares() {
+import { cn } from "../utils";
+
+function Squares({ className }: { className: string }) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="none" className="absolute z-10">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="96"
+      height="96"
+      fill="none"
+      className={cn("absolute z-10", className)}
+    >
       <g clipPath="url(#a)">
         <path
           fill="#fff"

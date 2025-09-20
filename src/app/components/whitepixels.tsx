@@ -1,12 +1,12 @@
 function WhitePixels() {
   return (
-    <div className="invisible xl:visible w-full h-28 grid grid-cols-8 bg-foreground *:border-r *:border-foreground">
+    <div className="invisible xl:visible w-full h-28 xl:grid xl:grid-cols-8 bg-foreground">
       <div className="grid grid-cols-8">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
+        <div className="bg-background"></div>
         <div></div>
         <div></div>
         <div></div>
@@ -23,7 +23,7 @@ function WhitePixels() {
         <div></div>
         <div></div>
         <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
+        <div className="bg-background"></div>
         <div></div>
         <div></div>
         <div></div>
@@ -33,7 +33,7 @@ function WhitePixels() {
         <div></div>
         <div></div>
         <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
+        <div className="bg-background"></div>
       </div>
       {/* */}
       <div className="grid grid-cols-8">
@@ -63,7 +63,7 @@ function WhitePixels() {
         <div></div>
         <div></div>
         <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
+        <div className="bg-background"></div>
         <div></div>
         <div></div>
         <div></div>
@@ -76,8 +76,8 @@ function WhitePixels() {
         <div></div>
         <div></div>
         <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
+        <div className="bg-background"></div>
+        <div className="bg-background"></div>
         <div></div>
         <div></div>
         <div></div>
@@ -85,116 +85,11 @@ function WhitePixels() {
         <div></div>
         <div></div>
         <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
+        <div className="bg-background"></div>
         <div></div>
         <div></div>
         <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      {/* */}
-      <div className="grid grid-cols-8">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
-        <div></div>
-      </div>
-      {/* */}
-      <div className="grid grid-cols-8">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      {/* */}
-      <div className="grid grid-cols-8">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div className="bg-background"></div>
         <div></div>
         <div></div>
         <div></div>
@@ -219,17 +114,12 @@ function WhitePixels() {
         <div></div>
         <div></div>
         <div></div>
+        <div className="bg-background"></div>
+        <div className="bg-background"></div>
         <div></div>
         <div></div>
         <div></div>
-        <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div className="bg-background"></div>
         <div></div>
         <div></div>
         <div></div>
@@ -237,7 +127,117 @@ function WhitePixels() {
         <div></div>
         <div></div>
         <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className="bg-background"></div>
+        <div></div>
+      </div>
+      {/* */}
+      <div className="grid grid-cols-8">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className="bg-background"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className="bg-background"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      {/* */}
+      <div className="grid grid-cols-8">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className="bg-background"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className="bg-background"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      {/* */}
+      <div className="grid grid-cols-8">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className="bg-background"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className="bg-background"></div>
         <div></div>
         <div></div>
         <div></div>
@@ -264,7 +264,7 @@ function WhitePixels() {
         <div></div>
         <div></div>
         <div></div>
-        <div className="bg-[url('/bg3.jpg')]"></div>
+        <div className="bg-background"></div>
         <div></div>
         <div></div>
         <div></div>

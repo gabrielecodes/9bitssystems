@@ -2,7 +2,7 @@ function BlackPixels() {
   return (
     <div
       id="blackpixels"
-      className="invisible xl:visible w-full h-28 grid grid-cols-8 col-start-1 col-end-9 bg-[url('/bg3.jpg')]"
+      className="invisible xl:visible w-full h-28 grid grid-cols-8 col-start-1 col-end-9 bg-background"
     >
       <div className="h-28 col-start-1 col-span-1 grid grid-cols-8">
         <div></div>

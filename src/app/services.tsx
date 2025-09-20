@@ -1,5 +1,6 @@
 "use client";
 
+import { useMotionTemplate, useMotionValue, motion } from "motion/react";
 import { useState, useEffect, useRef } from "react";
 import { ReadMoreButton } from "./components/readmorebutton";
 import { Plus } from "./components/plus";
@@ -19,14 +20,13 @@ export const generateRandomString = (length: number) => {
 
 export default function Services() {
   const [randomString, setRandomString] = useState("");
-  const [isHovering, setIsHovering] = useState<boolean>(false);
+  const [isHovering, setIsHovering] = useState<boolean>(true);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    console.log("Hovering");
     if (isHovering) {
       intervalRef.current = setInterval(() => {
-        const str = generateRandomString(1500);
+        const str = generateRandomString(10000);
         setRandomString(str);
       }, 50);
     } else if (intervalRef.current) {
@@ -38,6 +38,18 @@ export default function Services() {
     };
   }, [isHovering]);
 
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const maskImage = useMotionTemplate`radial-gradient(250px at ${mouseX}px ${mouseY}px, white, transparent)`;
+  const style = { maskImage, WebkitMaskImage: maskImage };
+
+  function handleMouseMove({ currentTarget, clientX, clientY }: any) {
+    const { left, top } = currentTarget.getBoundingClientRect();
+    mouseX.set(clientX - left);
+    mouseY.set(clientY - top);
+  }
+
   return (
     <>
       <div id="services" className="h-20"></div>
@@ -46,73 +58,77 @@ export default function Services() {
         Services
       </h2>
 
-      {/* Service 1*/}
       <div className="h-10"></div>
-      <div className="h-full xl:p-8 flex xl:flex-row flex-col xl:gap-x-8 justify-between items-center crossed-lines-gradient2 border-y border-border relative">
-        <Plus className="-left-5 -top-5" />
-        <Plus className="left-[calc(100%-1.25rem)] -top-5 z-10" />
-        <Plus className="-left-5 top-[calc(100%-1.25rem)]" />
-        <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)] z-10" />
+      {/* Service 1*/}
+      <div className="xl:h-[30rem] flex xl:flex-row flex-col items-baseline xl:gap-x-8 justify-between border-y border-border relative">
+        <Plus className="size-6 -left-3 -top-3" />
+        <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-10" />
+        <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)]" />
+        <Plus className="size-6 left-[calc(100%-0.75rem)] top-[calc(100%-0.75rem)] z-10" />
 
         <div
-          className="xl:max-w-full xl:w-1/3 xl:h-full h-[40rem] xl:mt20 p-6 col-start-2 col-span-2 xl:border-y border-b border-x xl:border-x border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative group/container hover:-translate-y-1 hover:bg-white transition transform duration-200 ease-in-out shadow-lg hover:shadow-none"
-          onMouseEnter={() => setIsHovering(true)}
-          onMouseLeave={() => setIsHovering(false)}
+          onMouseMove={handleMouseMove}
+          className="group/card w-full h-full relative overflow-hidden bg-transparent flex xl:flex-row flex-col items-baseline justify-center"
         >
-          <h2 className="mb-10">Data Strategy</h2>
-          <ServiceCard
-            background="bg-[url('/gradient1.png')] bg-[length:100%_100%]"
-            className="mb-10"
-            icon={<Star />}
-            randomString={randomString}
-          />
-          <p className="mb-6">
-            You&apos;ll gain a modern data infrastructure that supports your team decision making and extracts maximum
-            value from your data—at speed and scale.
-          </p>
-          <ReadMoreButton />
-        </div>
-        {/* Service 2*/}
-        <div
-          className="xl:max-w-full xl:w-1/3 xl:h-full h-[40rem] xl:mt20 p-6 col-start-4 col-span-2 xl:border-y border-b border-x xl:border border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative group/container hover:-translate-y-1 hover:bg-white transition transform duration-200 ease-in-out shadow-lg hover:shadow-none"
-          onMouseEnter={() => setIsHovering(true)}
-          onMouseLeave={() => setIsHovering(false)}
-        >
-          <h2 className="mb-10">Cloud Infrastructure</h2>
-          <ServiceCard
-            background="bg-[url('/gradient2.png')] bg-[length:100%_100%]"
-            className="mb-10"
-            icon={<Triangles />}
-            randomString={randomString}
-          />
-          <p className="mb-6">
-            I architect a solid foundation for your business, delivering a secure and scalable back-end and establishing
-            seamless integration with your workflows.
-          </p>
-          <ReadMoreButton />
-        </div>
-        {/* Service 3*/}
-        <div
-          className="xl:max-w-full xl:w-1/3 xl:h-full h-[40rem] xl:mt20 p-6 col-start-6 col-span-2 xl:border-y border-b border-x xl:border border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative group/container hover:-translate-y-1 hover:bg-white transition transform duration-200 ease-in-out shadow-lg hover:shadow-none"
-          onMouseEnter={() => setIsHovering(true)}
-          onMouseLeave={() => setIsHovering(false)}
-        >
-          <h2 className="mb-10">Software Development</h2>
-          <ServiceCard
-            background="bg-[url('/gradient3.png')] bg-[length:100%_100%]"
-            className="mb-10"
-            icon={<Squares />}
-            randomString={randomString}
-          />
-          <p className="mb-6">
-            Whether you&apos;re launching a new product or upgrading your tech stack, I deliver back-end solutions built
-            for performance, security, and growth.
-          </p>
-          <ReadMoreButton />
+          <div className="pointer-events-none">
+            <div className="absolute inset-0 [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
+            <motion.div
+              className="absolute inset-0 bg-gradient-to-r from-green-500 to-blue-700 opacity-0  group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
+              style={style}
+            />
+            <motion.div
+              className="absolute inset-0 opacity-0 mix-blend-overlay group-hover/card:opacity-100"
+              style={style}
+            >
+              <span className="absolute inset-x-0 text-xs h-full break-words whitespace-pre-wrap text-white font-mono font-bold transition duration-500">
+                {randomString}
+              </span>
+            </motion.div>
+          </div>
+          <div className="h-full flex xl:flex-row flex-col xl:gap-x-4 items-center">
+            {/* */}
+
+            <div className="xl:w-96 w-full rounded-xl p-8 bg-background/75 border border-border relative z-20 group/container overflow-clip">
+              <Star className="mb-8 static flex mx-auto" />
+              <h2 className="mb-6 uppercase" style={{ fontSize: "1em", fontWeight: "900" }}>
+                Data Strategy
+              </h2>
+              <p className="">
+                You&apos;ll gain a modern data infrastructure that supports your team decision making and extracts
+                maximum value from your data—at speed and scale.
+              </p>
+              <ReadMoreButton />
+            </div>
+
+            <div className="xl:w-96 w-full rounded-xl p-8 bg-background/75 border border-border relative z-20 group/container overflow-clip">
+              <Triangles className="mb-8 static flex mx-auto" />
+              <h2 className="mb-6 uppercase" style={{ fontSize: "1em", fontWeight: "900" }}>
+                Cloud Infrastructure
+              </h2>
+              <p className="">
+                I architect a solid foundation for your business, delivering a secure and scalable back-end and
+                establishing seamless integration with your workflows.
+              </p>
+              <ReadMoreButton />
+            </div>
+
+            <div className="xl:w-96 w-full rounded-xl p-8 bg-background/75 border border-border relative z-20 group/container overflow-clip">
+              <Squares className="mb-8 static flex mx-auto" />
+              <h2 className="mb-6 uppercase" style={{ fontSize: "1em", fontWeight: "900" }}>
+                Software Development
+              </h2>
+              <p className="">
+                Whether you&apos;re launching a new product or upgrading your tech stack, I deliver back-end solutions
+                built for performance, security, and growth.
+              </p>
+              <ReadMoreButton />
+            </div>
+          </div>
+          {/* */}
         </div>
       </div>
-      <div className="h-full w-full col-start-8 col-span-1 border-y border-neutral-200"></div>
-      <div className="h-20 col-span-8"></div>
+      <div className="h-full w-full col-start-8 col-span-1"></div>
+      <div className="h-20"></div>
     </>
   );
 }

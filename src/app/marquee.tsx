@@ -12,40 +12,40 @@ import Gemini from "./components/icons/gemini";
 
 function CustomMarquqee() {
   return (
-    <div className="xl:h-32 xl:-ml-[1px] xl:mt-20 xl:px-60 invisible xl:visible xl:col-start-1 xl:col-end-9 xl:w-[calc(100%+1px)] flex size-full items-center justify-center bg-background border-y border-l border-border">
+    <div className="xl:h-32 xl:-ml-[1px] xl:mt-20 xl:px-60 invisible xl:visible xl:w-[calc(100%+1px)] flex size-full items-center justify-center border-y border-l border-border">
       <Marquee>
-        <MarqueeFade side="left" />
-        <MarqueeFade side="right" />
+        <MarqueeFade side="left" className="bg-gradient-to-r from-background" />
+        <MarqueeFade side="right" className="bg-gradient-to-l from-background" />
         <MarqueeContent pauseOnHover={false} autoFill={false} speed={20}>
           <MarqueeItem className="h-fit w-32 m-2 p-2">
-            <GoogleCloud fill={"#00000023"} />
+            <GoogleCloud fill={"#979797"} />
           </MarqueeItem>
           <MarqueeItem className="h-fit w-32 m-2 p-2">
-            <Kubernetes fill={"#00000023"} />
+            <Kubernetes fill={"#979797"} />
           </MarqueeItem>
           <MarqueeItem className="h-fit w-32 m-2 p-2">
-            <Python fill={"#00000023"} />
+            <Python fill={"#979797"} />
           </MarqueeItem>
           <MarqueeItem className="h-fit w-32 m-2 p-2">
-            <TypeScript fill={"#00000023"} />
+            <TypeScript fill={"#979797"} />
           </MarqueeItem>
           <MarqueeItem className="h-fit w-32 m-2 p-2">
-            <Docker fill={"#00000023"} />
+            <Docker fill={"#979797"} />
           </MarqueeItem>
           <MarqueeItem className="h-fit w-32 m-2 p-2">
-            <Postgres fill={"#00000023"} />
+            <Postgres fill={"#979797"} />
           </MarqueeItem>
           <MarqueeItem className="h-fit w-32 m-2 p-2">
-            <Bigquery fill={"#00000023"} />
+            <Bigquery fill={"#979797"} />
           </MarqueeItem>
           <MarqueeItem className="h-fit w-32 m-2 p-2">
-            <Terraform fill={"#00000023"} />
+            <Terraform fill={"#979797"} />
           </MarqueeItem>
           <MarqueeItem className="h-fit w-32 m-2 p-2">
-            <Aws fill={"#00000023"} />
+            <Aws fill={"#979797"} />
           </MarqueeItem>
           <MarqueeItem className="h-fit w-32 m-2 p-2">
-            <Gemini fill={"#00000023"} />
+            <Gemini fill={"#979797"} />
           </MarqueeItem>
         </MarqueeContent>
       </Marquee>

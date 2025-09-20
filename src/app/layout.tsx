@@ -26,11 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.className} bg-[url('/bg3.jpg')] antialiased -mt-14`}>
+      <body className={`${font.className} bg-background antialiased -mt-14`}>
         <Nav />
         {children}
         <Border />
-        <div className="w-full h-40 bg-[url('/bg3.jpg')]"></div>
+        <div className="w-full h-40 bg-background"></div>
         <Footer />
       </body>
     </html>

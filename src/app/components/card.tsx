@@ -15,14 +15,14 @@ export const ServiceCard = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("w-full bg-foreground aspect-square flex items-center justify-center relative", className)}>
+    <div className={cn("w-full bg-background aspect-square flex items-center justify-center relative", className)}>
       <div
         // onMouseMove={handleMouseMove}
-        className="group/card w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full"
+        className="group/card w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full rounded-lg"
       >
         <CardPattern randomString={randomString} background={background} />
         <div className="relative z-10 flex items-center justify-center">
-          <div className="relative h-44 w-44 flex items-center justify-center text-white font-bold text-4xl group-hover/container:scale-95 transition duration-200 ease-in-out">
+          <div className="relative flex items-center justify-center text-white font-bold text-4xl group-hover/container:scale-95 transition duration-150 ease-in-out">
             {icon}
           </div>
         </div>
@@ -37,18 +37,18 @@ export function CardPattern({ randomString, background }: { randomString: string
 
   return (
     <div className="pointer-events-none">
-      <div className="absolute inset-0 [mask-image:linear-gradient(white,transparent)] group-hover/container:opacity-50"></div>
+      <div className="absolute inset-0 rounded-2xl [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
       <motion.div
         className={cn(
-          "absolute inset-0 opacity-0 group-hover/container:opacity-100 backdrop-blur-xl transition duration-300",
+          "absolute inset-0 rounded-2xl bg-gradient-to-r from-green-500 to-blue-700 opacity-0  group-hover/container:opacity-100 backdrop-blur-xl transition duration-150",
           background
         )}
         style={style}
       />
-      <motion.div className="absolute inset-0 opacity-0 mix-blend-overlay group-hover/container:opacity-100">
-        <p className="absolute inset-x-0 text-xs h-full break-words whitespace-pre-wrap text-white font-mono font-bold transition duration-300">
+      <motion.div className="absolute inset-0 opacity-0 mix-blend-hard-overlay group-hover/container:opacity-100">
+        <span className="absolute inset-x-0 text-xs h-full break-words whitespace-pre-wrap text-white/30 font-mono font-bold transition duration-500">
           {randomString}
-        </p>
+        </span>
       </motion.div>
     </div>
   );
