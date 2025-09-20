@@ -4,10 +4,11 @@ import { Plus } from "./components/plus";
 function Nav() {
   return (
     <nav className="xl:w-[calc(50%+2px)] h-14 bg-white flex items-center sticky xl:top-4 top-0 xl:left-[calc(50%-1px)] xl:-translate-x-[calc(50%-2px)] z-100 overflow-clip">
-      <Plus className="-left-5 -top-5" />
-      <Plus className="left-[calc(100%-1.25rem)] -top-5 z-10" />
-      <Plus className="-left-5 top-[calc(100%-1.25rem)]" />
-      <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)] z-10" />
+      <Plus className="-left-5 -top-5 xl:visible invisible" />
+      <Plus className="left-[calc(100%-1.25rem)] -top-5 z-10 xl:visible invisible" />
+      <Plus className="-left-5 top-[calc(100%-1.25rem)] xl:visible invisible" />
+      <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)] z-10 xl:visible invisible" />
+
       <div className="w-full h-full my-1 pl-4 border-y border-l border-border flex items-center">
         <Link
           href={"/"}

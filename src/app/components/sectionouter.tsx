@@ -4,13 +4,14 @@ function SectionOuter({ children, className }: { children?: React.ReactNode; cla
   return (
     <div
       className={cn(
-        "max-w-screen min-h-screen h-[130rem] xl:h-[65rem] xl:mx-0 relative xl:grid xl:grid-cols-8 [&>*:not(:last-child)]:border-r *:border-neutral-200 border-t border-neutral-200",
+        "max-w-screen h-[130rem] xl:h-[65rem] xl:mx-0 relative xl:grid xl:grid-cols-12 *:first:border-r *:border-border",
         className
       )}
     >
-      {new Array(8).fill(null).map((_, idx) => (
+      {new Array(11).fill(null).map((_, idx) => (
         <div key={idx}></div>
       ))}
+      <div className="border-l border-border"></div>
       {children}
     </div>
   );

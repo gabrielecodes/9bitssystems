@@ -40,23 +40,22 @@ export default function Services() {
 
   return (
     <>
-      <div id="services" className="h-20 col-span-8"></div>
-      <h2 className="h-20 ml-2 col-start-2 col-span-1">
-        <span className="w-full mx-auto text-center inline-block transform bg-foreground text-background font-semibold">
-          What I Do
-        </span>
+      <div id="services" className="h-20"></div>
+
+      <h2 className="w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold">
+        Services
       </h2>
+
       {/* Service 1*/}
-      <div className="h-10 col-start-1 col-span-8"></div>
-      <div className="h-full col-start-1 col-span-1 border-y border-neutral-200"></div>
-      <div className="h-full p-8 col-start-2 col-span-6 crossed-lines-gradient2 border border-l-0 border-neutral-200 flex gap-x-8 justify-between items-center relative">
+      <div className="h-10"></div>
+      <div className="h-full xl:p-8 flex xl:flex-row flex-col xl:gap-x-8 justify-between items-center crossed-lines-gradient2 border-y border-border relative">
         <Plus className="-left-5 -top-5" />
         <Plus className="left-[calc(100%-1.25rem)] -top-5 z-10" />
         <Plus className="-left-5 top-[calc(100%-1.25rem)]" />
         <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)] z-10" />
 
         <div
-          className="max-w-4/5 xl:max-w-full xl:w-1/3 xl:h-full h-[40rem] xl:mt20 p-6 col-start-2 col-span-2 xl:border-y border-b border-x xl:border-x border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative group/container hover:-translate-y-1 hover:bg-white transition transform duration-200 ease-in-out shadow-lg hover:shadow-none"
+          className="xl:max-w-full xl:w-1/3 xl:h-full h-[40rem] xl:mt20 p-6 col-start-2 col-span-2 xl:border-y border-b border-x xl:border-x border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative group/container hover:-translate-y-1 hover:bg-white transition transform duration-200 ease-in-out shadow-lg hover:shadow-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
@@ -75,7 +74,7 @@ export default function Services() {
         </div>
         {/* Service 2*/}
         <div
-          className="max-w-4/5 xl:max-w-full xl:w-1/3 xl:h-full h-[40rem] xl:mt20 p-6 col-start-4 col-span-2 xl:border-y border-b border-x xl:border border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative group/container hover:-translate-y-1 hover:bg-white transition transform duration-200 ease-in-out shadow-lg hover:shadow-none"
+          className="xl:max-w-full xl:w-1/3 xl:h-full h-[40rem] xl:mt20 p-6 col-start-4 col-span-2 xl:border-y border-b border-x xl:border border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative group/container hover:-translate-y-1 hover:bg-white transition transform duration-200 ease-in-out shadow-lg hover:shadow-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
@@ -94,7 +93,7 @@ export default function Services() {
         </div>
         {/* Service 3*/}
         <div
-          className="max-w-4/5 xl:max-w-full xl:w-1/3 xl:h-full h-[40rem] xl:mt20 p-6 col-start-6 col-span-2 xl:border-y border-b border-x xl:border border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative group/container hover:-translate-y-1 hover:bg-white transition transform duration-200 ease-in-out shadow-lg hover:shadow-none"
+          className="xl:max-w-full xl:w-1/3 xl:h-full h-[40rem] xl:mt20 p-6 col-start-6 col-span-2 xl:border-y border-b border-x xl:border border-neutral-200 bg-background xl:flex xl:flex-col xl:justify-between relative group/container hover:-translate-y-1 hover:bg-white transition transform duration-200 ease-in-out shadow-lg hover:shadow-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >

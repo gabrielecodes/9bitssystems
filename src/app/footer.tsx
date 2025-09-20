@@ -21,8 +21,9 @@ function Footer() {
             <div className="w-full xl:w-1/2">
               <h3 className="font-bold">Small Brand, Large Delivery.</h3>
               <span className="inline-block md:w-[28rem] text-neutral-400">
-                We&apos;re passionate about our craft — building strong relationships and delivering the vision our
-                clients imagine.
+                My goal is to support businesses in automating and growing with confidence. I work alongside you to
+                create thoughtful data strategies, build reliable cloud infrastructures, and develop systems that just
+                work.
               </span>
             </div>
             <div className="w-full xl:w-1/4">

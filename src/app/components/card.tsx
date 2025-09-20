@@ -9,20 +9,20 @@ export const ServiceCard = ({
   randomString,
   className,
 }: {
-  icon: React.ReactNode,
-  background?: string,
-  randomString: string,
+  icon: React.ReactNode;
+  background?: string;
+  randomString: string;
   className?: string;
 }) => {
   return (
     <div className={cn("w-full bg-foreground aspect-square flex items-center justify-center relative", className)}>
       <div
-        // onMouseMove={handleMouseMove}        
+        // onMouseMove={handleMouseMove}
         className="group/card w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full"
       >
         <CardPattern randomString={randomString} background={background} />
         <div className="relative z-10 flex items-center justify-center">
-          <div className="relative h-44 w-44 flex items-center justify-center text-white font-bold text-4xl group-hover/container:scale-110 transition duration-200 ease-in-out">
+          <div className="relative h-44 w-44 flex items-center justify-center text-white font-bold text-4xl group-hover/container:scale-95 transition duration-200 ease-in-out">
             {icon}
           </div>
         </div>
@@ -31,13 +31,7 @@ export const ServiceCard = ({
   );
 };
 
-export function CardPattern({
-  randomString,
-  background,
-}: {
-  randomString: string;
-  background?: string;
-}) {
+export function CardPattern({ randomString, background }: { randomString: string; background?: string }) {
   const maskImage = useMotionTemplate`radial-gradient(250px at 50% 50%, white, transparent)`;
   const style = { maskImage, WebkitMaskImage: maskImage };
 
@@ -51,7 +45,7 @@ export function CardPattern({
         )}
         style={style}
       />
-      <motion.div className="absolute inset-0 opacity-0 mix-blend-overlay group-hover/container:opacity-100" >
+      <motion.div className="absolute inset-0 opacity-0 mix-blend-overlay group-hover/container:opacity-100">
         <p className="absolute inset-x-0 text-xs h-full break-words whitespace-pre-wrap text-white font-mono font-bold transition duration-300">
           {randomString}
         </p>
