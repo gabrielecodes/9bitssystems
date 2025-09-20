@@ -4,6 +4,7 @@ import "./globals.css";
 import { Metadata } from "next";
 import { Nav } from "./nav";
 import { Footer } from "./footer";
+import { Border } from "./components/border";
 
 export const serif = Instrument_Serif({
   weight: "400",
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${font.className} bg-[url('/bg3.jpg')] antialiased -mt-14`}>
         <Nav />
         {children}
+        <Border />
         <div className="w-full h-40 bg-[url('/bg3.jpg')]"></div>
         <Footer />
       </body>

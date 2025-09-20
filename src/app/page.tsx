@@ -44,7 +44,7 @@ export default function Home() {
         Contact Me
       </h2>
 
-      <div className="mt-20 xl:col-start-3 xl:col-span-4 gap-y-0 flex justify-center">
+      <div className="mt-20 pb-20 xl:col-start-3 xl:col-span-4 gap-y-0 flex justify-center">
         <div className="w-1/2 bg-background border border-neutral-200 flex relative xl:overflow-visible overflow-x-clip">
           <Plus className="-left-5 -top-5" />
           <Plus className="left-[calc(100%-1.25rem)] -top-5" />
