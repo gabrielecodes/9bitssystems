@@ -7,7 +7,6 @@ import { Plus } from "./components/plus";
 import { Triangles } from "./components/triangles";
 import { Star } from "./components/start";
 import { Squares } from "./components/squares";
-import { ServiceCard } from "./components/card";
 
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 export const generateRandomString = (length: number) => {
@@ -26,7 +25,7 @@ export default function Services() {
   useEffect(() => {
     if (isHovering) {
       intervalRef.current = setInterval(() => {
-        const str = generateRandomString(10000);
+        const str = generateRandomString(11000);
         setRandomString(str);
       }, 50);
     } else if (intervalRef.current) {
@@ -60,7 +59,7 @@ export default function Services() {
 
       <div className="h-10"></div>
       {/* Service 1*/}
-      <div className="xl:h-[30rem] flex xl:flex-row flex-col items-baseline xl:gap-x-8 justify-between border-y border-border relative">
+      <div className="h-[80vh] flex xl:flex-row flex-col items-baseline xl:gap-x-8 justify-between border-y border-border relative">
         <Plus className="size-6 -left-3 -top-3" />
         <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-10" />
         <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)]" />

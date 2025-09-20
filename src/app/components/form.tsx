@@ -7,7 +7,7 @@ export default function ContactForm() {
   const [state, formAction, pending] = useActionState(submitContactForm, null);
 
   return (
-    <div className="container mx-auto p-8">
+    <div className="mx-auto px-8 py-4">
       <form action={formAction} className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-foreground">
@@ -17,7 +17,7 @@ export default function ContactForm() {
             type="text"
             id="name"
             name="name"
-            className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+            className="mt-1 block w-full border border-gray-300 rounded-md p-2 ring-0 outline-none"
           />
           {state?.error ? <p className="text-red-500 text-sm mt-1">{state.error}</p> : <></>}
         </div>
@@ -30,7 +30,7 @@ export default function ContactForm() {
             type="email"
             id="email"
             name="email"
-            className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+            className="mt-1 block w-full border border-gray-300 rounded-md p-2 ring-0 outline-none"
           />
           {state?.error ? <p className="text-red-500 text-sm mt-1">{state.error}</p> : <></>}
         </div>
@@ -43,21 +43,21 @@ export default function ContactForm() {
             id="message"
             name="message"
             rows={4}
-            className="resize-none h-56 mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+            className="resize-none h-56 mt-1 block w-full border border-gray-300 rounded-md p-2 ring-0 outline-none"
           ></textarea>
-          {state?.error ? <p className="text-red-500 text-sm mt-1">{state.error}</p> : <></>}
+          {state?.error ? <p className="text-rose-500 text-sm mt-1">{state.error}</p> : <></>}
         </div>
 
         <button
           disabled={pending}
           type="submit"
-          className="mx-2 px-2 py-1 inline-block -skew-x-12 border border-foreground hover:bg-foreground hover:text-background transition-color duration-200 ease-in-out cursor-pointer"
+          className="px-2 py-1 border border-background hover:bg-foreground hover:text-background transition-color duration-200 ease-in-out cursor-pointer bg-emerald-500 text-background"
         >
-          <span className="inline-block skew-x-12">&#8627;&ensp;Send Message</span>
+          <span className="inline-block ">&#8627;&ensp;Send Message</span>
         </button>
 
         {state?.success && <p className="text-green-600 mt-4">{state.success}</p>}
-        {state?.success === false && !state?.error && <p className="text-red-500 mt-4">{state.error}</p>}
+        {state?.success === false && !state?.error && <p className="text-rose-500 mt-4">{state.error}</p>}
       </form>
     </div>
   );
