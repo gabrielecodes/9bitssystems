@@ -57,9 +57,9 @@ export default function Services() {
         Services
       </h2>
 
-      <div className="h-10"></div>
+      <div className="h-20"></div>
       {/* Service 1*/}
-      <div className="xl:h-[80vh] flex xl:flex-row flex-col items-baseline xl:gap-x-8 justify-between border-y border-border relative">
+      <div className="xl:h-[80vh] flex xl:flex-row flex-col items-baseline justify-between border-y border-border relative">
         <Plus className="size-6 -left-3 -top-3" />
         <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-10" />
         <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)]" />
@@ -84,10 +84,10 @@ export default function Services() {
               </span>
             </motion.div>
           </div>
-          <div className="h-full flex xl:flex-row flex-col xl:gap-x-4 items-center">
+          <div className="h-full flex xl:flex-row flex-col xl:gap-x-4 gap-y-4 xl:gap-y-0 items-center">
             {/* */}
 
-            <div className="xl:w-96 w-full rounded-xl p-8 bg-background/75 border border-border relative z-20 group/container overflow-clip">
+            <div className="xl:w-96 w-full xl:rounded-xl p-8 bg-background/75 xl:border border-y border-border relative z-20 group/container overflow-clip">
               <Star className="mb-8 static flex mx-auto" />
               <h2 className="mb-6 uppercase" style={{ fontSize: "1em", fontWeight: "900" }}>
                 Data Strategy
@@ -96,10 +96,10 @@ export default function Services() {
                 You&apos;ll gain a modern data infrastructure that supports your team decision making and extracts
                 maximum value from your data—at speed and scale.
               </p>
-              <ReadMoreButton />
+              <ReadMoreButton className="left-[90%] xl:left-[115%]" />
             </div>
 
-            <div className="xl:w-96 w-full rounded-xl p-8 bg-background/75 border border-border relative z-20 group/container overflow-clip">
+            <div className="xl:w-96 w-full xl:rounded-xl p-8 bg-background/75 xl:border border-y border-border relative z-20 group/container overflow-clip">
               <Triangles className="mb-8 static flex mx-auto" />
               <h2 className="mb-6 uppercase" style={{ fontSize: "1em", fontWeight: "900" }}>
                 Cloud Infrastructure
@@ -108,10 +108,10 @@ export default function Services() {
                 I architect a solid foundation for your business, delivering a secure and scalable back-end and
                 establishing seamless integration with your workflows.
               </p>
-              <ReadMoreButton />
+              <ReadMoreButton className="left-[90%] xl:left-[115%]" />
             </div>
 
-            <div className="xl:w-96 w-full rounded-xl p-8 bg-background/75 border border-border relative z-20 group/container overflow-clip">
+            <div className="xl:w-96 w-full xl:rounded-xl p-8 bg-background/75 xl:border border-y border-border relative z-20 group/container overflow-clip">
               <Squares className="mb-8 static flex mx-auto" />
               <h2 className="mb-6 uppercase" style={{ fontSize: "1em", fontWeight: "900" }}>
                 Software Development
@@ -120,7 +120,7 @@ export default function Services() {
                 Whether you&apos;re launching a new product or upgrading your tech stack, I deliver back-end solutions
                 built for performance, security, and growth.
               </p>
-              <ReadMoreButton />
+              <ReadMoreButton className="left-[90%] xl:left-[115%]" />
             </div>
           </div>
           {/* */}

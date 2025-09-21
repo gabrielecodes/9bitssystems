@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <div className="xl:h-screen xl:pt-40 flex flex-col relative">
+    <div className="xl:h-[calc(100vh-4rem)] xl:pt-40 flex flex-col relative">
       <div className="absolute inset-0 -z-10">
         <Image
           src="/pyramid.jpg"
@@ -19,11 +19,7 @@ function Hero() {
         <span className="w-3 h-3 rounded-full bg-blue animate-pulse"></span>
         <p>Consulting Services Within IT & Data</p>
       </div>
-      <div className="xl:w-1/2 mt-10 py-10 flex flex-col mx-auto items-center justify-center group relative rounded-2xl">
-        {/* <Plus className="-left-5 -top-5" />
-        <Plus className="left-[calc(100%-1.25rem)] -top-5 z-10" />
-        <Plus className="-left-5 top-[calc(100%-1.25rem)]" />
-        <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)] z-10" /> */}
+      <div className="xl:w-1/2 mt-10 py-10 flex flex-col mx-auto items-center justify-center group relative rounded-2xl xl:backdrop-blur-xl xl:border border-neutral-800">
         <h1 className="w-fit mb-6 text-center leading-24">
           Scale{" "}
           <span className={`${serif.className} relative`}>

@@ -47,15 +47,15 @@ export default function Home() {
         Contact Me
       </h2>
 
-      <div id="contact" className="h-screen mt-20 pb-20 xl:col-start-3 xl:col-span-4 gap-y-0 flex">
-        <div className="w-full bg-[url('/glass.jpg')] bg-[42%_-7%] bg-cover flex justify-center items-center border border-border relative">
+      <div id="contact" className="xl:mt-20 flex">
+        <div className="w-full xl:py-20 p-4 bg-[url('/glass.jpg')] bg-[42%_-7%] bg-cover flex justify-center items-center border-t border-border relative">
           <Plus className="size-6 -left-3 -top-3" />
           <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-10" />
           <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)]" />
           <Plus className="size-6 left-[calc(100%-0.75rem)] top-[calc(100%-0.75rem)] z-10" />
 
-          <div className="w-2/3 h-fit flex relative xl:overflow-visible overflow-x-clip ">
-            <div className="w-full h-fit p-12 m-auto flex xl:flex-row flex-col items-start justify-center gap-x-4 backdrop-blur-md rounded-2xl bg-background/75">
+          <div className="xl:w-2/3 h-fit flex relative xl:overflow-visible overflow-x-clip ">
+            <div className="w-full h-fit xl:p-12 p-6 m-auto flex xl:flex-row flex-col items-start justify-center gap-x-4 backdrop-blur-md rounded-2xl bg-background/75">
               <div className="w-full h-full">
                 <h2 className="mb-6 leading-10">
                   Let&apos;s talk about your idea. <br />

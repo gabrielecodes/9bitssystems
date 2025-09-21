@@ -8,7 +8,7 @@ export default function ContactForm() {
   const [state, formAction, pending] = useActionState(submitContactForm, null);
 
   return (
-    <div className="mx-auto px-8 py-4">
+    <div className="mx-auto xl:px-8 py-4">
       <form action={formAction} className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-foreground">

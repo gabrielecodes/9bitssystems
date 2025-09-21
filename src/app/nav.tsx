@@ -18,25 +18,25 @@ function Nav() {
         </Link>
       </div>
       <div className="w-full h-full pr-4 flex items-center justify-between">
-        <ul className="w-full h-full flex items-center gap-x-6 justify-end">
-          <li className="h-full flex">
+        <ul className="w-full h-full flex items-center gap-x-6 justify-end ">
+          <li className="h-full xl:flex hidden">
             <Link href={"/#services"} className="flex items-center">
               Services
               <Plus className="static size-5 p-0 ml-1 mt-1" />
             </Link>
           </li>
-          <li className="border-b border-foreground hover:border-background">
+          <li className="h-full xl:flex hidden">
             <Link href={"/blog"} className="flex items-center">
               Blog
               <Plus className="static size-5 p-0 ml-1 mt-1" />
             </Link>
           </li>
-          <li className="border-b border-foreground hover:border-background">
+          <li className="h-full xl:flex hidden">
             <Link href={"/#about"} className="flex items-center">
               About <Plus className="static size-5 p-0 ml-1 mt-1" />
             </Link>
           </li>
-          <li className="border-b border-foreground hover:border-background">
+          <li className="h-full flex items-center">
             <Link href={"/#contact"} className="flex items-center">
               Contact <Plus className="static size-5 p-0 ml-1 mt-1" />
             </Link>

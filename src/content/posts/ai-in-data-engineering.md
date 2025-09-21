@@ -1,42 +1,64 @@
 ---
-title: "AI in Data Engineering"
+title: "Practical Applications of AI in Data Engineering: Opportunities and Limitations"
 date: "2025-09-18"
 author: Gabriele C.
-subtitle: "Some thoughs sparked by a social media discussion regarding AI in data engineering"
+subtitle: "Thinking about the best uses of AI in data engineering"
 excerpt: "Even after years of AI becoming mainstream, many questions remain unanswered. There are many opinions out there concerning the best ways to leverage AI."
 tags: ["Data Engineering", "Career", "Data Strategy"]
 image: "ai.jpg"
 alt: "graphs on a computer"
 ---
 
-## Introduction
+## Introduction: : Aligning Teams on AI Adoption
 
-A post on LinkedIn caught my attention. The author was mentioning that <em>"engineering and data teams"</em> need to be on board with embracing AI, otherwise the company would move rapidly in one domain and remain behind in another.
+As artificial intelligence (AI) continues to reshape the enterprise landscape, its adoption is often uneven across departments. A recent conversation on LinkedIn highlighted an important point: engineering and data teams must align on AI integration, or risk creating operational silos where some functions advance rapidly while others lag behind.
 
-That made me think. I understand the appeal of AI, it can really increase your productivity if used correctly and it's fun. But I think AI has very different values across differen teams.
+While AI can significantly enhance productivity when used appropriately, its impact varies widely across different business units. Crucially, engineering is not like marketing or sales—these teams differ not only in their objectives but also in how progress and productivity are measured.
 
-First, **engineering is not like marketing or sales**. There's no reason why "progress" in different teams can and should be measured in the same way. Theese teams have very different functions and goals, and operate in different ways.
+## Understanding the Core Capability of AI
 
-Second, **AI can do well one thing only**. Of all the things an "intelligent entity" can do, AI can only do one, and that's generating text somewhat resembling human text. (and generating images, though we're not talking about that in this article). You may have noticed, I'm pushing the brake pedal a bit here, by using the word "resembling". We haven't really established that AI is "intelligent like a human", and <em>who know what that really means</em>.
+At its core, today’s AI—particularly large language models—is primarily a text generation engine. While it can mimic human-like responses and assist with content creation, it’s important to note that AI does not possess human-level intelligence or context-awareness. Referring to its output as “resembling” human text is intentional; this distinction becomes critical when applying AI to high-stakes domains like software engineering.
 
-Even with considering that AI is capable, in some sense and with varying degree, to "understand" text, it doesn't mean that it's production has the same value for every task, be it writing copy for advertising or writing code. Clearly these use cases, involve producing production "text", but of very different type and with different uses. The magical coding abilities of AI have been sponsored for a while, but as of the date of this article, in my view we don't have an AI capable of replacing even the average programmer.
+Even within technical teams, the value of AI-generated content differs significantly depending on the task. For example, writing marketing copy and writing production code both involve generating text, but the requirements for precision, correctness, and maintainability in software are far more stringent.
 
-A LinkedIn posted mentioned using AI for debugging and boilerplate generation. I think that the effectiveness of AI in these case is more limited than what may seem at first glance.
+As of now, AI is not a replacement for experienced developers. While it can support engineering workflows, its capabilities in areas like debugging or code generation remain limited and require human oversight.
 
-Concerning debugging, it's not clear to me how effective AI is, in what cases and to what extent. Debugging a small function you're uncertain about is one thing, finding the needle in a 100k codebase haystack is another. Also, who's going to debug the debugger?
+## Common Misconceptions: Debugging and Boilerplate Generation
 
-Concerning boilerplate generation. I'd rather use a human-made boilerplate. It's under source control, possibly well maintained and updated, tested and used, perhaps for production code, by multiple people etc. Why exposing myself to the randomness of AI?
+### Debugging with AI
 
-## Uses of AI in Data Engineering
+Some advocate using AI tools for debugging. While this can be helpful in small, isolated scenarios—such as identifying a bug in a single function—AI struggles with debugging in large, complex codebases. Navigating a 100,000-line codebase requires a deep understanding of context, system architecture, and interdependencies—areas where AI still falls short. And when AI misinterprets code, the question arises: Who debugs the debugger?
 
-How can we use AI in data engineering?
+### Boilerplate Code Generation
 
-I think a couple of ways to use AI effectively are **documentation generation and research**.
+Another frequently mentioned use case is generating boilerplate code. Although this sounds efficient in theory, it often introduces unnecessary variability or untested patterns into your codebase. In many cases, using a vetted, source-controlled boilerplate maintained by your team offers more consistency and reliability. Production-quality boilerplate code is typically reviewed, tested, and adapted to organizational standards—something AI-generated snippets can’t guarantee.
 
-Documentation is important and it's somewhat of a chore to write. AI is quite good at picking up what your function does and it can at least help you write all those inputs arguments, errors and output types that require special formatting. If you want to be more concise just trim the text. **This use case is low risk, documentation is not buggy code**.
+## Practical Use Cases of AI in Data Engineering
 
-Researching documentation is also a good application in my view. **New tools and APIs are coming out all the time** and it's a real job to keep up to speed with everything. Let's say you are using the API of a newly release AI too. It's still evolving and it has a vast documentation already. You can spend half of your day sifting through the docs trying to find that function but AI can find it quickly. You maybe tempted to just generate code and call it a day, but in my experience, with new or rapidly evolving APIs that code often won't compile/run. Asking AI to interpret the documentation though can speed up your understaing of how the API works.
+Despite its limitations, AI does offer clear advantages in specific data engineering tasks—especially those that are repetitive or research-intensive.
 
-## Conclusion
+1. Documentation Generation
 
-Tasks like documentation generation and researching APIs are practical, low-risk applications where AI can genuinely boost productivity. However, more complex tasks like debugging or code generation still require human judgment and oversight in my view. As with any tool, understanding its limitations is just as important as recognizing its potential.
+Writing technical documentation is essential, yet time-consuming. AI can assist by:
+
+- Automatically generating function-level documentation.
+- Formatting input arguments, output types, and error messages.
+- Suggesting summaries of what a function does.
+
+Since documentation is not executed code, the risk of introducing bugs is minimal, making this a low-risk, high-value task for AI assistance.
+
+2. Technical Research and API Exploration
+
+Another strong use case is accelerating research and onboarding with new tools and APIs. With the rapid pace of change in the data ecosystem, keeping up with new technologies is a challenge. AI can help by:
+
+- Summarizing lengthy or complex documentation.
+- Identifying relevant functions or endpoints faster than manual searches.
+- Clarifying the usage of poorly documented or evolving APIs.
+
+While AI-generated code based on new APIs may not always work as expected, asking AI to explain the documentation can provide valuable insights and reduce ramp-up time.
+
+## Conclusion: Balancing Innovation and Caution
+
+AI can be a powerful productivity enhancer in data engineering—particularly for non-critical tasks like documentation and technical research. However, for more complex workflows such as debugging or code generation, human expertise remains essential.
+
+To get the most out of AI, organizations should approach it as a strategic tool with specific, well-understood applications. Recognizing both its potential and its limitations will enable engineering and data teams to integrate AI effectively—without compromising quality or reliability.
