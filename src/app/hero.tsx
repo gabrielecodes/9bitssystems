@@ -6,14 +6,7 @@ function Hero() {
   return (
     <div className="xl:h-[calc(100vh-4rem)] xl:pt-40 flex flex-col relative">
       <div className="absolute inset-0 -z-10">
-        <Image
-          src="/pyramid.jpg"
-          alt="Pyramid"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="100% 40%"
-          quality={100}
-        />
+        <Image src="/pyramid.jpg" alt="Pyramid" fill style={{ objectFit: "cover", objectPosition: "center" }} />
       </div>
       <div className="w-fit h-fit mx-auto py-1 px-3 rounded-full bg-[#212121] flex items-baseline gap-x-2">
         <span className="w-3 h-3 rounded-full bg-blue animate-pulse"></span>
