@@ -17,23 +17,11 @@ That made me think. I understand the appeal of AI, it can really increase your p
 
 First, **engineering is not like marketing or sales**. There's no reason why "progress" in different teams can and should be measured in the same way. Theese teams have very different functions and goals, and operate in different ways.
 
-Second, **AI can do well one thing only**. Of all the things an "intelligent entity" can do, AI can only do one, and that's generating text somewhat resembling human text. (and generating images, though we're not talking about that in this article). You may have noticed, I'm pushing the brake pedal a bit here, by using the word "resembling". We haven't really stablished that AI is "intelligent like a human", and <em>who know what that really means</em>.
+Second, **AI can do well one thing only**. Of all the things an "intelligent entity" can do, AI can only do one, and that's generating text somewhat resembling human text. (and generating images, though we're not talking about that in this article). You may have noticed, I'm pushing the brake pedal a bit here, by using the word "resembling". We haven't really established that AI is "intelligent like a human", and <em>who know what that really means</em>.
 
 Even with considering that AI is capable, in some sense and with varying degree, to "understand" text, it doesn't mean that it's production has the same value for every task, be it writing copy for advertising or writing code. Clearly these use cases, involve producing production "text", but of very different type and with different uses. The magical coding abilities of AI have been sponsored for a while, but as of the date of this article, in my view we don't have an AI capable of replacing even the average programmer.
 
-I engaged with the post asking a question. My question was:
-
-<blockquote>
-<strong>"</strong>What are the best uses of AI in data engineering?<strong>"</strong>
-</blockquote>
-
-And I received a reply. Here it is verbatim:
-
-<blockquote>
-<strong>"</strong>Gabriele C. Debugging and more general boilerplate generation! Also great for tracking down things like consistent data definitions or metric calculations.<strong>"</strong>
-</blockquote>
-
-A couple of quick ideas. I'm not trying to tear the commment apart. <em>I don't disagree that these are possible uses of AI, I think that the effectiveness of AI in these case is more limited than what many might think</em>. At least that's my impression.
+A LinkedIn posted mentioned using AI for debugging and boilerplate generation. I think that the effectiveness of AI in these case is more limited than what may seem at first glance.
 
 Concerning debugging, it's not clear to me how effective AI is, in what cases and to what extent. Debugging a small function you're uncertain about is one thing, finding the needle in a 100k codebase haystack is another. Also, who's going to debug the debugger?
 

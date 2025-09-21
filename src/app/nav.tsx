@@ -3,7 +3,7 @@ import { Plus } from "./components/plus";
 
 function Nav() {
   return (
-    <nav className="xl:w-[calc(50%+2px)] h-14 flex items-center sticky xl:top-4 top-0 border border-border xl:left-1/2 xl:-translate-x-1/2 z-100 overflow-clip text-foreground bg-background">
+    <nav className="xl:w-[calc(50%-2.5rem)] w-full h-14 flex items-center sticky xl:top-4 top-0 border border-border xl:left-1/2 xl:-translate-x-1/2 z-100 overflow-clip text-foreground bg-background">
       <Plus className="text-neutral-500 -left-5 -top-5 xl:visible invisible" />
       <Plus className="text-neutral-500 left-[calc(100%-1.25rem)] -top-5 z-10 xl:visible invisible" />
       <Plus className="text-neutral-500 -left-5 top-[calc(100%-1.25rem)] xl:visible invisible" />
@@ -18,10 +18,11 @@ function Nav() {
         </Link>
       </div>
       <div className="w-full h-full pr-4 flex items-center justify-between">
-        <ul className="w-full flex items-center gap-x-6 justify-end">
-          <li className="border-b border-foreground hover:border-background">
+        <ul className="w-full h-full flex items-center gap-x-6 justify-end">
+          <li className="h-full flex">
             <Link href={"/#services"} className="flex items-center">
-              Services <Plus className="static size-5 p-0 ml-1 mt-1" />
+              Services
+              <Plus className="static size-5 p-0 ml-1 mt-1" />
             </Link>
           </li>
           <li className="border-b border-foreground hover:border-background">
@@ -31,7 +32,7 @@ function Nav() {
             </Link>
           </li>
           <li className="border-b border-foreground hover:border-background">
-            <Link href={"#"} className="flex items-center">
+            <Link href={"/#about"} className="flex items-center">
               About <Plus className="static size-5 p-0 ml-1 mt-1" />
             </Link>
           </li>

@@ -33,22 +33,27 @@ function Footer() {
             <div className="w-full xl:w-1/4">
               <ul className="flex flex-col gap-y-2">
                 <li className="w-fit group">
-                  <Link href={"/"} className="group-hover:border-b border-neutral-200">
+                  <Link href={"/"} className="group-hover:border-b border-border">
                     Home
                   </Link>
                 </li>
                 <li className="w-fit group">
-                  <Link href={"#services"} className="group-hover:border-b border-neutral-200">
+                  <Link href={"/#services"} className="group-hover:border-b border-border">
                     Services
                   </Link>
                 </li>
                 <li className="w-fit group">
-                  <Link href={"#"} className="group-hover:border-b border-neutral-200">
+                  <Link href={"/blog"} className="group-hover:border-b border-border">
+                    Blog
+                  </Link>
+                </li>
+                <li className="w-fit group">
+                  <Link href={"/#about"} className="group-hover:border-b border-border">
                     About
                   </Link>
                 </li>
                 <li className="w-fit group">
-                  <Link href={"#contact"} className="group-hover:border-b border-neutral-200">
+                  <Link href={"/#contact"} className="group-hover:border-b border-border">
                     Contact
                   </Link>
                 </li>

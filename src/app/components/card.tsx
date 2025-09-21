@@ -18,7 +18,7 @@ export const ServiceCard = ({
     <div className={cn("w-full bg-background aspect-square flex items-center justify-center relative", className)}>
       <div
         // onMouseMove={handleMouseMove}
-        className="group/card w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full rounded-lg"
+        className="group/card w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full rounded-md"
       >
         <CardPattern randomString={randomString} background={background} />
         <div className="relative z-10 flex items-center justify-center">

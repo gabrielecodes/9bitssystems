@@ -10,6 +10,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-border: oklch(37.1% 0 0);
+  --color-neon: oklch(0.8425 0.2767 143.13);
+  --color-blue: oklch(0.4762 0.2966 267.42);
   --color-paragraph: oklch(67.64% 0.00008 271.152);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

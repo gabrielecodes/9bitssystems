@@ -1,4 +1,4 @@
--"use server";
+"use server";
 
 import { notFound } from "next/navigation";
 import { getPostData, type Post } from "@/app/functions";
@@ -47,9 +47,10 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
           }}
         />
       </Head>
-      <article className="mt-40 border-b border-neutral-200">
+      <article className="xl:w-1/2 w-full border-x border-border">
+        <div className="xl:h-40 h-10"></div>
         <h1
-          className="h-40 px-20 flex items-center border-y border-neutral-200 relative crossed-lines-gradient leading-14"
+          className="h-40 px-20 flex items-center border-y border-border relative leading-14"
           style={{ fontSize: "48px" }}
         >
           <Plus className="-left-5 -top-5" />
@@ -58,7 +59,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
           <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)]" />
           {post.frontmatter["title"] as string}
         </h1>
-        <div className="w-fit px-20 py-10 bg-white">
+        <div className="w-fit xl:px-20 py-10">
           <div className="overflow-clip">
             <div className="p-8 text-2xl tracking-tight relative border border-border">
               <Plus className="-left-5 -top-5" />
@@ -68,7 +69,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
               {post.frontmatter["excerpt"] as string}
             </div>
             <div className="overflow-clip">
-              <div className="p-8 border-b border-x border-border flex xl:flex-row flex-col items-center justify-between relative">
+              <div className="xl:p-8 border-b border-x border-border flex xl:flex-row flex-col items-center justify-between relative">
                 <Plus className="-left-5 top-[calc(100%-1.25rem)] z-10" />
                 <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)] z-10" />
                 <div>Written by {post.frontmatter["author"] as string}</div>
@@ -79,7 +80,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
         </div>
         <div
           id="post-content"
-          className="px-20 pt-6 pb-10 [&>h2]:mt-6 [&>h2]:mb-4 [&>h3]:mt-6 [&>h3]:mb-4 [&>p]:mb-4 *:l:ml-4 bg-white"
+          className="xl:px-20 px-2 pt-6 pb-10 [&>h2]:mt-6 [&>h2]:mb-4 [&>h3]:mt-6 [&>h3]:mb-4 [&>p]:mb-4 *:l:ml-4"
         >
           {post.content}
         </div>

@@ -2,6 +2,7 @@
 
 import { useActionState } from "react";
 import { submitContactForm } from "../actions/sendEmail";
+import SendPlane from "./icons/sendplane";
 
 export default function ContactForm() {
   const [state, formAction, pending] = useActionState(submitContactForm, null);
@@ -51,9 +52,10 @@ export default function ContactForm() {
         <button
           disabled={pending}
           type="submit"
-          className="px-2 py-1 border border-background hover:bg-foreground hover:text-background transition-color duration-200 ease-in-out cursor-pointer bg-emerald-500 text-background"
+          className="w-32 px-2 py-1 border border-background relative flex transition-all duration-200 ease-in-out hover:bg-foreground hover:text-background hover:w-38 hover:pl-8 cursor-pointer bg-neon text-background rounded-md overflow-clip group"
         >
-          <span className="inline-block ">&#8627;&ensp;Send Message</span>
+          <SendPlane className="size-6 absolute -left-8 transition-all duration-200 ease-in-out group-hover:left-1" />
+          <span className="inline-block ">Send Message</span>
         </button>
 
         {state?.success && <p className="text-green-600 mt-4">{state.success}</p>}

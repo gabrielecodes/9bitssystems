@@ -50,7 +50,7 @@ export default function Services() {
   }
 
   return (
-    <>
+    <div>
       <div id="services" className="h-20"></div>
 
       <h2 className="w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold">
@@ -59,7 +59,7 @@ export default function Services() {
 
       <div className="h-10"></div>
       {/* Service 1*/}
-      <div className="h-[80vh] flex xl:flex-row flex-col items-baseline xl:gap-x-8 justify-between border-y border-border relative">
+      <div className="xl:h-[80vh] flex xl:flex-row flex-col items-baseline xl:gap-x-8 justify-between border-y border-border relative">
         <Plus className="size-6 -left-3 -top-3" />
         <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-10" />
         <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)]" />
@@ -72,7 +72,7 @@ export default function Services() {
           <div className="pointer-events-none">
             <div className="absolute inset-0 [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-green-500 to-blue-700 opacity-0  group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
+              className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-sky-500 opacity-0 group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
               style={style}
             />
             <motion.div
@@ -128,6 +128,6 @@ export default function Services() {
       </div>
       <div className="h-full w-full col-start-8 col-span-1"></div>
       <div className="h-20"></div>
-    </>
+    </div>
   );
 }
