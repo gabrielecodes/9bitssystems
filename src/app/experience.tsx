@@ -100,7 +100,7 @@ function Experience4({ className }: { className?: string }) {
     <div id="exp4" className={cn("xl:mb-0 mb-4", className)}>
       <h3 className="relative">
         <div className="w-4 h-4 top-3 -right-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground xl:block hidden" />
-        Data Scientist/Risk Analyst<p className="ml-4 inline-block">Feb 2019 - Jun 2020</p>
+        Data Scientist<p className="ml-4 inline-block">Feb 2019 - Jun 2020</p>
       </h3>
       <ul className="list-disc *:flex [&_p]:ml-2">
         <li>

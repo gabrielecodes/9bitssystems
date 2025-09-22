@@ -1,5 +1,5 @@
 ---
-title: "Practical Applications of AI in Data Engineering: Opportunities and Limitations"
+title: "Practical Applications of AI in Data Engineering"
 date: "2025-09-18"
 author: Gabriele C.
 subtitle: "Thinking about the best uses of AI in data engineering"
@@ -45,6 +45,7 @@ Writing technical documentation is essential, yet time-consuming. AI can assist 
 - Formatting input arguments, output types, and error messages.
 - Suggesting summaries of what a function does.
 
+<br/> 
 Since documentation is not executed code, the risk of introducing bugs is minimal, making this a low-risk, high-value task for AI assistance.
 
 2. Technical Research and API Exploration
@@ -55,6 +56,7 @@ Another strong use case is accelerating research and onboarding with new tools a
 - Identifying relevant functions or endpoints faster than manual searches.
 - Clarifying the usage of poorly documented or evolving APIs.
 
+<br/> 
 While AI-generated code based on new APIs may not always work as expected, asking AI to explain the documentation can provide valuable insights and reduce ramp-up time.
 
 ## Conclusion: Balancing Innovation and Caution

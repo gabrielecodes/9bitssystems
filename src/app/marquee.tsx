@@ -12,11 +12,26 @@ import Gemini from "./components/icons/gemini";
 
 function CustomMarquqee() {
   return (
-    <>
-      <p className="xl:w-2/3 w-full mb-4 flex xl:justify-start justify-center mx-auto">
-        Some of the technologies I use
-      </p>
-      <div className="xl:w-2/3 w-full xl:h-32 flex mx-auto size-full items-center justify-center">
+    <div className="xl:w-2/3 flex flex-col mx-auto">
+      <div className="mb-8 flex items-start gap-x-8">
+        <div className="w-1/4 h-62 border border-border rounded-md"></div>
+        <div className="w-3/4">
+          <h2>Hi, I&apos;m Gabriele.</h2>
+          <p>
+            I&apos;m a data and systems consultant with nearly a decade of experience helping teams—from startups to
+            fintech firms—build tools they can actually rely on.
+            <br />
+            <br />I focus on practical solutions that align with your goals, streamline your workflows, and deliver real
+            value.
+            <br />
+            <br />
+            If your tech feels like it&apos;s holding you back, I can help untangle the mess and put better systems in
+            place—ones that work with you, not against you.
+          </p>
+        </div>
+      </div>
+      <div className="w-full xl:h-32 size-full items-center justify-center">
+        <p className="w-full mb-4">Some of the technologies I use</p>
         <Marquee className="bg-transparent">
           <MarqueeFade side="left" className="bg-gradient-to-r from-background" />
           <MarqueeFade side="right" className="bg-gradient-to-l from-background" />
@@ -54,7 +69,7 @@ function CustomMarquqee() {
           </MarqueeContent>
         </Marquee>
       </div>
-    </>
+    </div>
   );
 }
 
