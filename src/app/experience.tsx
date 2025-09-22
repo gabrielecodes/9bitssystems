@@ -29,7 +29,7 @@ function Experience1({ className }: { className?: string }) {
       </h3>
       <ul className="list-disc *:flex [&_p]:ml-2">
         <li>
-          Work: <p>Proj. Management, LLM Powered Data Integration & Microservice Development.</p>
+          Work <p>Proj. Management, LLM Powered Data Integration & Microservice Development.</p>
         </li>
         <li>
           Provider: <p>GCP</p>
