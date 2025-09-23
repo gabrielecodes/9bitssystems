@@ -18,7 +18,7 @@ function CustomMarquqee() {
         <div className="w-3/4">
           <h2>Hi, I&apos;m Gabriele.</h2>
           <p>
-            I&apos;m a data and systems consultant with nearly a decade of experience helping teams—from startups to
+            I&apos;m a data engineer and architect with nearly a decade of experience helping teams—from startups to
             fintech firms—build tools they can actually rely on.
             <br />
             <br />I focus on practical solutions that align with your goals, streamline your workflows, and deliver real

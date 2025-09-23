@@ -47,7 +47,8 @@ function Hero() {
           .
         </h1>
         <h3 className="xl:w-3/4 w-full text-center text-neutral-300">
-          I help businesses build a solid technological foundation &mdash; with reliable, secure, and modern solutions.
+          I&apos;m a data engineer and architect helping businesses build a solid technological foundation &mdash; with
+          reliable, secure, and modern solutions.
         </h3>
       </div>
     </div>
