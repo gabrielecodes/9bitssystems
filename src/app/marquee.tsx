@@ -12,14 +12,14 @@ import Gemini from "./components/icons/gemini";
 
 function CustomMarquqee() {
   return (
-    <div className="xl:w-2/3 flex flex-col mx-auto">
+    <div className="xl:w-2/3 flex flex-col mx-auto bg-background">
       <div className="mb-8 flex items-start gap-x-8">
         <div className="w-1/4 h-62 border border-border rounded-md"></div>
         <div className="w-3/4">
           <h2>Hi, I&apos;m Gabriele.</h2>
           <p>
             I&apos;m a data engineer and architect with nearly a decade of experience helping teams—from startups to
-            fintech firms—build tools they can actually rely on.
+            large firms—build tools they can actually rely on.
             <br />
             <br />I focus on practical solutions that align with your goals, streamline your workflows, and deliver real
             value.
