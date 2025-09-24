@@ -4,24 +4,34 @@ import ContactForm from "./components/form";
 export default function Contact() {
   return (
     <>
-      <div id="contact" className="h-20 xl:col-span-8"></div>
-      <div className="h-20 col-start-2 col-span-6 flex items-center xl:grid xl:grid-cols-6">
-        <h2 className="w-full mx-auto xl:col-start-1 xl:col-span-1 text-center inline-block transform bg-foreground text-background font-semibold">
-          Contact Me
-        </h2>
-      </div>
+      <div className="h-20 border-t border-border"></div>
+      <h2 className="w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold">
+        Contact Me
+      </h2>
 
-      <div className="mt-20 xl:col-start-3 xl:col-span-4 gap-y-0">
-        <div className="w-full bg-background border-r border-y border-neutral-200 flex relative xl:overflow-visible overflow-x-clip">
-          <Plus className="-left-5 -top-5" />
-          <Plus className="left-[calc(100%-1.25rem)] -top-5" />
-          <Plus className="-left-5 top-[calc(100%-1.25rem)]" />
-          <Plus className="left-[calc(100%-1.25rem)] top-[calc(100%-1.25rem)]" />
-          <div className="w-full p-10 flex items-center justify-center bg-neutral-100">
-            <div className="w-full h-full">
-              <h2>Get in touch, there are no obligations.</h2>
-              <h3>Tell us about your idea.</h3>
-              <div className="w-full mt-8 border border-neutral-200 bg-background">
+      <div id="contact" className="xl:mt-20 flex">
+        <div className="w-full xl:py-20 p-4 bg-[url('/glass.jpg')] bg-[42%_-7%] bg-cover flex justify-center items-center border-t border-border relative">
+          <Plus className="size-6 -left-3 -top-3" />
+          <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-10" />
+          <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)]" />
+          <Plus className="size-6 left-[calc(100%-0.75rem)] top-[calc(100%-0.75rem)] z-10" />
+
+          <div className="xl:w-2/3 h-fit flex relative xl:overflow-visible overflow-x-clip ">
+            <div className="w-full h-fit xl:p-12 p-6 m-auto flex xl:flex-row flex-col items-start justify-center gap-x-4 backdrop-blur-md rounded-2xl bg-background/75">
+              <div className="w-full h-full">
+                <h2 className="mb-6 leading-10">
+                  Let&apos;s talk about your idea. <br />
+                  There are no obligations.
+                </h2>
+                <p className="mb-4">
+                  I craft solutions that prioritize your goals, drawing on almost a decade of experience as a data
+                  engineering and analytics in the financial and service industries. I build systems that enable your
+                  teams to move faster — not lock them into complexity. Many businesses are dragged down by unreliable
+                  technology and broken processes &mdash; I help you untangle the complexity and build systems that
+                  actually work for you.
+                </p>
+              </div>
+              <div className="w-full">
                 <ContactForm />
               </div>
             </div>

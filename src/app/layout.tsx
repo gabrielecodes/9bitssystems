@@ -6,7 +6,7 @@ import { Nav } from "./nav";
 import { Footer } from "./footer";
 import { Border } from "./components/border";
 
-export const serif = Instrument_Serif({
+const serif = Instrument_Serif({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-serif",
@@ -26,12 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.className} bg-background antialiased -mt-14`}>
+      <body className={`${font.className} h-screen bg-background antialiased`}>
         <Nav />
         {children}
-        <Border />
-        <div className="w-full h-40 bg-background"></div>
-        <Footer />
+        {/* <Border /> */}
+        {/* <div className="w-full h-40 bg-background"></div> */}
+        {/* <Footer /> */}
       </body>
     </html>
   );
