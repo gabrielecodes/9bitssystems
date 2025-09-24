@@ -28,27 +28,25 @@ function TopNav() {
         </Link>
       </div>
       <div className="w-full h-full pr-4 flex items-center justify-between">
-        <ul className="w-full h-full flex items-center gap-x-6 justify-end ">
-          <li className="h-full xl:flex hidden">
-            <Link href={"/#services"} className="flex items-center">
+        <ul className="w-full h-full flex items-center gap-x-4 justify-end ">
+          <li className="h-full flex items-center">
+            <Link href={"/services"} className="flex items-center">
               Services
-              <Plus className="static size-5 p-0 ml-1 mt-1" />
             </Link>
           </li>
-          <li className="h-full xl:flex hidden">
+          <li className="h-full flex items-center">
             <Link href={"/blog"} className="flex items-center">
               Blog
-              <Plus className="static size-5 p-0 ml-1 mt-1" />
             </Link>
           </li>
-          <li className="h-full xl:flex hidden">
-            <Link href={"/#about"} className="flex items-center">
-              About <Plus className="static size-5 p-0 ml-1 mt-1" />
+          <li className="h-full flex items-center">
+            <Link href={"/about"} className="flex items-center">
+              About
             </Link>
           </li>
           <li className="h-full flex items-center">
             <Link href={"/#contact"} className="flex items-center">
-              Contact <Plus className="static size-5 p-0 ml-1 mt-1" />
+              Contact
             </Link>
           </li>
         </ul>
@@ -59,7 +57,7 @@ function TopNav() {
 
 function SideNav() {
   return (
-    <nav className="w-60 absolute top-20 left-full -translate-x-[calc(1.5*100%)] text-foreground z-100 group overflow-hidden bg-background">
+    <nav className="w-60 xl:block hidden absolute top-20 left-full -translate-x-[calc(1.5*100%)] text-foreground z-100 group overflow-hidden bg-background">
       <div className="w-full h-full relative overflow-hidde z-100">
         <span className="z-100 w-20 h-[1px] absolute -left-20 top-0 bg-gradient-to-r to-neutral-300 transition-all group-hover:left-full duration-[400ms] ease-in-out"></span>
         <span className="z-100 w-20 h-[1px] absolute left-full top-[calc(100%-1px)] bg-gradient-to-r from-neutral-300 transition-all group-hover:-left-20 duration-[400ms] ease-in-out"></span>
@@ -71,7 +69,7 @@ function SideNav() {
           <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)]" />
           <Plus className="size-6 left-[calc(100%-0.75rem)] top-[calc(100%-0.75rem)] z-10" />
 
-          <li className="w-full h-full xl:flex hidden">
+          <li className="w-full h-full">
             <Link href={"/"} className="w-full h-10 flex items-center hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] group/home p-4 rounded-md">
               <span>HOME</span>
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/home:left-24">
@@ -79,7 +77,7 @@ function SideNav() {
               </span>
             </Link>
           </li>
-          <li className="w-full h-full xl:flex hidden">
+          <li className="w-full h-full">
             <Link href={"/services"} className="w-full h-10 flex items-center hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] group/services p-4 rounded-md">
               <span>SERVICES</span>
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/services:left-24">
@@ -87,7 +85,7 @@ function SideNav() {
               </span>
             </Link>
           </li>
-          <li className="w-full h-full xl:flex hidden">
+          <li className="w-full h-full">
             <Link href={"/blog"} className="w-full h-10 flex items-center group/blog hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md">
               BLOG
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/blog:left-24">
@@ -95,7 +93,7 @@ function SideNav() {
               </span>
             </Link>
           </li>
-          <li className="w-full h-full xl:flex hidden">
+          <li className="w-full h-full">
             <Link href={"/about"} className="w-full h-10 flex items-center group/about hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md">
               <span>ABOUT</span>
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/about:left-24">

@@ -58,7 +58,7 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className="xl:p-20 px-2 text-foreground">
+    <section id="services" className="h-fit xl:p-20 px-2 text-foreground">
 
       <h1 className={`${serif.className} my-20 w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`} >
         Services
@@ -69,14 +69,14 @@ export default function Services() {
         <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-100" />
         <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)] z-100" />
         <Plus className="size-6 left-[calc(100%-0.75rem)] top-[calc(100%-0.75rem)] z-100" />
-        <span className="w-50 h-[1px] absolute -left-50 -top-[1px] bg-gradient-to-r from-background to-border" />
-        <span className="w-50 h-[1px] absolute -left-50 top-full bg-gradient-to-r from-background to-border" />
-        <span className="w-50 h-[1px] absolute left-full top-full bg-gradient-to-l from-background to-border" />
-        <span className="w-50 h-[1px] absolute left-full -top-[1px] bg-gradient-to-l from-background to-border" />
-        <span className="w-[1px] h-50 absolute left-0 -top-50 bg-gradient-to-b from-background to-border" />
-        <span className="w-[1px] h-50 absolute left-[calc(100%-1px)] -top-50 bg-gradient-to-b from-background to-border" />
-        <span className="w-[1px] h-50 absolute left-[calc(100%-1px)] top-full bg-gradient-to-t from-background to-border" />
-        <span className="w-[1px] h-50 absolute -left-[1px] top-full bg-gradient-to-t from-background to-border" />
+        <span className="w-50 h-[1px] absolute -left-50 -top-[1px] bg-gradient-to-r from-background to-border xl:block hidden" />
+        <span className="w-50 h-[1px] absolute -left-50 top-full bg-gradient-to-r from-background to-border xl:block hidden" />
+        <span className="w-50 h-[1px] absolute left-full top-full bg-gradient-to-l from-background to-border xl:block hidden" />
+        <span className="w-50 h-[1px] absolute left-full -top-[1px] bg-gradient-to-l from-background to-border xl:block hidden" />
+        <span className="w-[1px] h-50 absolute left-0 -top-50 bg-gradient-to-b from-background to-border xl:block hidden" />
+        <span className="w-[1px] h-50 absolute left-[calc(100%-1px)] -top-50 bg-gradient-to-b from-background to-border xl:block hidden" />
+        <span className="w-[1px] h-50 absolute left-[calc(100%-1px)] top-full bg-gradient-to-t from-background to-border xl:block hidden" />
+        <span className="w-[1px] h-50 absolute -left-[1px] top-full bg-gradient-to-t from-background to-border xl:block hidden" />
 
         <div
           onMouseMove={handleMouseMove}
@@ -105,11 +105,11 @@ export default function Services() {
               <h2 className="mb-6 uppercase" style={{ fontSize: "1em", fontWeight: "900" }}>
                 Data Strategy
               </h2>
-              <p>
+              <p className="mb-4">
                 You&apos;ll gain a modern data infrastructure that supports your team decision making and extracts
                 maximum value from your data—at speed and scale.
               </p>
-              <ReadMoreButton className="left-[90%] xl:left-[115%]" />
+              <ReadMoreButton className="left-[80%] xl:left-[115%]" />
             </div>
 
             <div className="xl:w-96 w-full h-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
@@ -117,11 +117,11 @@ export default function Services() {
               <h2 className="mb-6 uppercase" style={{ fontSize: "1em", fontWeight: "900" }}>
                 Cloud Infrastructure
               </h2>
-              <p>
+              <p className="mb-4">
                 I architect a solid foundation for your business, with a secure and scalable back-end and
                 establishing seamless integration with your workflows.
               </p>
-              <ReadMoreButton className="left-[90%] xl:left-[115%]" />
+              <ReadMoreButton className="left-[80%] xl:left-[115%]" />
             </div>
 
             <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
@@ -129,20 +129,17 @@ export default function Services() {
               <h2 className="mb-6 uppercase" style={{ fontSize: "1em", fontWeight: "900" }}>
                 Software Development
               </h2>
-              <p>
+              <p className="mb-4">
                 Whether you&apos;re launching a new product or upgrading your tech stack, I deliver back-end solutions
                 built for performance, security, and growth.
               </p>
-              <ReadMoreButton className="left-[90%] xl:left-[115%]" />
+              <ReadMoreButton className="left-[80%] xl:left-[115%]" />
             </div>
           </div>
 
 
         </div>
       </div>
-
-      <div className="h-full w-full col-start-8 col-span-1"></div>
-      <div className="h-20"></div>
     </section>
   );
 }
