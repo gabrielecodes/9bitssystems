@@ -9,7 +9,6 @@ import { Star } from "../components/start";
 import { Squares } from "../components/squares";
 import { Instrument_Serif } from "next/font/google";
 
-
 const serif = Instrument_Serif({
   weight: "400",
   subsets: ["latin"],
@@ -59,8 +58,9 @@ export default function Services() {
 
   return (
     <section id="services" className="h-fit xl:p-20 px-2 text-foreground">
-
-      <h1 className={`${serif.className} my-20 w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`} >
+      <h1
+        className={`${serif.className} my-20 w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`}
+      >
         Services
       </h1>
 
@@ -69,18 +69,18 @@ export default function Services() {
         <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-100" />
         <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)] z-100" />
         <Plus className="size-6 left-[calc(100%-0.75rem)] top-[calc(100%-0.75rem)] z-100" />
-        <span className="w-50 h-[1px] absolute -left-50 -top-[1px] bg-gradient-to-r from-background to-border xl:block hidden" />
+        {/* <span className="w-50 h-[1px] absolute -left-50 -top-[1px] bg-gradient-to-r from-background to-border xl:block hidden" />
         <span className="w-50 h-[1px] absolute -left-50 top-full bg-gradient-to-r from-background to-border xl:block hidden" />
         <span className="w-50 h-[1px] absolute left-full top-full bg-gradient-to-l from-background to-border xl:block hidden" />
-        <span className="w-50 h-[1px] absolute left-full -top-[1px] bg-gradient-to-l from-background to-border xl:block hidden" />
-        <span className="w-[1px] h-50 absolute left-0 -top-50 bg-gradient-to-b from-background to-border xl:block hidden" />
+        <span className="w-50 h-[1px] absolute left-full -top-[1px] bg-gradient-to-l from-background to-border xl:block hidden" /> */}
+        {/* <span className="w-[1px] h-50 absolute left-0 -top-50 bg-gradient-to-b from-background to-border xl:block hidden" />
         <span className="w-[1px] h-50 absolute left-[calc(100%-1px)] -top-50 bg-gradient-to-b from-background to-border xl:block hidden" />
         <span className="w-[1px] h-50 absolute left-[calc(100%-1px)] top-full bg-gradient-to-t from-background to-border xl:block hidden" />
-        <span className="w-[1px] h-50 absolute -left-[1px] top-full bg-gradient-to-t from-background to-border xl:block hidden" />
+        <span className="w-[1px] h-50 absolute -left-[1px] top-full bg-gradient-to-t from-background to-border xl:block hidden" /> */}
 
         <div
           onMouseMove={handleMouseMove}
-          className="group/card w-full h-full relative bg-transparent flex xl:flex-row flex-col items-baseline justify-center"
+          className="group/card w-full h-full relative bg-transparent flex xl:flex-row flex-col items-baseline justify-center overflow-clip"
         >
           <div className="pointer-events-none">
             <div className="absolute inset-0 [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50" />
@@ -99,7 +99,6 @@ export default function Services() {
           </div>
 
           <div className="h-full p-12 flex xl:flex-row flex-col xl:gap-x-4 gap-y-4 xl:gap-y-0 items-center">
-
             <div className="xl:w-96 w-full h-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
               <Star className="mb-8 static flex mx-auto" />
               <h2 className="mb-6 uppercase" style={{ fontSize: "1em", fontWeight: "900" }}>
@@ -118,8 +117,8 @@ export default function Services() {
                 Cloud Infrastructure
               </h2>
               <p className="mb-4">
-                I architect a solid foundation for your business, with a secure and scalable back-end and
-                establishing seamless integration with your workflows.
+                I architect a solid foundation for your business, with a secure and scalable back-end and establishing
+                seamless integration with your workflows.
               </p>
               <ReadMoreButton className="left-[80%] xl:left-[115%]" />
             </div>
@@ -136,8 +135,6 @@ export default function Services() {
               <ReadMoreButton className="left-[80%] xl:left-[115%]" />
             </div>
           </div>
-
-
         </div>
       </div>
     </section>

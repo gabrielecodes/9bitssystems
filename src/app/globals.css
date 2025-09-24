@@ -115,7 +115,7 @@ blockquote {
 }
 
 .neon-animation {
-  animation: neon-blink 5s infinite alternate;
+  animation: neon-blink 2s infinite alternate;
 
 }
 
@@ -149,6 +149,30 @@ blockquote {
   }
 
   46% {
+    opacity: 1;
+  }
+
+  74% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: .7;
+  }
+
+  76% {
+    opacity: .7;
+  }
+
+  77% {
+    opacity: .4;
+  }
+
+  78% {
+    opacity: .4;
+  }
+
+  79% {
     opacity: 1;
   }
 
