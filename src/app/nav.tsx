@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Plus } from "./components/plus";
 
+
 function Nav() {
   return (
     <>
@@ -64,40 +65,40 @@ function SideNav() {
         <span className="z-100 w-20 h-[1px] absolute left-full top-[calc(100%-1px)] bg-gradient-to-r from-neutral-300 transition-all group-hover:-left-20 duration-[400ms] ease-in-out"></span>
         <span className="z-100 w-[1px] h-20 absolute left-[calc(100%-1px)] -top-20 bg-gradient-to-b to-neutral-300 transition-all group-hover:top-full duration-[400ms] ease-in-out"></span>
         <span className="z-100 w-[1px] h-20 absolute left-0 top-full bg-gradient-to-b from-neutral-300 transition-all group-hover:-top-20 duration-[400ms] ease-in-out"></span>
-        <ul className="w-full h-full p-4 flex flex-col items-start justify-center relative overflow-hidden bg-background">
+        <ul className="w-full h-full p-2 flex flex-col items-start justify-center relative overflow-hidden bg-background">
           <Plus className="size-6 -left-3 -top-3" />
           <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-10" />
           <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)]" />
           <Plus className="size-6 left-[calc(100%-0.75rem)] top-[calc(100%-0.75rem)] z-10" />
 
           <li className="w-full h-full xl:flex hidden">
-            <Link href={"/#services"} className="w-full h-10 flex items-center group/services">
+            <Link href={"/services"} className="w-full h-10 flex items-center hover:text-background hover:bg-blue-neon group/services p-4 rounded-md">
               <span>SERVICES</span>
-              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center border border-dashed rounded-full group-hover/services:border-foreground transition-all duration-[400ms] ease-in-out text-neutral-700 group-hover/services:text-neutral-300 group-hover/services:left-24">
+              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/services:left-24">
                 <span>&rarr;</span>
               </span>
             </Link>
           </li>
           <li className="w-full h-full xl:flex hidden">
-            <Link href={"/blog"} className="w-full h-10 flex items-center group/blog">
-              <span>BLOG</span>
-              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center border border-dashed rounded-full group-hover/blog:border-foreground transition-all duration-[400ms] ease-in-out text-neutral-700 group-hover/blog:text-neutral-300 group-hover/blog:left-24">
+            <Link href={"/blog"} className="w-full h-10 flex items-center group/blog hover:text-background hover:bg-blue-neon p-4 rounded-md">
+              BLOG
+              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/blog:left-24">
                 <span>&rarr;</span>
               </span>
             </Link>
           </li>
           <li className="w-full h-full xl:flex hidden">
-            <Link href={"/#about"} className="w-full h-10 flex items-center group/about">
+            <Link href={"/#about"} className="w-full h-10 flex items-center group/about hover:text-background hover:bg-blue-neon p-4 rounded-md">
               <span>ABOUT</span>
-              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center border border-dashed rounded-full group-hover/about:border-foreground transition-all duration-[400ms] ease-in-out text-neutral-700 group-hover/about:text-neutral-300 group-hover/about:left-24">
+              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/about:left-24">
                 <span>&rarr;</span>
               </span>
             </Link>
           </li>
           <li className="w-full h-full flex items-center">
-            <Link href={"/#contact"} className="w-full h-10 flex items-center group/contact">
+            <Link href={"/#contact"} className="w-full h-10 flex items-center group/contact hover:text-background hover:bg-blue-neon p-4 rounded-md">
               <span>CONTACT</span>
-              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center border border-dashed rounded-full group-hover/contact:border-foreground transition-all duration-[400ms] ease-in-out text-neutral-700 group-hover/contact:text-neutral-300 group-hover/contact:left-24">
+              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/ group-hover/contact:left-24">
                 <span>&rarr;</span>
               </span>
             </Link>

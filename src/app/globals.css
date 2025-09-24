@@ -3,6 +3,7 @@
 :root {
   --foreground: #fff;
   --background: #010203;
+  --blue-neon: #03e9f4;
 }
 
 @theme inline {
@@ -11,7 +12,7 @@
   --color-foreground: var(--foreground);
   --color-border: oklch(37.1% 0 0);
   --color-neon: oklch(0.8425 0.2767 143.13);
-  --color-blue: oklch(0.4762 0.2966 267.42);
+  --color-blue-neon: var(--blue-neon);
   --color-paragraph: oklch(67.64% 0.00008 271.152);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -36,7 +37,7 @@
 } */
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   /* 96 px */
   font-weight: 900;
 }
@@ -107,4 +108,11 @@ blockquote {
   margin-right: 2rem;
   margin-bottom: 1rem;
   font-style: italic;
+}
+
+.blue-shadow {
+  box-shadow: 0 0 5px #03e9f4;
+  box-shadow: 0 0 25px #03e9f4;
+  box-shadow: 0 0 50px #03e9f4;
+  box-shadow: 0 0 75px #03e9f4;
 }

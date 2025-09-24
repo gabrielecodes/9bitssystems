@@ -2,22 +2,14 @@ import { Hero } from "./hero";
 import { CustomMarquqee } from "./marquee";
 import ContactForm from "./components/form";
 import { Plus } from "./components/plus";
-import Services from "./services";
+import Services from "./services/page";
 import Experience from "./experience";
 import Contact from "./contact";
-import { Manrope, Instrument_Serif } from "next/font/google";
-
-
-const serif = Instrument_Serif({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-serif",
-});
 
 
 export default function Home() {
   return (
-    <main className="xl:p-20 flex text-foreground h-screen">
+    <main className="xl:p-20 px-2 flex text-foreground h-screen">
       <Hero />
       {/* <CustomMarquqee />
       <Services />

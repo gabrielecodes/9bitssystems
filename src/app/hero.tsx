@@ -1,6 +1,4 @@
-// import Link from "next/link";
-import Image from "next/image";
-import { Manrope, Instrument_Serif } from "next/font/google";
+import { Instrument_Serif } from "next/font/google";
 
 
 const serif = Instrument_Serif({
@@ -18,9 +16,8 @@ function Hero() {
           reliable, secure, and modern solutions.
         </h1>
         <div className="w-3/5">
-          <p>
-            My goal is to support businesses in automating and growing with confidence, building <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>smarter</span> and scaling <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>faster</span>. I work alongside you to
-            create thoughtful data strategies, build reliable cloud infrastructures, and develop systems that
+          <p className="leading-6">
+            My goal is to support businesses in automating and growing with confidence, building <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>smarter</span> and scaling <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>faster</span>. I work alongside you to create thoughtful data strategies, build reliable cloud infrastructures, and develop systems that
             serve real needs.
           </p>
         </div>
