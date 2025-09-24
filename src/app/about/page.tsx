@@ -1,22 +1,50 @@
-import { cn } from "./utils";
+import { cn } from "../utils";
+import { Instrument_Serif } from "next/font/google";
+
+
+const serif = Instrument_Serif({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-serif",
+});
 
 export default function Experience() {
   return (
-    <section id="about" className="w-full">
-      <div className="w-full h-20"></div>
-      <h2 className="w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold">
+    <section id="about" className="xl:p-20 px-2 text-foreground">
+      <h1 className={`${serif.className} my-20 w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`} >
         Experience
-      </h2>
+      </h1>
 
-      <div className="w-full h-20"></div>
-      <div className="xl:w-2/3 mx-auto xl:flex xl:justify-center hidden ">
-        <LeftColumn />
-        <RightColumn />
+      <div className="w-full h-20" />
+      <div className="xl:w-full mx-auto xl:flex xl:flex-col hidden">
+        <TopColumn />
+        <div className="h-20 w-full" />
+        <BottomColumn />
       </div>
       <div className="xl:hidden">
         <AllExperience />
       </div>
     </section>
+  );
+}
+
+function TopColumn() {
+  return (
+    <div id="bottom-column" className="xl:w-full w-0 flex gap-x-4 justify-start items-center border-b border-border">
+      <Experience1 className="w-[32rem] h-50 pl-6 border-l border-border" />
+      <Experience3 className="w-[32rem] h-50 pl-6 border-l border-border" />
+      <Experience5 className="w-[32rem] h-50 pl-6 border-l border-border" />
+    </div>
+  );
+}
+
+function BottomColumn() {
+  return (
+    <div id="top-column" className="xl:w-full xl:h-fit xl:mx-0 mx-2 flex gap-x-4">
+      <div className="w-[32rem] h-50" />
+      <Experience2 className="w-[32rem] h-50 pl-6" />
+      <Experience4 className="w-[32rem] h-50 pl-6" />
+    </div>
   );
 }
 
@@ -49,7 +77,7 @@ function Experience2({ className }: { className?: string }) {
   return (
     <div id="exp2" className={cn("xl:mb-0 mb-4", className)}>
       <h3 className="relative">
-        <div className="w-4 h-4 top-3 -right-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground xl:block hidden" />
+        <div className="w-4 h-4 top-3 -left-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground xl:block hidden" />
         Senior Data Engineer<p className="ml-4 inline-block">Feb 2023 - Mar 2024</p>
       </h3>
       <ul className="list-disc *:flex [&_p]:ml-2 text-right">
@@ -99,7 +127,7 @@ function Experience4({ className }: { className?: string }) {
   return (
     <div id="exp4" className={cn("xl:mb-0 mb-4", className)}>
       <h3 className="relative">
-        <div className="w-4 h-4 top-3 -right-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground xl:block hidden" />
+        <div className="w-4 h-4 top-3 -left-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground xl:block hidden" />
         Data Scientist<p className="ml-4 inline-block">Feb 2019 - Jun 2020</p>
       </h3>
       <ul className="list-disc *:flex [&_p]:ml-2">
@@ -128,24 +156,6 @@ function Experience5({ className }: { className?: string }) {
   );
 }
 
-function LeftColumn() {
-  return (
-    <div id="left-column" className="xl:w-1/2 w-full xl:mx-0 mx-2 xl:border-r xl:border-border">
-      <Experience2 className="float-right mr-6 w-fit h-50 mt-50" />
-      <Experience4 className="float-right mr-6 w-fit h-50 mt-50 " />
-    </div>
-  );
-}
-
-function RightColumn() {
-  return (
-    <div id="right-column" className="xl:w-1/2 w-0 xl:border-l xl:border-border justify-end xl:visible invisible">
-      <Experience1 className=" w-fit h-50 ml-6" />
-      <Experience3 className=" w-fit h-50 mt-50 ml-6" />
-      <Experience5 className=" w-fit h-50 mt-50 ml-6" />
-    </div>
-  );
-}
 
 function AllExperience() {
   return (

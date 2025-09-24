@@ -111,8 +111,56 @@ blockquote {
 }
 
 .blue-shadow {
-  box-shadow: 0 0 5px #03e9f4;
-  box-shadow: 0 0 25px #03e9f4;
-  box-shadow: 0 0 50px #03e9f4;
-  box-shadow: 0 0 75px #03e9f4;
+  box-shadow: 5px 5px 15px 10px #03e9f4;
+}
+
+.neon-animation {
+  animation: neon-blink 5s infinite alternate;
+
+}
+
+@keyframes neon-blink {
+  14% {
+    opacity: 1;
+  }
+
+  15% {
+    opacity: .4;
+  }
+
+  16% {
+    opacity: 1;
+  }
+
+  17% {
+    opacity: .7;
+  }
+
+  18% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: .7;
+  }
+
+  46% {
+    opacity: 1;
+  }
+
+  98% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

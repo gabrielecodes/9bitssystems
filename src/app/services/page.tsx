@@ -16,7 +16,6 @@ const serif = Instrument_Serif({
   variable: "--font-serif",
 });
 
-
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 export const generateRandomString = (length: number) => {
   let result = "";
@@ -59,7 +58,7 @@ export default function Services() {
   }
 
   return (
-    <section className="xl:p-20 px-2 text-foreground">
+    <section id="services" className="xl:p-20 px-2 text-foreground">
 
       <h1 className={`${serif.className} my-20 w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`} >
         Services
