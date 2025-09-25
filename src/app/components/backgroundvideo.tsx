@@ -1,6 +1,10 @@
 "use client"
 import { useState, useEffect, useRef } from "react";
 
+const VIDEO_INITIAL_DELAY = 1500 // ms initial delay
+const FADE_BEFORE_END = 1.0; // seconds before end to fade out
+const FADE_DURATION = 2000; // ms, match CSS transition
+
 
 export default function BackgroundVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -21,9 +25,7 @@ export default function BackgroundVideo() {
     if (!video) return;
 
     let rafId: number;
-
-    const FADE_BEFORE_END = 1.0; // seconds before end to fade out
-    const FADE_DURATION = 2000; // ms, match CSS transition
+    let delayTimeout: NodeJS.Timeout;
 
     const fadeLoop = () => {
       // Start playback and fade in
@@ -51,7 +53,11 @@ export default function BackgroundVideo() {
     });
 
     // Start the initial loop
-    fadeLoop();
+    ;
+
+    delayTimeout = setTimeout(() => {
+      fadeLoop();
+    }, VIDEO_INITIAL_DELAY);
 
     return () => {
       cancelAnimationFrame(rafId);

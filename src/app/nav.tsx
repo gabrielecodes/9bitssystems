@@ -57,7 +57,7 @@ function TopNav() {
 
 function SideNav() {
   return (
-    <nav className="w-60 xl:block hidden absolute top-20 left-full -translate-x-[calc(1.5*100%)] text-foreground z-100 group overflow-hidden">
+    <nav className="w-60 xl:block hidden absolute top-10 left-full -translate-x-[calc(1.2*100%)] text-foreground z-100 group overflow-hidden">
       <div className="w-full h-full relative overflow-hidde z-100">
         <span className="z-100 w-20 h-[1px] absolute -left-20 top-0 bg-gradient-to-r to-neutral-300 transition-all group-hover:left-full duration-[400ms] ease-in-out"></span>
         <span className="z-100 w-20 h-[1px] absolute left-full top-[calc(100%-1px)] bg-gradient-to-r from-neutral-300 transition-all group-hover:-left-20 duration-[400ms] ease-in-out"></span>
@@ -71,17 +71,17 @@ function SideNav() {
 
           <li className="w-full h-full">
             <Link href={"/"} className="w-full h-10 flex items-center hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] group/home p-4 rounded-md">
-              <span>HOME</span>
+              HOME
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/home:left-24">
-                <span>&rarr;</span>
+                &rarr;
               </span>
             </Link>
           </li>
           <li className="w-full h-full">
             <Link href={"/services"} className="w-full h-10 flex items-center hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] group/services p-4 rounded-md">
-              <span>SERVICES</span>
+              SERVICES
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/services:left-24">
-                <span>&rarr;</span>
+                &rarr;
               </span>
             </Link>
           </li>
@@ -89,23 +89,23 @@ function SideNav() {
             <Link href={"/blog"} className="w-full h-10 flex items-center group/blog hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md">
               BLOG
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/blog:left-24">
-                <span>&rarr;</span>
+                &rarr;
               </span>
             </Link>
           </li>
           <li className="w-full h-full">
             <Link href={"/about"} className="w-full h-10 flex items-center group/about hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md">
-              <span>ABOUT</span>
+              ABOUT
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/about:left-24">
-                <span>&rarr;</span>
+                &rarr;
               </span>
             </Link>
           </li>
           <li className="w-full h-full flex items-center">
             <Link href={"/#contact"} className="w-full h-10 flex items-center group/contact hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md">
-              <span>CONTACT</span>
+              CONTACT
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/ group-hover/contact:left-24">
-                <span>&rarr;</span>
+                &rarr;
               </span>
             </Link>
           </li>

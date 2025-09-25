@@ -57,7 +57,7 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className="h-fit xl:p-20 px-2 text-foreground">
+    <section id="services" className="h-fit xl:p-10 px-2 text-foreground">
       <h1
         className={`${serif.className} my-20 w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`}
       >
@@ -93,9 +93,9 @@ export default function Services() {
           <div className="h-full p-12 flex xl:flex-row flex-col xl:gap-x-4 gap-y-4 xl:gap-y-0 items-center">
             <div className="xl:w-96 w-full h-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
               <Star className="mb-8 static flex mx-auto" />
-              <h2 className="mb-6 font-black">
-                Data Strategy
-              </h2>
+              <h3 className="mb-6 font-black">
+                DATA STRATEGY
+              </h3>
               <p className="mb-4">
                 You&apos;ll gain a modern data infrastructure that supports your team decision making and extracts
                 maximum value from your data—at speed and scale.
@@ -105,9 +105,9 @@ export default function Services() {
 
             <div className="xl:w-96 w-full h-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
               <Triangles className="mb-8 static flex mx-auto" />
-              <h2 className="mb-6 font-black">
-                Cloud Infrastructure
-              </h2>
+              <h3 className="mb-6 font-black">
+                CLOUD INFRASTRUCTURE
+              </h3>
               <p className="mb-4">
                 I architect a solid foundation for your business, with a secure and scalable back-end and establishing
                 seamless integration with your workflows.
@@ -117,9 +117,9 @@ export default function Services() {
 
             <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
               <Squares className="mb-8 static flex mx-auto" />
-              <h2 className="mb-6 font-black">
-                Backend Software
-              </h2>
+              <h3 className="mb-6 font-black">
+                BACKEND SOFTWARE
+              </h3>
               <p className="mb-4">
                 Whether you&apos;re launching a new product or upgrading your tech stack, I deliver back-end solutions
                 built for performance, security, and growth.
