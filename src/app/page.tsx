@@ -1,11 +1,4 @@
 import { Hero } from "./hero";
-import { CustomMarquqee } from "./marquee";
-import ContactForm from "./components/form";
-import { Plus } from "./components/plus";
-import Services from "./services/page";
-import Experience from "./about/page";
-import Contact from "./contact";
-
 
 export default function Home() {
   return (

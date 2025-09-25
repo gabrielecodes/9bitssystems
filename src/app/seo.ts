@@ -8,13 +8,19 @@ export function getMetadata() {
     },
 
     description:
-      "We help businesses automate and scale through data strategy, scalable cloud infrastructure, and reliable systems. From crafting data roadmaps to building growth-ready, secure environments, we turn chaotic data and systems into streamlined assets that drive productivity, reduce costs, and support 10x business growth—without downtime or risk.",
+      "I help businesses automate and scale through data strategy, scalable cloud infrastructure, and reliable systems. From crafting data strategies to building growth-ready, secure environments, I turn chaotic data and systems into streamlined assets that drive productivity, reduce costs, and support business growth—without downtime or risk.",
+
+    applicationName: "Nine Bits Systems",
+
+    generator: "Next.js",
+
+    publisher: "",
 
     keywords: [
       "IT automation services",
       "data strategy consulting",
       "scalable cloud infrastructure",
-      "business data roadmap",
+      "data strategy",
       "cloud systems reliability",
     ],
 
@@ -22,15 +28,15 @@ export function getMetadata() {
     openGraph: {
       title: "9 Bits Systems - Scale Smarter. Grow Faster.",
       description:
-        "We help businesses automate and scale through data strategy, scalable cloud infrastructure, and reliable systems.",
-      url: "[https://www.your-app-url.com](https://www.your-app-url.com)",
+        "I help businesses automate and scale through data strategy, scalable cloud infrastructure, and reliable systems.",
+      url: "[https://www.ninebitssystems.com](https://www.ninebitssystems.com)",
       siteName: "9 Bits Systems",
       images: [
         {
-          url: "[https://www.your-app-url.com/og-image.jpg](https://www.your-app-url.com/og-image.jpg)",
+          url: "[https://www.ninebitssystems.com/icon.png](https://www.ninebitssystems.com/icon.png)",
           width: 1200,
           height: 630,
-          alt: "A descriptive alt text for your Open Graph image",
+          alt: "The logo of 9 bits systems",
         },
         // You can include multiple images for different sizes or purposes
       ],
@@ -47,7 +53,7 @@ export function getMetadata() {
       description:
         "9 Bits systems helps your business automate and scale through data strategy, scalable cloud infrastructure, and reliable systems.",
       images: [
-        "[https://www.your-app-url.com/twitter-card-image.jpg](https://www.your-app-url.com/twitter-card-image.jpg)",
+        "[https://www.ninebitssystems.com/icon.png](https://www.ninebitssystems.com/icon.png)",
       ],
     },
 
@@ -67,7 +73,7 @@ export function getMetadata() {
 
     // Canonical URL to prevent duplicate content issues.
     alternates: {
-      canonical: "[https://www.your-app-url.com](https://www.your-app-url.com)",
+      canonical: "https://www.ninebitssystems.com",
     },
   };
   return metadata;

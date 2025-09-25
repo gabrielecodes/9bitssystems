@@ -102,7 +102,7 @@ function SideNav() {
             </Link>
           </li>
           <li className="w-full h-full flex items-center">
-            <Link href={"/#contact"} className="w-full h-10 flex items-center group/contact hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md">
+            <Link href={"/contact"} className="w-full h-10 flex items-center group/contact hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md">
               CONTACT
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/ group-hover/contact:left-24">
                 &rarr;

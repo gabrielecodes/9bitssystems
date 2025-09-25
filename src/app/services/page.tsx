@@ -57,14 +57,12 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className="h-fit xl:p-10 px-2 text-foreground">
-      <h1
-        className={`${serif.className} my-20 w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`}
-      >
+    <section id="services" className="h-screen xl:p-10 px-2 text-foreground">
+      <h1 className={`${serif.className} w-fit h-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`} >
         Services
       </h1>
 
-      <div className="w-fit mx-auto flex xl:flex-row flex-col items-center justify-between relative border border-border">
+      <div className="w-fit h-full mx-auto flex xl:flex-row flex-col items-center justify-center relative">
         <Plus className="size-6 -left-3 -top-3 z-100" />
         <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-100" />
         <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)] z-100" />
@@ -72,12 +70,12 @@ export default function Services() {
 
         <div
           onMouseMove={handleMouseMove}
-          className="group/card w-full h-full relative bg-transparent flex xl:flex-row flex-col items-baseline justify-center overflow-clip"
+          className="group/card w-full h-1/2 relative bg-transparent flex xl:flex-row flex-col items-baseline justify-center overflow-clip border border-border"
         >
           <div className="pointer-events-none">
             <div className="absolute inset-0 [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50" />
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-sky-500 opacity-0 group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
+              className="absolute inset-0 bg-gradient-to-r from-green-neon to-blue-neon opacity-0 group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
               style={style}
             />
             <motion.div

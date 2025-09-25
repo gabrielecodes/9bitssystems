@@ -29,9 +29,6 @@ export default function RootLayout({
       <body className={`${font.className} h-screen bg-background antialiased`}>
         <Nav />
         {children}
-        {/* <Border /> */}
-        {/* <div className="w-full h-40 bg-background"></div> */}
-        {/* <Footer /> */}
       </body>
     </html>
   );

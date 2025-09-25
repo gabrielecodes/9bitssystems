@@ -52,7 +52,7 @@ export default function ContactForm() {
         <button
           disabled={pending}
           type="submit"
-          className="w-32 px-2 py-1 border border-background relative flex transition-all duration-200 ease-in-out hover:bg-foreground hover:text-background hover:w-38 hover:pl-8 cursor-pointer bg-neon text-background rounded-md overflow-clip group"
+          className="w-32 px-2 py-1 border border-background relative flex transition-all duration-200 ease-in-out hover:bg-foreground hover:text-background hover:w-38 hover:pl-8 cursor-pointer bg-blue-neon text-background rounded-md overflow-clip group"
         >
           <SendPlane className="size-6 absolute -left-8 transition-all duration-200 ease-in-out group-hover:left-1" />
           <span className="inline-block ">Send Message</span>

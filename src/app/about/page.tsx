@@ -11,50 +11,93 @@ const serif = Instrument_Serif({
 export default function Experience() {
   return (
     <section id="about" className="w-full xl:h-screen xl:p-10 px-2 xl:flex xl:flex-col text-foreground selection:bg-blue-neon selection:text-background">
-      <h1 className={`${serif.className} my-20 w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`} >
+      <h1 className={`${serif.className} w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`} >
         About
       </h1>
 
-      <div className="xl:w-full xl:h-20 xl:block hidden" />
-      <div className="xl:w-full flex xl:flex-row flex-col gap-x-20">
-        <div className="w-1/2 flex gap-x-2">
-          <h3>Tools:</h3>
+      <div className="xl:w-full xl:h-50 xl:block hidden" />
+
+      <div className="xl:w-full flex xl:flex-row flex-col gap-x-4">
+
+        <div className="w-1/5 select-none">
+          <h3 className="mb-4 text-center">Cloud</h3>
           <div className="h-fit flex flex-wrap gap-2">
-            <Tool name="BigQuery" />
-            <Tool name="Kubernetes" />
-            <Tool name="Argo" />
-            <Tool name="PostgreSQL" />
-            <Tool name="SQL Server" />
-            <Tool name="Redis" />
-            <Tool name="Cloud Composer" />
-            <Tool name="Cloud Functions" />
-            <Tool name="Storage" />
-            <Tool name="Cloud Run" />
-            <Tool name="IAM" />
-            <Tool name="Pub/Sub" />
-            <Tool name="Docker" />
-            <Tool name="Podman" />
-            <Tool name="Airflow" />
-            <Tool name="dbt" />
-            <Tool name="EKS" />
-            <Tool name="ECS" />
-            <Tool name="EC2" />
-            <Tool name="S3" />
-            <Tool name="Cloud Logs" />
-            <Tool name="CloudWatch" />
-            <Tool name="Metabase" />
+            <div className="flex flex-wrap gap-x-2">
+              <h3>AWS:</h3>
+              <Tool name="EKS" />
+              <Tool name="ECS" />
+              <Tool name="EC2" />
+              <Tool name="S3" />
+              <Tool name="IAM" />
+              <Tool name="CloudWatch" />
+              <Tool name="Pub/Sub" />
+            </div>
+            <div className="flex flex-wrap gap-x-2">
+              <h3>GCP:</h3>
+              <Tool name="BigQuery" />
+              <Tool name="Composer" />
+              <Tool name="Functions" />
+              <Tool name="Storage" />
+              <Tool name="Run" />
+              <Tool name="Logs" />
+              <Tool name="IAM" />
+            </div>
           </div>
         </div>
-        <div className="w-1/2 flex gap-x-2">
-          <h3>Languages:</h3>
+
+        <div className="w-1/5 select-none">
+          <h3 className="mb-4 text-center">Data Integration & Modeling</h3>
+          <div className="h-fit flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-x-2">
+              <Tool name="dbt" />
+              <Tool name="BigQuery" />
+              <Tool name="SQL Server" />
+              <Tool name="PostgreSQL" />
+              <Tool name="Airflow" />
+              <Tool name="Custom Pipelines (Kubernetes)" />
+              <Tool name="Redis" />
+              <Tool name="Batch Processes" />
+              <Tool name="ETL/ELT" />
+              <Tool name="Metabase" />
+            </div>
+          </div>
+        </div>
+
+        <div className="w-1/5 select-none">
+          <h3 className="mb-4 text-center">DevOps</h3>
+          <div className="h-fit flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-x-2">
+              <Tool name="Git" />
+              <Tool name="GitHub" />
+              <Tool name="Kubernetes" />
+              <Tool name="Argo" />
+              <Tool name="Docker" />
+              <Tool name="Podman" />
+              <Tool name="Terraform" />
+            </div>
+          </div>
+        </div>
+
+        <div className="w-1/5 select-none">
+          <h3 className="mb-4 text-center">Languages</h3>
           <div className="h-fit flex flex-wrap gap-2">
             <Tool name="Python" />
             <Tool name="SQL" />
             <Tool name="Typescript" />
             <Tool name="Rust" />
-            <Tool name="Terraform" />
           </div>
         </div>
+
+        <div className="w-1/5 select-none">
+          <h3 className="mb-4 text-center">Other</h3>
+          <div className="h-fit flex flex-wrap gap-2">
+            <Tool name="Mentoring" />
+            <Tool name="Agile" />
+            <Tool name="Project Ownership" />
+            <Tool name="Dashboard & Reporting" />
+          </div>
+        </div>
+
       </div>
 
       <div className="xl:w-full xl:h-1/2 mx-auto xl:flex hidden xl:flex-col items-end justify-end">
@@ -74,7 +117,7 @@ export default function Experience() {
       <div className="xl:hidden">
         <AllExperience />
       </div>
-    </section>
+    </section >
   );
 }
 
@@ -155,8 +198,8 @@ function AllExperience() {
 }
 
 
-function Tool({ name }: { name: string }) {
+function Tool({ name, href }: { name: string, href?: string }) {
   return (
-    <p className="h-10 px-2 py-1 rounded-md border border-border">{name}</p>
+    < span className="h-10 px-2 py-1 rounded-md text-[#d4d4d4] border border-border select-none cursor-cursor" > {name}</span >
   )
 }
