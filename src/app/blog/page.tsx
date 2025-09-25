@@ -6,7 +6,6 @@ import { getAllPosts, type Post } from "@/app/functions";
 import { Plus } from "../components/plus";
 import { Instrument_Serif } from "next/font/google";
 
-
 const serif = Instrument_Serif({
   weight: "400",
   subsets: ["latin"],
@@ -18,16 +17,21 @@ export default async function Blog() {
   const posts = (await getAllPosts()) as Post[];
 
   return (
-    <section id="blog" className="w-full xl:h-screen xl:p-10 px-2 xl:flex xl:flex-col text-foreground selection:bg-blue-neon selection:text-background">
-      <h1 className={`${serif.className} w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`} >
+    <section
+      id="blog"
+      className="w-full xl:h-screen xl:p-10 xl:flex xl:flex-col text-foreground selection:bg-blue-neon selection:text-background"
+    >
+      <h1
+        className={`${serif.className} w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`}
+      >
         Blog
       </h1>
 
-      <div className="xl:w-1/2 xl:mt-40 mx-auto xl:flex xl:flex-row relative border-t border-border">
-        <Plus className="size-6 -left-3 -top-3" />
-        <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-10" />
+      <div className="xl:w-1/2 xl:mt-40 mx-auto xl:flex xl:flex-row relative xl:border-t border-border">
+        <Plus className="size-6 -left-3 -top-3 xl:block hidden" />
+        <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-10 xl:block hidden" />
 
-        <div className="p-4 w-full">
+        <div className="px-4 w-full">
           {posts ? posts.map((post) => <PostCard key={post.slug} post={post} />) : <h3>No posts</h3>}
         </div>
       </div>
@@ -37,7 +41,7 @@ export default async function Blog() {
 
 function PostCard({ post }: { post: any }) {
   return (
-    <div className="w-full my-2 px-8 py-2 rounded-md relative group overflow-hidden">
+    <div className="w-full my-2 xl:px-8 py-2 rounded-md relative group overflow-hidden">
       <div className="absolute w-full h-full bg-foreground right-full top-0 rounded-md group-hover:right-0 transition-all duration-300 ease-in-out z-[-1]" />
       <Link href={`/blog/${[post.slug]}`} className="flex gap-x-8">
         <div className="w-4/5 h-full pb-4">
@@ -53,4 +57,3 @@ function PostCard({ post }: { post: any }) {
     </div>
   );
 }
-

@@ -58,19 +58,21 @@ export default function Services() {
 
   return (
     <section id="services" className="h-screen xl:p-10 px-2 text-foreground">
-      <h1 className={`${serif.className} w-fit h-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`} >
+      <h1
+        className={`${serif.className} w-fit h-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`}
+      >
         Services
       </h1>
 
       <div className="w-fit h-full mx-auto flex xl:flex-row flex-col items-center justify-center relative">
-        <Plus className="size-6 -left-3 -top-3 z-100" />
+        {/* <Plus className="size-6 -left-3 -top-3 z-100" />
         <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-100" />
         <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)] z-100" />
-        <Plus className="size-6 left-[calc(100%-0.75rem)] top-[calc(100%-0.75rem)] z-100" />
+        <Plus className="size-6 left-[calc(100%-0.75rem)] top-[calc(100%-0.75rem)] z-100" /> */}
 
         <div
           onMouseMove={handleMouseMove}
-          className="group/card w-full h-1/2 relative bg-transparent flex xl:flex-row flex-col items-baseline justify-center overflow-clip border border-border"
+          className="group/card w-full h-1/2 relative bg-transparent flex xl:flex-row flex-col items-baseline justify-center overflow-clip"
         >
           <div className="pointer-events-none">
             <div className="absolute inset-0 [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50" />
@@ -91,9 +93,7 @@ export default function Services() {
           <div className="h-full p-12 flex xl:flex-row flex-col xl:gap-x-4 gap-y-4 xl:gap-y-0 items-center">
             <div className="xl:w-96 w-full h-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
               <Star className="mb-8 static flex mx-auto" />
-              <h3 className="mb-6 font-black">
-                DATA STRATEGY
-              </h3>
+              <h3 className="mb-6 font-black">DATA STRATEGY</h3>
               <p className="mb-4">
                 You&apos;ll gain a modern data infrastructure that supports your team decision making and extracts
                 maximum value from your data—at speed and scale.
@@ -103,9 +103,7 @@ export default function Services() {
 
             <div className="xl:w-96 w-full h-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
               <Triangles className="mb-8 static flex mx-auto" />
-              <h3 className="mb-6 font-black">
-                CLOUD INFRASTRUCTURE
-              </h3>
+              <h3 className="mb-6 font-black">CLOUD INFRASTRUCTURE</h3>
               <p className="mb-4">
                 I architect a solid foundation for your business, with a secure and scalable back-end and establishing
                 seamless integration with your workflows.
@@ -115,9 +113,7 @@ export default function Services() {
 
             <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
               <Squares className="mb-8 static flex mx-auto" />
-              <h3 className="mb-6 font-black">
-                BACKEND SOFTWARE
-              </h3>
+              <h3 className="mb-6 font-black">BACKEND SOFTWARE</h3>
               <p className="mb-4">
                 Whether you&apos;re launching a new product or upgrading your tech stack, I deliver back-end solutions
                 built for performance, security, and growth.

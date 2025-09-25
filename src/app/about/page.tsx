@@ -1,7 +1,6 @@
 import { cn } from "../utils";
 import { Instrument_Serif } from "next/font/google";
 
-
 const serif = Instrument_Serif({
   weight: "400",
   subsets: ["latin"],
@@ -10,16 +9,20 @@ const serif = Instrument_Serif({
 
 export default function Experience() {
   return (
-    <section id="about" className="w-full xl:h-screen xl:p-10 px-2 xl:flex xl:flex-col text-foreground selection:bg-blue-neon selection:text-background">
-      <h1 className={`${serif.className} w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`} >
+    <section
+      id="about"
+      className="w-full xl:h-screen xl:p-10 xl:flex xl:flex-col text-foreground selection:bg-blue-neon selection:text-background"
+    >
+      <h1
+        className={`${serif.className} w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`}
+      >
         About
       </h1>
 
       <div className="xl:w-full xl:h-50 xl:block hidden" />
 
-      <div className="xl:w-full flex xl:flex-row flex-col gap-x-4">
-
-        <div className="w-1/5 select-none">
+      <div className="xl:w-full flex xl:flex-row flex-col gap-x-4 px-4 ">
+        <div className="xl:w-1/5 w-full select-none mb-8">
           <h3 className="mb-4 text-center">Cloud</h3>
           <div className="h-fit flex flex-wrap gap-2">
             <div className="flex flex-wrap gap-x-2">
@@ -45,7 +48,7 @@ export default function Experience() {
           </div>
         </div>
 
-        <div className="w-1/5 select-none">
+        <div className="xl:w-1/5 w-full select-none mb-8">
           <h3 className="mb-4 text-center">Data Integration & Modeling</h3>
           <div className="h-fit flex flex-wrap gap-2">
             <div className="flex flex-wrap gap-x-2">
@@ -63,7 +66,7 @@ export default function Experience() {
           </div>
         </div>
 
-        <div className="w-1/5 select-none">
+        <div className="xl:w-1/5 w-full select-none mb-8">
           <h3 className="mb-4 text-center">DevOps</h3>
           <div className="h-fit flex flex-wrap gap-2">
             <div className="flex flex-wrap gap-x-2">
@@ -78,7 +81,7 @@ export default function Experience() {
           </div>
         </div>
 
-        <div className="w-1/5 select-none">
+        <div className="xl:w-1/5 w-full select-none mb-8">
           <h3 className="mb-4 text-center">Languages</h3>
           <div className="h-fit flex flex-wrap gap-2">
             <Tool name="Python" />
@@ -88,7 +91,7 @@ export default function Experience() {
           </div>
         </div>
 
-        <div className="w-1/5 select-none">
+        <div className="xl:w-1/5 w-full select-none mb-8">
           <h3 className="mb-4 text-center">Other</h3>
           <div className="h-fit flex flex-wrap gap-2">
             <Tool name="Mentoring" />
@@ -97,12 +100,14 @@ export default function Experience() {
             <Tool name="Dashboard & Reporting" />
           </div>
         </div>
-
       </div>
 
       <div className="xl:w-full xl:h-1/2 mx-auto xl:flex hidden xl:flex-col items-end justify-end">
         <div>
-          <div id="top-row" className="xl:w-full h-1/2 w-0 mb-4 grid grid-cols-6 justify-start items-end border-b border-border">
+          <div
+            id="top-row"
+            className="xl:w-full h-1/2 w-0 mb-4 grid grid-cols-6 justify-start items-end border-b border-border"
+          >
             <Experience5 className="col-start-1 w-[32rem] h-28 pl-6 border-l border-border" />
             <Experience3 className="col-start-3 w-[32rem] h-28 pl-6 border-l border-border" />
             <Experience1 className="col-start-5 w-[32rem] h-28 pl-6 border-l border-border" />
@@ -114,10 +119,11 @@ export default function Experience() {
           </div>
         </div>
       </div>
+
       <div className="xl:hidden">
         <AllExperience />
       </div>
-    </section >
+    </section>
   );
 }
 
@@ -136,13 +142,13 @@ function Experience1({ className }: { className?: string }) {
 function Experience2({ className }: { className?: string }) {
   return (
     <div id="exp2" className={cn("xl:mb-0 mb-4 relative", className)}>
-      <span className="col-start-1 h-8 w-[1px] bg-border absolute -left-[2px] -top-4"></span>
+      <span className="col-start-1 h-8 w-[1px] bg-border absolute -left-[2px] -top-4 xl:block hidden"></span>
       <h3 className="relative">
         <div className="w-4 h-4 top-3 -left-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground xl:block hidden" />
         Senior Data Engineer<p className="ml-4 inline-block">Feb 2023 - Mar 2024</p>
       </h3>
       <p>Data Integration, Data Models</p>
-    </div >
+    </div>
   );
 }
 
@@ -161,14 +167,12 @@ function Experience3({ className }: { className?: string }) {
 function Experience4({ className }: { className?: string }) {
   return (
     <div id="exp4" className={cn("xl:mb-0 mb-4 relative", className)}>
-      <span className="col-start-1 h-8 w-[1px] bg-border absolute -left-[2px] -top-4"></span>
+      <span className="col-start-1 h-8 w-[1px] bg-border absolute -left-[2px] -top-4 xl:block hidden"></span>
       <h3 className="relative">
         <div className="w-4 h-4 top-3 -left-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground xl:block hidden" />
         Data Scientist<p className="ml-4 inline-block">Feb 2019 - Jun 2020</p>
       </h3>
-      <p>
-        Credit Risk Analysis, Statistical Models
-      </p>
+      <p>Credit Risk Analysis, Statistical Models</p>
     </div>
   );
 }
@@ -184,10 +188,9 @@ function Experience5({ className }: { className?: string }) {
   );
 }
 
-
 function AllExperience() {
   return (
-    <div id="left-column" className="w-full mx-2 flex flex-col gap-y-4">
+    <div id="left-column" className="w-full px-4 flex flex-col gap-y-4">
       <Experience1 />
       <Experience2 />
       <Experience3 />
@@ -197,9 +200,10 @@ function AllExperience() {
   );
 }
 
-
-function Tool({ name, href }: { name: string, href?: string }) {
+function Tool({ name }: { name: string }) {
   return (
-    < span className="h-10 px-2 py-1 rounded-md text-[#d4d4d4] border border-border select-none cursor-cursor" > {name}</span >
-  )
+    <span className="h-10 px-2 py-1 rounded-md text-[#d4d4d4] border border-border select-none cursor-cursor">
+      {name}
+    </span>
+  );
 }

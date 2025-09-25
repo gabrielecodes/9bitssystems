@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Plus } from "./components/plus";
 
-
 function Nav() {
   return (
     <>
@@ -45,14 +44,14 @@ function TopNav() {
             </Link>
           </li>
           <li className="h-full flex items-center">
-            <Link href={"/#contact"} className="flex items-center">
+            <Link href={"/contact"} className="flex items-center">
               Contact
             </Link>
           </li>
         </ul>
       </div>
     </nav>
-  )
+  );
 }
 
 function SideNav() {
@@ -70,7 +69,10 @@ function SideNav() {
           <Plus className="size-6 left-[calc(100%-0.75rem)] top-[calc(100%-0.75rem)] z-10" />
 
           <li className="w-full h-full">
-            <Link href={"/"} className="w-full h-10 flex items-center hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] group/home p-4 rounded-md">
+            <Link
+              href={"/"}
+              className="w-full h-10 flex items-center hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] group/home p-4 rounded-md"
+            >
               HOME
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/home:left-24">
                 &rarr;
@@ -78,7 +80,10 @@ function SideNav() {
             </Link>
           </li>
           <li className="w-full h-full">
-            <Link href={"/services"} className="w-full h-10 flex items-center hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] group/services p-4 rounded-md">
+            <Link
+              href={"/services"}
+              className="w-full h-10 flex items-center hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] group/services p-4 rounded-md"
+            >
               SERVICES
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/services:left-24">
                 &rarr;
@@ -86,7 +91,10 @@ function SideNav() {
             </Link>
           </li>
           <li className="w-full h-full">
-            <Link href={"/blog"} className="w-full h-10 flex items-center group/blog hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md">
+            <Link
+              href={"/blog"}
+              className="w-full h-10 flex items-center group/blog hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md"
+            >
               BLOG
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/blog:left-24">
                 &rarr;
@@ -94,7 +102,10 @@ function SideNav() {
             </Link>
           </li>
           <li className="w-full h-full">
-            <Link href={"/about"} className="w-full h-10 flex items-center group/about hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md">
+            <Link
+              href={"/about"}
+              className="w-full h-10 flex items-center group/about hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md"
+            >
               ABOUT
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/about:left-24">
                 &rarr;
@@ -102,7 +113,10 @@ function SideNav() {
             </Link>
           </li>
           <li className="w-full h-full flex items-center">
-            <Link href={"/contact"} className="w-full h-10 flex items-center group/contact hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md">
+            <Link
+              href={"/contact"}
+              className="w-full h-10 flex items-center group/contact hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md"
+            >
               CONTACT
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/ group-hover/contact:left-24">
                 &rarr;
@@ -112,7 +126,7 @@ function SideNav() {
         </ul>
       </div>
     </nav>
-  )
+  );
 }
 
 export { Nav };

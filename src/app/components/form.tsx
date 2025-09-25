@@ -12,7 +12,7 @@ export default function ContactForm() {
       <form action={formAction} className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-foreground">
-            Yout Name:
+            Your Name:
           </label>
           <input
             type="text"

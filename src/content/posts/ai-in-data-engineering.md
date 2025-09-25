@@ -3,7 +3,7 @@ title: "Practical Applications of AI in Data Engineering"
 date: "2025-09-18"
 author: Gabriele C.
 subtitle: "Thinking about the best uses of AI in data engineering"
-excerpt: "Even after years of AI becoming mainstream, many questions remain unanswered. There are many opinions out there concerning the best ways to leverage AI."
+excerpt: "What's the best use of AI in data engineering? There are many opinions out there concerning the best ways to leverage AI."
 tags: ["Data Engineering", "Career", "Data Strategy"]
 image: "ai.jpg"
 alt: "graphs on a computer"
