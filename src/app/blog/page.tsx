@@ -53,3 +53,4 @@ function PostCard({ post }: { post: any }) {
     </div>
   );
 }
+

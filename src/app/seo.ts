@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export function getMetadata() {
+export function generateMetadata() {
   const metadata: Metadata = {
     title: {
       default: "9 Bits Systems - Scale Smarter. Grow Faster.",

@@ -1,4 +1,4 @@
-import { getMetadata } from "./seo";
+import { generateMetadata } from "./seo";
 import { Manrope, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import { Metadata } from "next";
@@ -17,7 +17,7 @@ const font = Manrope({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = getMetadata();
+export const metadata: Metadata = generateMetadata();
 
 export default function RootLayout({
   children,

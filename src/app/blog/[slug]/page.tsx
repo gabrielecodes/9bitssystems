@@ -88,7 +88,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         url: "https://www.ninebitssystems.com/icon.png",
       },
     },
-    title: { default: post.frontmatter["title"] },
+    title: post.frontmatter["title"],
     description: post.frontmatter["excerpt"],
   };
 }
