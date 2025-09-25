@@ -1,4 +1,5 @@
 import { Instrument_Serif } from "next/font/google";
+import BackgroundVideo from "./components/backgroundvideo";
 
 const serif = Instrument_Serif({
   weight: "400",
@@ -8,7 +9,8 @@ const serif = Instrument_Serif({
 
 function Hero() {
   return (
-    <section className="w-full h-full flex xl:flex-row flex-col">
+    <section className="xl:p-20 p-2 w-full h-full flex xl:flex-row flex-col relative">
+      <BackgroundVideo />
       <div className="xl:w-1/2 w-full xl:h-full h-1/2 flex xl:flex-col flex-row justify-between">
         <h1 className="xl:w-3/5 w-1/2 text-xl font-medium" style={{ fontWeight: 400, fontSize: "1.1rem" }}>
           I&apos;m a{" "}
@@ -37,8 +39,8 @@ function Hero() {
         </div>
       </div>
       <div className="xl:w-1/2 xl:h-full h-1/2 flex flex-col items-end justify-end relative">
-        <p className="absolute bottom-12">I&apos;ve called this part of the web</p>
-        <span className="styro text-5xl scale-x-250 tracking-wide absolute bottom-0 right-19">NINE BITS</span>
+        <p className="absolute bottom-12">I&apos;ve called this space</p>
+        <span className="styro text-5xl scale-x-250 tracking-wide absolute bottom-0 right-18">NINE BITS</span>
       </div>
     </section>
   );

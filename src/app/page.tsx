@@ -9,7 +9,7 @@ import Contact from "./contact";
 
 export default function Home() {
   return (
-    <main className="xl:h-screen h-[calc(100vh-3.5rem)] xl:p-20 px-2 flex text-foreground selection:bg-blue-neon selection:text-background">
+    <main className="xl:h-screen h-[calc(100vh-3.5rem)] flex text-foreground selection:bg-blue-neon selection:text-background">
       <Hero />
       {/* <CustomMarquqee />
       <Services />

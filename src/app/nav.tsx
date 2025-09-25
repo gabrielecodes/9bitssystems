@@ -57,13 +57,13 @@ function TopNav() {
 
 function SideNav() {
   return (
-    <nav className="w-60 xl:block hidden absolute top-20 left-full -translate-x-[calc(1.5*100%)] text-foreground z-100 group overflow-hidden bg-background">
+    <nav className="w-60 xl:block hidden absolute top-20 left-full -translate-x-[calc(1.5*100%)] text-foreground z-100 group overflow-hidden">
       <div className="w-full h-full relative overflow-hidde z-100">
         <span className="z-100 w-20 h-[1px] absolute -left-20 top-0 bg-gradient-to-r to-neutral-300 transition-all group-hover:left-full duration-[400ms] ease-in-out"></span>
         <span className="z-100 w-20 h-[1px] absolute left-full top-[calc(100%-1px)] bg-gradient-to-r from-neutral-300 transition-all group-hover:-left-20 duration-[400ms] ease-in-out"></span>
         <span className="z-100 w-[1px] h-20 absolute left-[calc(100%-1px)] -top-20 bg-gradient-to-b to-neutral-300 transition-all group-hover:top-full duration-[400ms] ease-in-out"></span>
         <span className="z-100 w-[1px] h-20 absolute left-0 top-full bg-gradient-to-b from-neutral-300 transition-all group-hover:-top-20 duration-[400ms] ease-in-out"></span>
-        <ul className="w-full h-full p-2 flex flex-col items-start justify-center relative overflow-hidden bg-background">
+        <ul className="w-full h-full p-2 flex flex-col items-start justify-center relative overflow-hidden">
           <Plus className="size-6 -left-3 -top-3" />
           <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-10" />
           <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)]" />

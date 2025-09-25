@@ -69,14 +69,6 @@ export default function Services() {
         <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-100" />
         <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)] z-100" />
         <Plus className="size-6 left-[calc(100%-0.75rem)] top-[calc(100%-0.75rem)] z-100" />
-        {/* <span className="w-50 h-[1px] absolute -left-50 -top-[1px] bg-gradient-to-r from-background to-border xl:block hidden" />
-        <span className="w-50 h-[1px] absolute -left-50 top-full bg-gradient-to-r from-background to-border xl:block hidden" />
-        <span className="w-50 h-[1px] absolute left-full top-full bg-gradient-to-l from-background to-border xl:block hidden" />
-        <span className="w-50 h-[1px] absolute left-full -top-[1px] bg-gradient-to-l from-background to-border xl:block hidden" /> */}
-        {/* <span className="w-[1px] h-50 absolute left-0 -top-50 bg-gradient-to-b from-background to-border xl:block hidden" />
-        <span className="w-[1px] h-50 absolute left-[calc(100%-1px)] -top-50 bg-gradient-to-b from-background to-border xl:block hidden" />
-        <span className="w-[1px] h-50 absolute left-[calc(100%-1px)] top-full bg-gradient-to-t from-background to-border xl:block hidden" />
-        <span className="w-[1px] h-50 absolute -left-[1px] top-full bg-gradient-to-t from-background to-border xl:block hidden" /> */}
 
         <div
           onMouseMove={handleMouseMove}
@@ -101,7 +93,7 @@ export default function Services() {
           <div className="h-full p-12 flex xl:flex-row flex-col xl:gap-x-4 gap-y-4 xl:gap-y-0 items-center">
             <div className="xl:w-96 w-full h-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
               <Star className="mb-8 static flex mx-auto" />
-              <h2 className="mb-6 uppercase" style={{ fontSize: "1em", fontWeight: "900" }}>
+              <h2 className="mb-6 font-black">
                 Data Strategy
               </h2>
               <p className="mb-4">
@@ -113,7 +105,7 @@ export default function Services() {
 
             <div className="xl:w-96 w-full h-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
               <Triangles className="mb-8 static flex mx-auto" />
-              <h2 className="mb-6 uppercase" style={{ fontSize: "1em", fontWeight: "900" }}>
+              <h2 className="mb-6 font-black">
                 Cloud Infrastructure
               </h2>
               <p className="mb-4">
@@ -125,8 +117,8 @@ export default function Services() {
 
             <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
               <Squares className="mb-8 static flex mx-auto" />
-              <h2 className="mb-6 uppercase" style={{ fontSize: "1em", fontWeight: "900" }}>
-                Software Development
+              <h2 className="mb-6 font-black">
+                Backend Software
               </h2>
               <p className="mb-4">
                 Whether you&apos;re launching a new product or upgrading your tech stack, I deliver back-end solutions
