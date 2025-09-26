@@ -8,7 +8,7 @@ export function generateMetadata() {
     },
 
     description:
-      "I help businesses automate and scale through data strategy, scalable cloud infrastructure, and reliable systems. From crafting data strategies to building growth-ready, secure environments, I turn chaotic data and systems into streamlined assets that drive productivity, reduce costs, and support business growth—without downtime or risk.",
+      "9 Bits systems helps businesses automate and scale through data strategy, scalable cloud infrastructure, and reliable systems. From crafting data strategies to building growth-ready, secure environments, I turn chaotic data and systems into streamlined assets that drive productivity, reduce costs, and support business growth—without downtime or risk.",
 
     applicationName: "Nine Bits Systems",
 
@@ -28,7 +28,7 @@ export function generateMetadata() {
     openGraph: {
       title: "9 Bits Systems - Scale Smarter. Grow Faster.",
       description:
-        "I help businesses automate and scale through data strategy, scalable cloud infrastructure, and reliable systems.",
+        "9 Bits systems helps you automate and scale through data strategy, scalable cloud infrastructure, and reliable systems.",
       url: "[https://www.ninebitssystems.com](https://www.ninebitssystems.com)",
       siteName: "9 Bits Systems",
       images: [
@@ -52,9 +52,7 @@ export function generateMetadata() {
       title: "9 Bits Systems - Scale Smarter. Grow Faster.",
       description:
         "9 Bits systems helps your business automate and scale through data strategy, scalable cloud infrastructure, and reliable systems.",
-      images: [
-        "[https://www.ninebitssystems.com/icon.png](https://www.ninebitssystems.com/icon.png)",
-      ],
+      images: ["[https://www.ninebitssystems.com/icon.png](https://www.ninebitssystems.com/icon.png)"],
     },
 
     // Instructions for search engine crawlers.

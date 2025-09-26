@@ -32,7 +32,7 @@ export default function Services() {
   useEffect(() => {
     if (isHovering) {
       intervalRef.current = setInterval(() => {
-        const str = generateRandomString(8000);
+        const str = generateRandomString(7000);
         setRandomString(str);
       }, 50);
     } else if (intervalRef.current) {
@@ -57,7 +57,7 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className="h-screen xl:p-10 px-2 text-foreground">
+    <section id="services" className="h-screen xl:p-10 px-2 text-foreground overflow-hidden">
       <h1
         className={`${serif.className} w-fit h-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`}
       >
@@ -72,7 +72,7 @@ export default function Services() {
 
         <div
           onMouseMove={handleMouseMove}
-          className="group/card w-full h-1/2 relative bg-transparent flex xl:flex-row flex-col items-baseline justify-center overflow-clip"
+          className="group/card w-full relative bg-transparent flex xl:flex-row flex-col items-baseline justify-center overflow-clip"
         >
           <div className="pointer-events-none">
             <div className="absolute inset-0 [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50" />
@@ -90,8 +90,8 @@ export default function Services() {
             </motion.div>
           </div>
 
-          <div className="h-full p-12 flex xl:flex-row flex-col xl:gap-x-4 gap-y-4 xl:gap-y-0 items-center">
-            <div className="xl:w-96 w-full h-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
+          <div className="p-12 flex xl:flex-row flex-col xl:gap-x-4 gap-y-4 xl:gap-y-0 items-center">
+            <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
               <Star className="mb-8 static flex mx-auto" />
               <h3 className="mb-6 font-black">DATA STRATEGY</h3>
               <p className="mb-4">
@@ -101,7 +101,7 @@ export default function Services() {
               <ReadMoreButton className="left-[80%] xl:left-[115%]" />
             </div>
 
-            <div className="xl:w-96 w-full h-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
+            <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
               <Triangles className="mb-8 static flex mx-auto" />
               <h3 className="mb-6 font-black">CLOUD INFRASTRUCTURE</h3>
               <p className="mb-4">
