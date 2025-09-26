@@ -1,16 +1,8 @@
 import { generateMetadata } from "./seo";
-import { Manrope, Instrument_Serif } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import { Metadata } from "next";
 import { Nav } from "./nav";
-import { Footer } from "./footer";
-import { Border } from "./components/border";
-
-const serif = Instrument_Serif({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-serif",
-});
 
 const font = Manrope({
   weight: "variable",
@@ -26,9 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${font.className} h-screen bg-background antialiased`}>
+      <body className={`${font.className} w-screen h-screen bg-background antialiased`}>
         <Nav />
-        {children}
+        <main className="w-screen xl:h-full h-[calc(100vh-3.5rem)] text-foreground selection:bg-blue-neon selection:text-background">
+          {children}
+        </main>
       </body>
     </html>
   );

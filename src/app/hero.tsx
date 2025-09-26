@@ -9,7 +9,7 @@ const serif = Instrument_Serif({
 
 function Hero() {
   return (
-    <section className="xl:p-10 p-2 w-full h-full flex xl:flex-row flex-col relative">
+    <section className="w-full h-full xl:p-10 p-2 flex xl:flex-row flex-col relative">
       <BackgroundVideo />
       <div className="xl:w-1/2 w-full xl:h-full h-1/2 flex xl:flex-col flex-row justify-between">
         <h1 className="xl:w-3/5 w-1/2 text-xl font-medium" style={{ fontWeight: 400, fontSize: "1.1rem" }}>
