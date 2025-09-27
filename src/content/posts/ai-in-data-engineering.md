@@ -9,7 +9,7 @@ image: "ai.jpg"
 alt: "graphs on a computer"
 ---
 
-## Introduction: : Aligning Teams on AI Adoption
+## Aligning Teams on AI Adoption
 
 As artificial intelligence (AI) continues to reshape the enterprise landscape, its adoption is often uneven across departments. A recent conversation on LinkedIn highlighted an important point: engineering and data teams must align on AI integration, or risk creating operational silos where some functions advance rapidly while others lag behind.
 
@@ -37,7 +37,7 @@ Another frequently mentioned use case is generating boilerplate code. Although t
 
 Despite its limitations, AI does offer clear advantages in specific data engineering tasks—especially those that are repetitive or research-intensive.
 
-1. Documentation Generation
+### Documentation Generation
 
 Writing technical documentation is essential, yet time-consuming. AI can assist by:
 
@@ -48,7 +48,7 @@ Writing technical documentation is essential, yet time-consuming. AI can assist 
 <br/> 
 Since documentation is not executed code, the risk of introducing bugs is minimal, making this a low-risk, high-value task for AI assistance.
 
-2. Technical Research and API Exploration
+### Technical Research and API Exploration
 
 Another strong use case is accelerating research and onboarding with new tools and APIs. With the rapid pace of change in the data ecosystem, keeping up with new technologies is a challenge. AI can help by:
 

@@ -12,8 +12,8 @@ function Hero() {
     <section className="w-full h-full xl:p-10 p-2 flex xl:flex-row flex-col relative">
       <BackgroundVideo />
       <div className="xl:w-1/2 w-full xl:h-full h-1/2 flex xl:flex-col flex-row justify-between">
-        <h1 className="xl:w-3/5 w-1/2 text-xl font-medium" style={{ fontWeight: 400, fontSize: "1.1rem" }}>
-          I&apos;m a{" "}
+        <p className="xl:w-3/5 w-1/2 text-xl font-medium" style={{ lineHeight: "1.5rem" }}>
+          Hi, I&apos;m Gabriele. I&apos;m a{" "}
           <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
             data engineer
           </span>{" "}
@@ -22,7 +22,7 @@ function Hero() {
             arcihtect
           </span>{" "}
           helping businesses build a solid technological foundation &mdash; with reliable, secure, and modern solutions.
-        </h1>
+        </p>
         <div className="xl:w-3/5 w-1/2">
           <p className="leading-6">
             My goal is to support businesses in automating and growing with confidence, building{" "}

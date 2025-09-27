@@ -2,8 +2,9 @@
 
 import { useMotionTemplate, useMotionValue, motion } from "motion/react";
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 import { ReadMoreButton } from "../components/readmorebutton";
-import { Plus } from "../components/plus";
+import ArrowRight from "../components/icons/arrowright";
 import { Triangles } from "../components/triangles";
 import { Star } from "../components/start";
 import { Squares } from "../components/squares";
@@ -32,7 +33,7 @@ export default function Services() {
   useEffect(() => {
     if (isHovering) {
       intervalRef.current = setInterval(() => {
-        const str = generateRandomString(7000);
+        const str = generateRandomString(9000);
         setRandomString(str);
       }, 50);
     } else if (intervalRef.current) {
@@ -65,11 +66,6 @@ export default function Services() {
       </h1>
 
       <div className="w-fit h-full mx-auto flex xl:flex-row flex-col items-center justify-center relative">
-        {/* <Plus className="size-6 -left-3 -top-3 z-100" />
-        <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-100" />
-        <Plus className="size-6 -left-3 top-[calc(100%-0.75rem)] z-100" />
-        <Plus className="size-6 left-[calc(100%-0.75rem)] top-[calc(100%-0.75rem)] z-100" /> */}
-
         <div
           onMouseMove={handleMouseMove}
           className="group/card w-full relative bg-transparent flex xl:flex-row flex-col items-baseline justify-center overflow-clip"
@@ -90,35 +86,54 @@ export default function Services() {
             </motion.div>
           </div>
 
-          <div className="p-12 flex xl:flex-row flex-col xl:gap-x-4 gap-y-4 xl:gap-y-0 items-center">
-            <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
-              <Star className="mb-8 static flex mx-auto" />
-              <h3 className="mb-6 font-black">DATA STRATEGY</h3>
-              <p className="mb-4">
-                You&apos;ll gain a modern data infrastructure that supports your team decision making and extracts
-                maximum value from your data—at speed and scale.
-              </p>
-              <ReadMoreButton className="left-[80%] xl:left-[115%]" />
-            </div>
+          <div className="relative">
+            <div className="absolute w-full h-20 top-0 left-0 bg-gradient-to-b from-background" />
+            <div className="absolute w-20 h-full top-0 left-0 bg-gradient-to-r from-background" />
+            <div className="absolute w-20 h-full top-0 right-0 bg-gradient-to-l from-background" />
+            <div className="absolute w-full h-20 bottom-0 left-0 bg-gradient-to-t from-background" />
 
-            <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
-              <Triangles className="mb-8 static flex mx-auto" />
-              <h3 className="mb-6 font-black">CLOUD INFRASTRUCTURE</h3>
-              <p className="mb-4">
-                I architect a solid foundation for your business, with a secure and scalable back-end and establishing
-                seamless integration with your workflows.
-              </p>
-              <ReadMoreButton className="left-[80%] xl:left-[115%]" />
-            </div>
+            <div className="w-full h-full p-22 flex xl:flex-row flex-col xl:gap-x-4 gap-y-4 xl:gap-y-0 items-center ">
+              <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
+                <Star className="mb-8 static flex mx-auto" />
+                <h3 className="mb-6 font-black">DATA STRATEGY</h3>
+                <p className="mb-4">
+                  You&apos;ll gain a modern data infrastructure that supports your team decision making and extracts
+                  maximum value from your data—at speed and scale.
+                </p>
+                <ReadMoreButton className="left-[80%] xl:left-[115%]">
+                  <Link href={"/contact"} className="pt-2 flex items-center justify-center text-background">
+                    <ArrowRight className="size-6" />
+                  </Link>
+                </ReadMoreButton>
+              </div>
 
-            <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
-              <Squares className="mb-8 static flex mx-auto" />
-              <h3 className="mb-6 font-black">BACKEND SOFTWARE</h3>
-              <p className="mb-4">
-                Whether you&apos;re launching a new product or upgrading your tech stack, I deliver back-end solutions
-                built for performance, security, and growth.
-              </p>
-              <ReadMoreButton className="left-[80%] xl:left-[115%]" />
+              <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
+                <Triangles className="mb-8 static flex mx-auto" />
+                <h3 className="mb-6 font-black">CLOUD INFRASTRUCTURE</h3>
+                <p className="mb-4">
+                  I architect a solid foundation for your business, with a secure and scalable back-end and establishing
+                  seamless integration with your workflows.
+                </p>
+                <ReadMoreButton className="left-[80%] xl:left-[115%]">
+                  <Link href={"/contact"} className="pt-2 flex items-center justify-center text-background">
+                    <ArrowRight className="size-6" />
+                  </Link>
+                </ReadMoreButton>
+              </div>
+
+              <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
+                <Squares className="mb-8 static flex mx-auto" />
+                <h3 className="mb-6 font-black">BACKEND SOFTWARE</h3>
+                <p className="mb-4">
+                  Whether you&apos;re launching a new product or upgrading your tech stack, I deliver back-end solutions
+                  built for performance, security, and growth.
+                </p>
+                <ReadMoreButton className="left-[80%] xl:left-[115%]">
+                  <Link href={"/contact"} className="pt-2 flex items-center justify-center text-background">
+                    <ArrowRight className="size-6" />
+                  </Link>
+                </ReadMoreButton>
+              </div>
             </div>
           </div>
         </div>
