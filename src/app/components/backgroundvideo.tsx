@@ -15,8 +15,6 @@ export default function BackgroundVideo() {
     const video = videoRef.current;
     if (!video) return;
 
-    checkBuffer();
-
     if (!isDesktop) {
       video.pause();
       setIsVisible(false);
@@ -24,11 +22,25 @@ export default function BackgroundVideo() {
     }
 
     let rafId: number;
-
     const fadeLoop = () => {
       video.currentTime = 0;
-      video.play().catch(console.error);
-      setIsVisible(true);
+
+      const buffered = video.buffered;
+
+      if (buffered.length > 0) {
+        const end = buffered.end(buffered.length - 1);
+        const bufferedSeconds = end - video.currentTime;
+
+        if (bufferedSeconds >= BUFFER_THRESHOLD) {
+          console.log("buffered");
+          video.play().catch(console.error);
+          setIsVisible(true);
+        } else {
+          setTimeout(fadeLoop, 500); // Check again in 500ms
+        }
+      } else {
+        setTimeout(fadeLoop, 500);
+      }
 
       const checkTime = () => {
         if (video.duration && video.currentTime >= video.duration - FADE_BEFORE_END) {
@@ -40,24 +52,6 @@ export default function BackgroundVideo() {
       };
       rafId = requestAnimationFrame(checkTime);
     };
-
-    function checkBuffer() {
-      if (!video) return;
-      const buffered = video.buffered;
-
-      if (buffered.length > 0) {
-        const end = buffered.end(buffered.length - 1);
-        const bufferedSeconds = end - video.currentTime;
-
-        if (bufferedSeconds >= BUFFER_THRESHOLD) {
-          video.play();
-        } else {
-          setTimeout(checkBuffer, 500); // Check again in 500ms
-        }
-      } else {
-        setTimeout(checkBuffer, 500);
-      }
-    }
 
     const handleEnded = () => {
       setTimeout(fadeLoop, FADE_DURATION);
