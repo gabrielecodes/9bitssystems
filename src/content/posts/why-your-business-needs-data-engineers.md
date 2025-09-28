@@ -2,7 +2,7 @@
 title: "Why Your Business Needs Data Engineers"
 date: "2025-09-10"
 author: Gabriele C.
-subtitle: "Sharing my experience on why every modern company should have a solid data engineering team."
+subtitle: "Sharing my experience on why every modern company should have a solid data engineering team"
 excerpt: "Modern businesses need solid data engineering to drive informed decisions, gain competitive advantage, improve security and be compliant."
 tags: ["Data Engineering", "Career", "Data Strategy"]
 image: "graphs.jpg"

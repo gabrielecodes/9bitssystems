@@ -1,75 +1,64 @@
-"use client"
+"use client";
 import { useState, useEffect, useRef } from "react";
 
-const VIDEO_INITIAL_DELAY = 1500 // ms initial delay
+const VIDEO_INITIAL_DELAY = 1500; // ms initial delay
 const FADE_BEFORE_END = 1.0; // seconds before end to fade out
 const FADE_DURATION = 2000; // ms, match CSS transition
 
-
 export default function BackgroundVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [shouldFadeOut, setShouldFadeOut] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const isDesktop = useIsDesktop();
-
-  useEffect(() => {
-    if (isDesktop && videoRef.current) {
-      videoRef.current.play().catch((err) => {
-        console.warn('Autoplay failed:', err);
-      });
-    }
-  }, [isDesktop]);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
+    if (!isDesktop) {
+      video.pause();
+      setIsVisible(false);
+      return;
+    }
+
     let rafId: number;
-    let delayTimeout: NodeJS.Timeout;
 
     const fadeLoop = () => {
-      // Start playback and fade in
       video.currentTime = 0;
       video.play().catch(console.error);
       setIsVisible(true);
 
       const checkTime = () => {
         if (video.duration && video.currentTime >= video.duration - FADE_BEFORE_END) {
-          setIsVisible(false); // start fade-out
+          setIsVisible(false);
           cancelAnimationFrame(rafId);
         } else {
           rafId = requestAnimationFrame(checkTime);
         }
       };
-      // Start checking when to fade out
       rafId = requestAnimationFrame(checkTime);
     };
 
-    // When video ends, restart it with fade in
-    video.addEventListener('ended', () => {
-      setTimeout(() => {
-        fadeLoop(); // restart with fade-in
-      }, FADE_DURATION); // small delay to ensure clean loop
-    });
+    const handleEnded = () => {
+      setTimeout(fadeLoop, FADE_DURATION);
+    };
 
-    // Start the initial loop
-    ;
+    video.addEventListener("ended", handleEnded);
 
-    delayTimeout = setTimeout(() => {
-      fadeLoop();
-    }, VIDEO_INITIAL_DELAY);
+    const startTimeout = setTimeout(fadeLoop, VIDEO_INITIAL_DELAY);
 
     return () => {
       cancelAnimationFrame(rafId);
-      video.removeEventListener('ended', fadeLoop);
+      clearTimeout(startTimeout);
+      video.removeEventListener("ended", handleEnded);
     };
-  }, []);
+  }, [isDesktop]);
 
   return (
     <video
       ref={videoRef}
-      className={`absolute top-0 left-0 w-full h-full object-cover z-[-1] transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'
-        }`}
+      className={`absolute top-0 left-0 w-full h-full object-cover z-[-1] transition-opacity duration-1000 ${
+        isVisible ? "opacity-100" : "opacity-0"
+      }`}
       muted
       playsInline
     >
@@ -78,7 +67,6 @@ export default function BackgroundVideo() {
     </video>
   );
 }
-
 
 function useIsDesktop(breakpoint = 1024) {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -89,8 +77,8 @@ function useIsDesktop(breakpoint = 1024) {
     const handleChange = () => setIsDesktop(mediaQuery.matches);
     handleChange(); // Set initial value
 
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
   }, [breakpoint]);
 
   return isDesktop;

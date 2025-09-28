@@ -11,9 +11,9 @@ function Hero() {
   return (
     <section className="w-full h-full xl:p-10 p-2 flex xl:flex-row flex-col relative">
       <BackgroundVideo />
-      <div className="xl:w-1/2 w-full xl:h-full h-1/2 flex xl:flex-col flex-row justify-between">
-        <p className="xl:w-3/5 w-1/2 text-xl font-medium" style={{ lineHeight: "1.5rem" }}>
-          Hi, I&apos;m Gabriele. I&apos;m a{" "}
+      <div className="xl:w-1/2 w-full xl:h-full h-3/4 flex flex-col justify-between">
+        <p className="xl:w-3/5 w-full text-xl font-medium" style={{ lineHeight: "1.5rem" }}>
+          Hi, I&apos;m Gabriele, a{" "}
           <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
             data engineer
           </span>{" "}
@@ -21,9 +21,9 @@ function Hero() {
           <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
             arcihtect
           </span>{" "}
-          helping businesses build a solid technological foundation &mdash; with reliable, secure, and modern solutions.
+          helping businesses build solid technological foundations &mdash; with reliable, secure, and modern solutions.
         </p>
-        <div className="xl:w-3/5 w-1/2">
+        <div className="xl:w-3/5 w-full">
           <p className="leading-6">
             My goal is to support businesses in automating and growing with confidence, building{" "}
             <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
@@ -38,7 +38,7 @@ function Hero() {
           </p>
         </div>
       </div>
-      <div className="xl:w-1/2 xl:h-full h-1/2 flex flex-col items-end justify-end relative">
+      <div className="xl:w-1/2 xl:h-full h-1/4 flex flex-col items-end justify-end relative">
         <p className="absolute bottom-12">I&apos;ve called this space</p>
         <span className="styro text-5xl scale-x-250 tracking-wide absolute bottom-0 right-18">NINE BITS</span>
       </div>

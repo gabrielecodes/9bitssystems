@@ -2,6 +2,9 @@
 
 import { notFound } from "next/navigation";
 import { getPostData, type Post } from "@/app/functions";
+import Link from "next/link";
+import { LinkedIn } from "@/app/components/linkedin";
+import Image from "next/image";
 
 export default async function Blog({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -19,7 +22,15 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
       <div className="mb-10 items-center xl:border-b xl:border-border">
         <h1 className="leading-14">{post.frontmatter["title"] as string}</h1>
         <div className="py-8 flex items-center justify-between relative">
-          <div>Written by {post.frontmatter["author"] as string}</div>
+          <div className="flex items-center">
+            <div className="mr-2">Written by {post.frontmatter["author"] as string}</div>
+            <Link href={"https://www.linkedin.com/in/gabriele-costanza/"} target="_blank">
+              <LinkedIn />
+            </Link>
+            <Link href={"https://substack.com/@gabrielecodes"} target="_blank">
+              <Image src="/substack.png" alt="Substack logo" width={40} height={40} priority={true} />
+            </Link>
+          </div>
           <p className="text-end">{date}</p>
         </div>
       </div>

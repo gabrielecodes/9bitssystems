@@ -58,14 +58,14 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className="h-screen xl:p-10 px-2 text-foreground overflow-hidden">
+    <section id="services" className="w-full xl:h-screen xl:p-10 text-foreground overflow-hidden">
       <h1
         className={`${serif.className} w-fit h-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`}
       >
         Services
       </h1>
 
-      <div className="w-fit h-full mx-auto flex xl:flex-row flex-col items-center justify-center relative">
+      <div className="w-fit h-full xl:mx-auto xl:mt-0 mt-10 xl:p-0 p-4 flex xl:flex-row flex-col items-center justify-center relative">
         <div
           onMouseMove={handleMouseMove}
           className="group/card w-full relative bg-transparent flex xl:flex-row flex-col items-baseline justify-center overflow-clip"
@@ -87,15 +87,15 @@ export default function Services() {
           </div>
 
           <div className="relative">
-            <div className="absolute w-full h-20 top-0 left-0 bg-gradient-to-b from-background" />
-            <div className="absolute w-20 h-full top-0 left-0 bg-gradient-to-r from-background" />
-            <div className="absolute w-20 h-full top-0 right-0 bg-gradient-to-l from-background" />
-            <div className="absolute w-full h-20 bottom-0 left-0 bg-gradient-to-t from-background" />
+            <div className="xl:block hidden absolute w-full h-20 top-0 left-0 bg-gradient-to-b from-background" />
+            <div className="xl:block hidden absolute w-20 h-full top-0 left-0 bg-gradient-to-r from-background" />
+            <div className="xl:block hidden absolute w-20 h-full top-0 right-0 bg-gradient-to-l from-background" />
+            <div className="xl:block hidden absolute w-full h-20 bottom-0 left-0 bg-gradient-to-t from-background" />
 
-            <div className="w-full h-full p-22 flex xl:flex-row flex-col xl:gap-x-4 gap-y-4 xl:gap-y-0 items-center ">
+            <div className="w-full h-full xl:p-22 flex xl:flex-row flex-col xl:gap-x-4 gap-y-10 xl:gap-y-0 items-center ">
               <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
                 <Star className="mb-8 static flex mx-auto" />
-                <h3 className="mb-6 font-black">DATA STRATEGY</h3>
+                <h3 className="mb-6 font-black">DATA INTEGRATION</h3>
                 <p className="mb-4">
                   You&apos;ll gain a modern data infrastructure that supports your team decision making and extracts
                   maximum value from your data—at speed and scale.

@@ -12,7 +12,7 @@ function Nav() {
 
 function TopNav() {
   return (
-    <nav className="xl:hidden xl:w-[calc(50%-2.5rem)] w-full h-14 flex items-center sticky xl:top-4 top-0 border border-border xl:left-1/2 xl:-translate-x-1/2 z-100 overflow-clip text-foreground bg-background">
+    <nav className="xl:hidden xl:w-[calc(50%-2.5rem)] w-full h-14 flex items-center sticky xl:top-4 top-0 border-b border-border xl:left-1/2 xl:-translate-x-1/2 z-100 overflow-clip text-foreground bg-background">
       <Plus className="text-neutral-500 -left-5 -top-5 xl:visible invisible" />
       <Plus className="text-neutral-500 left-[calc(100%-1.25rem)] -top-5 z-10 xl:visible invisible" />
       <Plus className="text-neutral-500 -left-5 top-[calc(100%-1.25rem)] xl:visible invisible" />
@@ -34,13 +34,13 @@ function TopNav() {
             </Link>
           </li>
           <li className="h-full flex items-center">
-            <Link href={"/blog"} className="flex items-center">
-              Blog
+            <Link href={"/about"} className="flex items-center">
+              About
             </Link>
           </li>
           <li className="h-full flex items-center">
-            <Link href={"/about"} className="flex items-center">
-              About
+            <Link href={"/blog"} className="flex items-center">
+              Blog
             </Link>
           </li>
           <li className="h-full flex items-center">
@@ -92,22 +92,22 @@ function SideNav() {
           </li>
           <li className="w-full h-full">
             <Link
-              href={"/blog"}
-              className="w-full h-10 flex items-center group/blog hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md"
+              href={"/about"}
+              className="w-full h-10 flex items-center group/about hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md"
             >
-              BLOG
-              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/blog:left-24">
+              ABOUT
+              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/about:left-24">
                 &rarr;
               </span>
             </Link>
           </li>
           <li className="w-full h-full">
             <Link
-              href={"/about"}
-              className="w-full h-10 flex items-center group/about hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md"
+              href={"/blog"}
+              className="w-full h-10 flex items-center group/blog hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md"
             >
-              ABOUT
-              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/about:left-24">
+              BLOG
+              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/blog:left-24">
                 &rarr;
               </span>
             </Link>

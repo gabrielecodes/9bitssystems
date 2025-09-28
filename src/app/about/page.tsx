@@ -21,9 +21,9 @@ export default function Experience() {
 
       {/* <div className="xl:w-full xl:h-72 xl:block hidden" /> */}
 
-      <div className="h-full xl:flex xl:flex-col flex-row items-end">
+      <div className="mt-10 xl:mt-0 h-full xl:flex flex-col items-end">
         <div className="w-full xl:h-1/2 xl:block hidden"></div>
-        <div className="xl:w-full xl:h-full flex gap-x-8 px-4">
+        <div className="xl:w-full xl:h-full flex xl:flex-row flex-col gap-x-8 px-4">
           {/* */}
           <div className="xl:w-1/5 w-full select-none mb-8">
             <h3 className="mb-4 text-center">Cloud</h3>
@@ -33,10 +33,10 @@ export default function Experience() {
                 <Tool name="EKS" />
                 <Tool name="ECS" />
                 <Tool name="EC2" />
+                <Tool name="Networking" />
                 <Tool name="S3" />
                 <Tool name="IAM" />
                 <Tool name="CloudWatch" />
-                <Tool name="Pub/Sub" />
               </div>
               <div className="flex flex-wrap gap-x-2">
                 <h3>GCP:</h3>
@@ -44,6 +44,7 @@ export default function Experience() {
                 <Tool name="Composer" />
                 <Tool name="Functions" />
                 <Tool name="Storage" />
+                <Tool name="Pub/Sub" />
                 <Tool name="Run" />
                 <Tool name="Logs" />
                 <Tool name="IAM" />
@@ -132,7 +133,7 @@ function Experience1({ className }: { className?: string }) {
   return (
     <div id="exp1" className={cn("xl:mb-0 mb-4 relative group overflow-hidden", className)}>
       <span className="h-12 w-[1px] bg-border absolute z-0 left-[15px] -top-4 xl:block hidden" />
-      <div className="w-[26rem]l h-full absolute z-10 rounded-md left-10 -top-full group-hover:top-6 bg-background transition-all duration-300 ease-in-out">
+      <div className="xl:block hidden w-[26rem]l h-full absolute z-10 rounded-md left-10 -top-full group-hover:top-6 bg-background transition-all duration-300 ease-in-out">
         I take a break from the cold north and join the coolest gang in a sunny and warm place (France). Great times and
         croissants. And also LLM powered data pipelines.
       </div>
@@ -165,9 +166,9 @@ function Experience3({ className }: { className?: string }) {
   return (
     <div id="exp3" className={cn("xl:mb-0 mb-4 relative group overflow-hidden", className)}>
       <span className="h-12 w-[1px] bg-border absolute z-0 left-[15px] -top-4 xl:block hidden" />
-      <div className="w-[26rem] h-full absolute z-10 rounded-md left-10 -top-full group-hover:top-6 bg-background transition-all duration-300 ease-in-out">
-        At a bubbling fintech startup, I doubled the dbt repository size, implemented models for the Apple Pay App
-        feature and architected multiple Airflow DAGs as a data engineer.
+      <div className="xl:block hidden w-[26rem] h-full absolute z-10 rounded-md left-10 -top-full group-hover:top-6 bg-background transition-all duration-300 ease-in-out">
+        Working at a bubbling fintech startup, I doubled the dbt repository size, implemented models for the Apple Pay
+        App feature and architected multiple Airflow DAGs as a data engineer.
       </div>
       <h3 className="relative">
         <div className="w-4 h-4 top-3 -left-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground flex group-hover:bg-blue-neon group-hover:border-blue-neon transition-color duration-300 ease-in-out" />
@@ -182,12 +183,12 @@ function Experience4({ className }: { className?: string }) {
   return (
     <div id="exp4" className={cn("xl:mb-0 mb-4 relative group overflow-hidden", className)}>
       <span className="h-[105%] w-[1px] bg-border absolute z-0 left-[15px] top-6 xl:block hidden" />
-      <div className="w-[26rem] h-full absolute z-10 rounded-md left-10 -top-full group-hover:top-2 bg-background transition-all duration-300 ease-in-out">
-        WIP
+      <div className="xl:block hidden w-[26rem] h-full absolute z-10 rounded-md left-10 -top-full group-hover:top-2 bg-background transition-all duration-300 ease-in-out">
+        I continue to work with data and statistical models for a bank. Great learning experience.
       </div>
       <h3 className="relative">
         <div className="w-4 h-4 top-3 -left-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground flex group-hover:bg-blue-neon group-hover:border-blue-neon transition-color duration-300 ease-in-out" />
-        Data Scientist<p className="ml-4 inline-block">Feb 2019 - Jun 2020</p>
+        Data Scientist<p className="ml-4 inline-block">Feb 2019 - May 2020</p>
       </h3>
       <p>Credit Risk Analysis, Statistical Models</p>
     </div>
@@ -198,7 +199,7 @@ function Experience0({ className }: { className?: string }) {
   return (
     <div id="exp4" className={cn("xl:mb-0 mb-4 relative group overflow-hidden", className)}>
       <span className="h-12 w-[1px] bg-border absolute z-0 left-[15px] -top-6 xl:block hidden" />
-      <div className="w-[26rem] h-full absolute z-10 rounded-md left-10 -top-full group-hover:top-6 bg-background transition-all duration-300 ease-in-out">
+      <div className="xl:block hidden  w-[26rem] h-full absolute z-10 rounded-md left-10 -top-full group-hover:top-6 bg-background transition-all duration-300 ease-in-out">
         First assignment after completing my studies. I start out as aspiring data scientist working with Tensorflow and
         Torch.
       </div>
@@ -215,7 +216,7 @@ function Experience5({ className }: { className?: string }) {
   return (
     <div id="exp5" className={cn("xl:mb-0 mb-4 relative group overflow-hidden", className)}>
       <span className="h-[105%] w-[1px] bg-border absolute z-0 left-[15px] top-6 xl:block hidden" />
-      <div className="w-[26rem]l h-full absolute z-10 rounded-md left-10 -top-full group-hover:top-2 bg-background transition-all duration-300 ease-in-out">
+      <div className="xl:block hidden w-[26rem]l h-full absolute z-10 rounded-md left-10 -top-full group-hover:top-2 bg-background transition-all duration-300 ease-in-out">
         Great times & friends. Ph.D. in Electromagnetic Field Theory.
       </div>
       <h3 className="relative">
@@ -229,10 +230,12 @@ function Experience5({ className }: { className?: string }) {
 function AllExperience() {
   return (
     <div id="left-column" className="w-full px-4 flex flex-col gap-y-4">
+      <h2>Curriculum</h2>
       <Experience1 />
       <Experience2 />
       <Experience3 />
       <Experience4 />
+      <Experience0 />
       <Experience5 />
     </div>
   );
