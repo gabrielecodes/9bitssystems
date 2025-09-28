@@ -151,7 +151,8 @@ function Experience2({ className }: { className?: string }) {
     <div id="exp2" className={cn("xl:mb-0 mb-4 relative group overflow-hidden", className)}>
       <span className="h-[105%] w-[1px] bg-border absolute z-0 left-[15px] top-6 xl:block hidden" />
       <div className="w-[26rem] h-full absolute z-10 rounded-md left-10 -top-full group-hover:top-2 bg-background transition-all duration-300 ease-in-out">
-        WIP
+        I had a great time providing guidance for our GCP architecture and keeping out Kubernetes cluster running all
+        while being a regular at the many Friday bar initiatives.
       </div>
       <h3 className="relative">
         <div className="w-4 h-4 top-3 -left-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground flex group-hover:bg-blue-neon group-hover:border-blue-neon transition-color duration-300 ease-in-out" />
