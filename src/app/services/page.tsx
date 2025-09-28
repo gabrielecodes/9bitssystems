@@ -17,7 +17,7 @@ const serif = Instrument_Serif({
 });
 
 const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-export const generateRandomString = (length: number) => {
+const generateRandomString = (length: number) => {
   let result = "";
   for (let i = 0; i < length; i++) {
     result += characters.charAt(Math.floor(Math.random() * characters.length));
@@ -27,7 +27,7 @@ export const generateRandomString = (length: number) => {
 
 export default function Services() {
   const [randomString, setRandomString] = useState("");
-  const [isHovering, setIsHovering] = useState<boolean>(true);
+  const [isHovering] = useState<boolean>(true);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
@@ -73,7 +73,7 @@ export default function Services() {
           <div className="pointer-events-none">
             <div className="absolute inset-0 [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50" />
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-green-neon to-blue-neon opacity-0 group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
+              className="absolute inset-0 bg-gradient-to-r from-green-neon to-blue-neon opacity-0 group-hover/card:opacity-100 backdrop-blur-xl transition duration-300"
               style={style}
             />
             <motion.div

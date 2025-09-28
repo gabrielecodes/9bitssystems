@@ -1,6 +1,4 @@
-import Link from "next/link";
 import { WhitePixels } from "./components/whitepixels";
-import { LinkedIn } from "./components/linkedin";
 import { BlackPixels } from "./components/blackpixels";
 
 function Footer() {
@@ -10,7 +8,7 @@ function Footer() {
       <WhitePixels />
       <div className="h-10" />
       <span className="xl:px-20 text-background">Copyright </span>
-    </footer >
+    </footer>
   );
 }
 

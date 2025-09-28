@@ -1,6 +1,4 @@
-import Link from "next/link";
 import { cn } from "../utils";
-import ArrowRight from "./icons/arrowright";
 
 function ReadMoreButton({ children, className }: { children?: React.ReactNode; className?: string }) {
   return (
