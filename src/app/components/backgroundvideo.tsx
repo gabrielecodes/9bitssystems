@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 
-const VIDEO_INITIAL_DELAY = 1500; // ms initial delay
-const FADE_BEFORE_END = 1.0; // seconds before end to fade out
-const FADE_DURATION = 2000; // ms, match CSS transition
+const VIDEO_INITIAL_DELAY = 1500;
+const FADE_BEFORE_END = 1.0;
+const FADE_DURATION = 2000;
 const BUFFER_THRESHOLD = 5;
 
 export default function BackgroundVideo() {
