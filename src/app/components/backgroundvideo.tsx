@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 const VIDEO_INITIAL_DELAY = 1500; // ms initial delay
 const FADE_BEFORE_END = 1.0; // seconds before end to fade out
 const FADE_DURATION = 2000; // ms, match CSS transition
+const BUFFER_THRESHOLD = 2;
 
 export default function BackgroundVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -13,6 +14,8 @@ export default function BackgroundVideo() {
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
+
+    checkBuffer();
 
     if (!isDesktop) {
       video.pause();
@@ -38,6 +41,24 @@ export default function BackgroundVideo() {
       rafId = requestAnimationFrame(checkTime);
     };
 
+    function checkBuffer() {
+      if (!video) return;
+      const buffered = video.buffered;
+
+      if (buffered.length > 0) {
+        const end = buffered.end(buffered.length - 1);
+        const bufferedSeconds = end - video.currentTime;
+
+        if (bufferedSeconds >= BUFFER_THRESHOLD) {
+          video.play();
+        } else {
+          setTimeout(checkBuffer, 500); // Check again in 500ms
+        }
+      } else {
+        setTimeout(checkBuffer, 500);
+      }
+    }
+
     const handleEnded = () => {
       setTimeout(fadeLoop, FADE_DURATION);
     };
@@ -61,6 +82,7 @@ export default function BackgroundVideo() {
       }`}
       muted
       playsInline
+      preload="auto"
     >
       <source src="/videos/video.webm" type="video/webm" />
       Your browser does not support the video tag.
