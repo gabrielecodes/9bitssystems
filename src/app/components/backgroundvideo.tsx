@@ -62,7 +62,7 @@ export default function BackgroundVideo() {
       muted
       playsInline
     >
-      <source src="/videos/bg-video.mp4" type="video/mp4" />
+      <source src="/videos/video.webm" type="video/webm" />
       Your browser does not support the video tag.
     </video>
   );
