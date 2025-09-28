@@ -22,46 +22,49 @@ export default function BackgroundVideo() {
     }
 
     let rafId: number;
-    const fadeLoop = () => {
-      video.currentTime = 0;
+    let bufferCheckTimeout: any;
 
-      const buffered = video.buffered;
-
-      if (buffered.length > 0) {
-        const end = buffered.end(buffered.length - 1);
-        const bufferedSeconds = end - video.currentTime;
-
-        if (bufferedSeconds >= BUFFER_THRESHOLD) {
-          video.play().catch(console.error);
-          setIsVisible(true);
-        } else {
-          setTimeout(fadeLoop, 500); // Check again in 500ms
-        }
-      } else {
-        setTimeout(fadeLoop, 500);
+    const checkTime = () => {
+      if (video.duration && video.currentTime >= video.duration - FADE_BEFORE_END) {
+        setIsVisible(false);
       }
-
-      const checkTime = () => {
-        if (video.duration && video.currentTime >= video.duration - FADE_BEFORE_END) {
-          setIsVisible(false);
-          cancelAnimationFrame(rafId);
-        } else {
-          rafId = requestAnimationFrame(checkTime);
-        }
-      };
       rafId = requestAnimationFrame(checkTime);
     };
 
+    const restartVideo = () => {
+      video.currentTime = 0;
+      video.play().catch(console.error);
+      setIsVisible(true);
+    };
+
     const handleEnded = () => {
-      setTimeout(fadeLoop, FADE_DURATION);
+      setTimeout(restartVideo, FADE_DURATION);
+    };
+
+    const checkBuffer = () => {
+      const buffered = video.buffered;
+      if (buffered.length > 0) {
+        const bufferedEnd = buffered.end(buffered.length - 1);
+        if (bufferedEnd >= BUFFER_THRESHOLD) {
+          video.play().catch(console.error);
+          setIsVisible(true);
+          rafId = requestAnimationFrame(checkTime);
+        } else {
+          bufferCheckTimeout = setTimeout(checkBuffer, 500);
+        }
+      } else {
+        bufferCheckTimeout = setTimeout(checkBuffer, 500);
+      }
     };
 
     video.addEventListener("ended", handleEnded);
 
-    const startTimeout = setTimeout(fadeLoop, VIDEO_INITIAL_DELAY);
+    // After an initial delay, start checking the buffer.
+    const startTimeout = setTimeout(checkBuffer, VIDEO_INITIAL_DELAY);
 
     return () => {
       cancelAnimationFrame(rafId);
+      clearTimeout(bufferCheckTimeout);
       clearTimeout(startTimeout);
       video.removeEventListener("ended", handleEnded);
     };
