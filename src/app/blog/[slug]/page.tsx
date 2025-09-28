@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     },
     url: `https://www.ninebitssystems.com/blog/${slug}`,
     headline: post.frontmatter["title"],
-    image: ["https://www.ninebitssystems.com/public/" + post.frontmatter["image"]],
+    image: [`https://www.ninebitssystems.com/${post.frontmatter["image"]}`],
     datePublished: post.frontmatter["date"],
     dateModified: post.frontmatter["date"],
     author: {

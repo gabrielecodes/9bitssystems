@@ -29,11 +29,11 @@ export function generateMetadata() {
       title: "9 Bits Systems - Scale Smarter. Grow Faster.",
       description:
         "9 Bits systems helps you automate and scale through data strategy, scalable cloud infrastructure, and reliable systems.",
-      url: "[https://www.ninebitssystems.com](https://www.ninebitssystems.com)",
+      url: "https://www.ninebitssystems.com",
       siteName: "9 Bits Systems",
       images: [
         {
-          url: "[https://www.ninebitssystems.com/icon.png](https://www.ninebitssystems.com/icon.png)",
+          url: "https://www.ninebitssystems.com/icon.png",
           width: 1200,
           height: 630,
           alt: "The logo of 9 bits systems",
@@ -47,12 +47,10 @@ export function generateMetadata() {
     // Twitter Card metadata for rich previews on Twitter.
     twitter: {
       card: "summary_large_image",
-      site: "@your-twitter-handle",
-      creator: "@your-twitter-handle",
       title: "9 Bits Systems - Scale Smarter. Grow Faster.",
       description:
         "9 Bits systems helps your business automate and scale through data strategy, scalable cloud infrastructure, and reliable systems.",
-      images: ["[https://www.ninebitssystems.com/icon.png](https://www.ninebitssystems.com/icon.png)"],
+      images: ["https://www.ninebitssystems.com/icon.png"],
     },
 
     // Instructions for search engine crawlers.
