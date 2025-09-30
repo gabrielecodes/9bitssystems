@@ -42,9 +42,9 @@ Structured data is relatively easy to store and manipulate, but achieving the sa
 
 AI can read, summarize, generate, and categorize vast amounts of text almost instantaneously.
 
-Example (Internal): An AI system can triage every incoming support email or document, identifying priority level, topic, and necessary action, then drafting a personalized (but supervised) first-response, saving human agents hours of manual sorting. I underline that for sensitive or client-facing applications, human supervision is advised.
+For example, an AI system can triage incoming support email or document, identifying priority level, topic, and necessary action, then drafting a personalized (but supervised) first-response, saving human agents hours of manual sorting. Something similar could be done with logs. I underline that for sensitive or client-facing applications, human supervision is advised. Such Applications already exist out there on the internet.
 
-Example (Marketing): A single core piece of content (like a webinar transcript) can be fed to the AI, which can automatically repurpose and generate many unique social media captions, a dozen newsletter blurbs, and a complete SEO summary.
+Another example that I've heard mentioned around. A single core piece of content (like a webinar transcript) can be fed to the AI, which can automatically repurpose and generate many unique social media captions, a dozen newsletter blurbs, and a complete SEO summary.
 
 ### Creating and Manipulating Images
 
