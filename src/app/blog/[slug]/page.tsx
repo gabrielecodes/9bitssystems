@@ -104,10 +104,11 @@ const getJsonLd = (post: Post, slug: string) => {
       },
     },
     title: post.frontmatter.title,
+    name: post.frontmatter.title,
     description: post.frontmatter.excerpt,
   };
 
-  return JSON.stringify(ld, null, 2);
+  return JSON.stringify(ld).replace(/</g, '\\u003c');
 }
 
 
