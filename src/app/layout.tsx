@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${font.className} w-screen h-screen bg-background antialiased`}>
         <Nav />
-        <main className="w-screen xl:h-full h-[calc(100vh-3.5rem)] text-foreground selection:bg-blue-neon selection:text-background">
+        <main className="w-screen xl:h-full h-[calc(100vh-3.5rem)] text-foreground selection:bg-blue-neon selection:text-background overflow-x-hidden">
           {children}
         </main>
       </body>

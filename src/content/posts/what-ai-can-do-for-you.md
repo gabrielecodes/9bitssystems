@@ -37,7 +37,7 @@ that are typically seen in online educational content. Even large companies, str
 data available to all the parts of the business. In these settings 
 
 ## What are the applications of AI that really have impact?
-Structured data is relatively easy to store and manipulate, but achieving the same results efficiently with unstructured data at scale presents a major challenge. AI excels at generating and manipulating unstructured data—specifically large volumes of text, images, and audio—tasks that are highly inefficient for humans to scale.
+Structured data is relatively easy to store and manipulate, but achieving the same results efficiently with unstructured data at scale presents a major challenge. AI excels at generating and manipulating unstructured data—specifically large volumes of text, images, and audio—tasks that are highly inefficient for humans to scale. This is nothing new, _that's what we all knew back in the days of Machine Learning and Neural Networks_, and things haven't changed that much with LLMs.
 
 ### Producing and "understanding" text at scale
 AI can read, summarize, generate, and categorize vast amounts of text almost instantaneously.

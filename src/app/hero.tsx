@@ -19,7 +19,7 @@ function Hero() {
           </span>{" "}
           and{" "}
           <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
-            arcihtect
+            architect
           </span>{" "}
           helping businesses build solid technological foundations &mdash; with reliable, secure, and modern solutions.
         </p>
