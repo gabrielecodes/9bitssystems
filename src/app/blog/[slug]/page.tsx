@@ -34,7 +34,7 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
           <p className="text-end">{date}</p>
         </div>
       </div>
-      <h2 className="w-fit py-8">{post.frontmatter["excerpt"] as string}</h2>
+      <h3 className="w-fit py-8 italic">{post.frontmatter["excerpt"] as string}</h3>
       <div id="post-content" className="pt-6 pb-10 [&>h3]:mt-6 [&>h3]:mb-4 [&>p]:mb-4 *:l:ml-4">
         {post.content}
       </div>
@@ -42,11 +42,40 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
   );
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({ params }: { params: { slug: string } }) {
   const { slug } = await params;
   const post = (await getPostData(slug)) as Post;
 
+  const url = `https://www.ninebitssystems.com/blog/${slug}`
+
   return {
+    title: post.frontmatter.title,
+    description: post.frontmatter.excerpt,
+    keywords: post.frontmatter.tags,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: post.frontmatter.title,
+      description: post.frontmatter.excerpt,
+      url: url,
+      type: 'article',
+      images: [
+        {
+          url: `https://www.ninebitssystems.com/${post.frontmatter.image}`,
+        },
+      ],
+      publishedTime: post.frontmatter.date, // Add for better article context
+    },
+    twitter: {
+      card: 'summary_large_image',
+      images: [`https://www.ninebitssystems.com/${post.frontmatter.image}`],
+    },
+  };
+}
+
+const getJsonLd = (post: Post, slug: string) => {
+  const ld = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     mainEntityOfPage: {
@@ -54,13 +83,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       "@id": `https://www.ninebitssystems.com/blog/${slug}`,
     },
     url: `https://www.ninebitssystems.com/blog/${slug}`,
-    headline: post.frontmatter["title"],
-    image: [`https://www.ninebitssystems.com/${post.frontmatter["image"]}`],
-    datePublished: post.frontmatter["date"],
-    dateModified: post.frontmatter["date"],
+    headline: post.frontmatter.title,
+    keywords: post.frontmatter.tags,
+    image: [`https://www.ninebitssystems.com/${post.frontmatter.image}`],
+    datePublished: post.frontmatter.date,
+    dateModified: post.frontmatter.date,
     author: {
       "@type": "Person",
-      name: post.frontmatter["author"],
+      name: post.frontmatter.author,
     },
     publisher: {
       "@type": "Organization",
@@ -70,7 +100,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         url: "https://www.ninebitssystems.com/icon.png",
       },
     },
-    title: post.frontmatter["title"],
-    description: post.frontmatter["excerpt"],
+    title: post.frontmatter.title,
+    description: post.frontmatter.excerpt,
   };
+
+  return JSON.stringify(ld, null, 2);
+}
+
+
+function BlogPostingLd({ post, slug }: { post: Post, slug: string }) {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: getJsonLd(post, slug) }}
+    />
+  );
 }

@@ -101,6 +101,15 @@ p {
   color: var(--color-background)
 }
 
+#post-content a {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#post-content a:hover {
+  background-color: var(--color-blue-neon);
+  color: var(--color-background)
+}
+
 td {
   padding-left: .5rem;
   padding-right: 1rem;

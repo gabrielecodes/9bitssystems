@@ -32,7 +32,9 @@ export default async function Blog() {
         <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-10 xl:block hidden" />
 
         <div className="px-4 w-full">
-          {posts ? posts.map((post) => <PostCard key={post.slug} post={post} />) : <h3>No posts</h3>}
+          {posts ? posts.sort((a, b) =>
+            new Date(b.frontmatter["date"] as string).getTime() - new Date(a.frontmatter["date"] as string).getTime()
+          ).map((post) => <PostCard key={post.slug} post={post} />) : <h3>No posts</h3>}
         </div>
       </div>
     </section>
@@ -45,7 +47,7 @@ function PostCard({ post }: { post: any }) {
       <div className="absolute w-full h-full bg-foreground right-full top-0 rounded-md group-hover:right-0 transition-all duration-300 ease-in-out z-[-1]" />
       <Link href={`/blog/${[post.slug]}`} className="xl:flex xl:flex-row flex-col xl:gap-x-8">
         <div className="w-4/5 h-full pb-4">
-          <h2 className="leading-8 uppercase mix-blend-exclusion" style={{ fontWeight: 900, fontSize: "1.2rem" }}>
+          <h2 className="mb-2 leading-8 uppercase mix-blend-exclusion" style={{ fontWeight: 900, fontSize: "1.2rem" }}>
             {post.frontmatter["title"]}
           </h2>
           <p className="mix-blend-exclusion">{post.frontmatter["subtitle"]}</p>

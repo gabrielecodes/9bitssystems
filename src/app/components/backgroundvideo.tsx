@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 
-const VIDEO_INITIAL_DELAY = 1500;
+const VIDEO_INITIAL_DELAY = 2000;
 const FADE_BEFORE_END = 1.0;
 const FADE_DURATION = 2000;
 const BUFFER_THRESHOLD = 5;
@@ -73,9 +73,8 @@ export default function BackgroundVideo() {
   return (
     <video
       ref={videoRef}
-      className={`absolute top-0 left-0 w-full h-full object-cover z-[-1] transition-opacity duration-1000 ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}
+      className={`absolute top-0 left-0 w-full h-full object-cover z-[-1] transition-opacity duration-1000 ${isVisible ? "opacity-100" : "opacity-0"
+        }`}
       muted
       playsInline
       preload="auto"

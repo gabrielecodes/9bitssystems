@@ -6,7 +6,14 @@ export const POSTS_DIR = path.join(process.cwd(), "src", "content", "posts");
 
 export type Post = {
   slug: string;
-  frontmatter: Record<string, unknown>;
+  frontmatter: {
+    title: string;
+    excerpt: string;
+    tags: string[] | string;
+    image: string;
+    date: string; // ISO date string
+    author: string;
+  }
   content: React.ReactElement<unknown, string | any>;
 };
 
