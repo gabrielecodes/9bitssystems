@@ -189,7 +189,7 @@ function Experience4({ className }: { className?: string }) {
       </div>
       <h3 className="relative">
         <div className="w-4 h-4 top-3 -left-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground flex group-hover:bg-blue-neon group-hover:border-blue-neon transition-color duration-300 ease-in-out" />
-        Data Scientist<p className="xl:ml-4 inline-block">Feb 2019 - May 2020</p>
+        Data Scientist<p className="ml-4 inline-block">Feb 2019 - May 2020</p>
       </h3>
       <p>Credit Risk Analysis, Statistical Models</p>
     </div>
@@ -206,7 +206,7 @@ function Experience0({ className }: { className?: string }) {
       </div>
       <h3 className="relative">
         <div className="w-4 h-4 top-3 -left-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground xl:flex group-hover:bg-blue-neon group-hover:border-blue-neon transition-color duration-300 ease-in-out" />
-        Data Scientist<p className="xl:ml-4 inline-block">Oct 2017 - Jan 2019</p>
+        Data Scientist<p className="ml-4 inline-block">Oct 2017 - Jan 2019</p>
       </h3>
       <p>Data Scientist, ML models (Tensorflow, Torch)</p>
     </div>
@@ -222,7 +222,7 @@ function Experience5({ className }: { className?: string }) {
       </div>
       <h3 className="relative">
         <div className="w-4 h-4 top-3 -left-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground flex group-hover:bg-blue-neon group-hover:border-blue-neon transition-color duration-300 ease-in-out" />
-        Ph.D. Engineering<p className="xl:ml-4 inline-block">2012 - 2017</p>
+        Ph.D. Engineering<p className="ml-4 inline-block">2012 - 2017</p>
       </h3>
     </div>
   );
