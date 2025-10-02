@@ -30,7 +30,7 @@ function TopNav() {
         <ul className="w-full h-full flex items-center gap-x-4 justify-end ">
           <li className="h-full flex items-center">
             <Link href={"/services"} className="flex items-center">
-              Services
+              What I Do
             </Link>
           </li>
           <li className="h-full flex items-center">
@@ -84,7 +84,7 @@ function SideNav() {
               href={"/services"}
               className="w-full h-10 flex items-center hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] group/services p-4 rounded-md"
             >
-              SERVICES
+              WHAT I DO
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/services:left-24">
                 &rarr;
               </span>

@@ -62,7 +62,7 @@ export default function Services() {
       <h1
         className={`${serif.className} w-fit h-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`}
       >
-        Services
+        What I Do
       </h1>
 
       <div className="w-fit h-full xl:mx-auto xl:mt-0 mt-10 xl:p-0 p-4 flex xl:flex-row flex-col items-center justify-center relative">
@@ -93,6 +93,7 @@ export default function Services() {
             <div className="xl:block hidden absolute w-full h-20 bottom-0 left-0 bg-gradient-to-t from-background" />
 
             <div className="w-full h-full xl:p-22 flex xl:flex-row flex-col xl:gap-x-4 gap-y-10 xl:gap-y-0 items-center ">
+
               <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
                 <Star className="mb-8 static flex mx-auto" />
                 <h3 className="mb-6 font-black">DATA INTEGRATION</h3>
@@ -111,8 +112,8 @@ export default function Services() {
                 <Triangles className="mb-8 static flex mx-auto" />
                 <h3 className="mb-6 font-black">CLOUD INFRASTRUCTURE</h3>
                 <p className="mb-4">
-                  I architect a solid foundation for your business, with a secure and scalable back-end and establishing
-                  seamless integration with your workflows.
+                  I architect a solid cloud foundation, with a secure and scalable back-end and establish
+                  a seamless integration with your workflows. &ensp;&ensp;&ensp;&ensp;&ensp;
                 </p>
                 <ReadMoreButton className="left-[80%] xl:left-[115%]">
                   <Link href={"/contact"} className="pt-2 flex items-center justify-center text-background">
