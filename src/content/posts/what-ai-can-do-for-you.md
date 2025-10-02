@@ -11,12 +11,30 @@ alt: "graphs on a computer"
 
 ## What has AI done for you lately?
 
-I recently stumbled upon a [YouTube video](https://www.youtube.com/watch?v=Luw5AlD6is8) confirming that the AI hype narrative is finally showing some cracks. A pervasive trend over the last couple of years proposes that individuals can earn **significant money (even $100k/month)** by selling AI automation built entirely with no-code connectors like n8n. These are automation softwares with a graphical interface where you can drag-and-drop a series of "building blocks" to create a sequence of operations, e.g. reading an email, generating a text response and sending
+Is the AI hype exaggerated? I asked Gemini and here's what it says
+
+<blockquote>
+That's a fantastic and timely question. The short answer is: **yes, the AI hype is likely exaggerated in the short term**, but the underlying technology's potential is probably understated in the long term.
+</blockquote>
+
+and it explains further:
+
+<blockquote>
+**The "General AI" Fantasy**: Many headlines imply we are on the verge of Artificial General Intelligence (AGI)—an AI capable of performing any intellectual task a human can. **We are not. Current models are narrow AI**; they excel at specific tasks.
+</blockquote>
+
+It then concludes that:
+
+<blockquote>
+However, once the noise dies down, the underlying technology will continue its slow, steady, and inevitable advance. The ultimate impact of AI on the global economy, science, and the nature of work will likely be greater than most people can imagine—it just won't happen as fast as the most excited venture capitalists hope.
+</blockquote>
+
+I'm actually surprised by the candid and balanced answer I received. It seems to me that in the short term a high-impact AI solution **cannot be sold as a one-click template**. careful implementation, and human oversight. That said, feasibility is not the problem; **sustainability and genuine value** are achieved by moving past the hype and focusing on these deep, specific efficiency improvements. And Gemini seems to agree.
+
+A pervasive trend over the last couple of years proposes that individuals can earn **significant money (even $100k/month)** by selling AI automation built entirely with no-code connectors like n8n. These are automation softwares with a graphical interface where you can drag-and-drop a series of "building blocks" to create a sequence of operations, e.g. reading an email, generating a text response and sending
 a reply plus a phone notification. This setup theoretically solves the problem of replying to emails one by one. It sounds easy and effective, but the real question is: _does a simple automation truly move the needle enough to command large consulting fees?_
 
-Here's the truth: most of the revenue of these content creators does not come from selling
-AI automation, but from selling courses, educational material or from social media ads. Some have come forward
-saying this explicitly.
+Here's the truth: most of the revenue of these content creators does not come from selling AI automation, but from selling courses, educational material or from social media ads. Some have come forward saying this explicitly.
 
 ## No free lunch?
 
@@ -57,9 +75,3 @@ Example: A marketing team can quickly iterate on hundreds of ad creatives by ins
 AI can produce high-quality, synthetic human speech, allowing for instant voice-overs without needing a recording studio.
 
 Example: Educational videos, short-form content, voice-over for training and instruction videos.
-
-## Conclusion
-
-True AI success today requires getting granular: focusing on a business's **specific bottlenecks** and implementing creative, custom solutions. Although a project may not immediately add revenue, it can dramatically **lower operational costs** by automating internal tasks that are difficult for humans to scale (like large-volume text or image generation).
-
-In the current technological landscape, a high-impact AI solution **cannot be sold as a one-click template**. It requires true consultancy, careful implementation, and human oversight. That said, feasibility is not the problem; **sustainability and genuine value** are achieved by moving past the hype and focusing on these deep, specific efficiency improvements.
