@@ -11,6 +11,7 @@ export type Post = {
     excerpt: string;
     tags: string[] | string;
     image: string;
+    alt: string;
     date: string; // ISO date string
     author: string;
   }

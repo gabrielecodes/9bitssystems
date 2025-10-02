@@ -5,8 +5,8 @@ author: Gabriele C.
 subtitle: "A realistic view on leveraging AI to drive real business impact"
 excerpt: "What's behind all the AI hype and dreams of glory?"
 tags: ["Data Engineering", "AI Automation", "Workflow Automation"]
-image: "ai.jpg"
-alt: "graphs on a computer"
+image: "abstract1.jpg"
+alt: "abstract art"
 ---
 
 ## What has AI done for you lately?

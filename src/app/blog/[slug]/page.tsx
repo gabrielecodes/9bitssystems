@@ -36,7 +36,13 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
             <p className="text-end">{date}</p>
           </div>
         </div>
-        <h3 className="w-fit py-8 italic">{post.frontmatter["excerpt"] as string}</h3>
+        <div className="w-full h-full relative">
+          <div className="w-full h-full absolute bg-gradient-to-b from-background/50 via-transparent" />
+          <Image src={`/${post.frontmatter.image}`} alt={`/${post.frontmatter.alt}`} width={700} height={480} priority={true} className="w-full" />
+          <div className="w-full h-full px-4 absolute top-4 left-0">
+            <h3 className="w-fit px-4 py-4 italic bg-background rounded-md">{post.frontmatter["excerpt"] as string}</h3>
+          </div>
+        </div>
         <div id="post-content" className="pt-6 pb-10 [&>h3]:mt-6 [&>h3]:mb-4 [&>p]:mb-4 *:l:ml-4">
           {post.content}
         </div>

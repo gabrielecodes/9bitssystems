@@ -5,8 +5,8 @@ author: Gabriele C.
 subtitle: "Thinking about the best uses of AI in data engineering"
 excerpt: "What's the best use of AI in data engineering? There are many opinions out there concerning the best ways to leverage AI."
 tags: ["Data Engineering", "Career", "Data Strategy"]
-image: "ai.jpg"
-alt: "graphs on a computer"
+image: "ai_lowered.jpg"
+alt: "ai chip"
 ---
 
 ## Aligning Teams on AI Adoption
