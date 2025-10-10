@@ -1,7 +1,7 @@
 "use server";
 
 import { notFound } from "next/navigation";
-import { getPostData, type Post } from "@/app/functions";
+import { getPostData, getAllPosts, type Post } from "@/app/functions";
 import Link from "next/link";
 import { LinkedIn } from "@/app/components/linkedin";
 import Image from "next/image";
@@ -11,6 +11,13 @@ const serif = Instrument_Serif({
   weight: "400",
   subsets: ["latin"],
 });
+
+export async function generateStaticParams() {
+  const posts = await getAllPosts();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
 
 export default async function Blog({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
