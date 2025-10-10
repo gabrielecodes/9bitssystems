@@ -19,7 +19,7 @@ I think the journey to the promised data land starts with establishing a solid d
 
 ## Problems and Remedies
 
-I'm going to try to make the case for data engineering referring to the above idea: the losses for not having your data in check are high. Trying to understand your business' performance when your data is all over the place—stored in different formats and in various places, becomes next to impossible. In that situation data can even be a liability (see financial regulations). The lack of consistency and reliability makes it nearly impossible to extract valuable insights, let alone make sound decisions. Sales teams end up having different numbers from accounting, marketing costs must be measured accurately and campaigns optimized to avoid runaway costs.
+I'm going to try to make the case for data engineering referring to the above idea: the losses for not having your data in check are high. Trying to understand your business' performance when your data is all over the place—stored in different formats and in various places, becomes next to impossible. In that situation data can even be a liability (see financial regulations). The lack of consistency and reliability makes it nearly impossible to extract valuable insights or even have a clear view of your finances, let alone make sound decisions. Sales teams end up having different numbers from accounting, marketing costs must be measured accurately and campaigns optimized to avoid runaway costs.
 
 When properly managed though, data becomes one of the most valuable assets a company has. Here are four concrete examples I've tangled with personally.
 

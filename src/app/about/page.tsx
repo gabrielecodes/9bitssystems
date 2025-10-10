@@ -134,8 +134,8 @@ function Experience1({ className }: { className?: string }) {
     <div id="exp1" className={cn("xl:mb-0 mb-4 relative group overflow-hidden", className)}>
       <span className="h-12 w-[1px] bg-border absolute z-0 left-[15px] -top-4 xl:block hidden" />
       <div className="xl:block hidden w-[26rem]l h-full absolute z-10 rounded-md left-10 -top-full group-hover:top-6 bg-background transition-all duration-300 ease-in-out">
-        I take a break from the cold north and join the coolest gang in a sunny and warm place (France). Great times and
-        croissants. And also LLM powered data pipelines.
+        I became part of an awesome team in a sunny, warm corner of France—good vibes, great croissants, and LLM-powered
+        data pipelines.
       </div>
       <h3 className="relative">
         <div className="w-4 h-4 top-3 -left-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground flex group-hover:bg-blue-neon group-hover:border-blue-neon transition-color duration-300 ease-in-out" />
