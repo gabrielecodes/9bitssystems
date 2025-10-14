@@ -27,7 +27,7 @@ function Hero() {
           </p>
           <div className="flex gap-x-4 w-fit">
             <Link href={"/contact"} className="mt-2 px-3 py-2 bg-blue-neon rounded-md text-background font-semibold">
-              Let's Talk
+              Let&apos;s Talk
             </Link>
             <Link href={"/services"} className="mt-2 px-3 py-2 bg-background text-foreground rounded-md border border-border font-semibold">
               What I Do
