@@ -21,7 +21,7 @@ function TopNav() {
       <div className="w-full h-full my-1 pl-4  flex items-center">
         <Link
           href={"/"}
-          className="w-10 rounded-m text-4xl font-black bg-background text-foreground styro text-center hover:text-background hover:bg-foreground transition-colors duration-150 scale-x-150"
+          className="w-10 text-4xl font-black bg-background text-foreground styro text-center hover:text-background hover:bg-foreground transition-colors duration-150 scale-x-150"
         >
           N
         </Link>

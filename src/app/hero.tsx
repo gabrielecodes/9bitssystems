@@ -1,5 +1,6 @@
 import { Instrument_Serif } from "next/font/google";
 import BackgroundVideo from "./components/backgroundvideo";
+import Link from "next/link";
 
 const serif = Instrument_Serif({
   weight: "400",
@@ -12,20 +13,30 @@ function Hero() {
     <section className="w-full h-full xl:p-10 p-2 flex xl:flex-row flex-col relative">
       <BackgroundVideo />
       <div className="xl:w-1/2 w-full xl:h-full h-3/4 flex flex-col justify-between">
-        <p className="xl:w-3/5 w-full text-xl font-medium" style={{ lineHeight: "1.5rem" }}>
-          Hi, I&apos;m Gabriele, a{" "}
-          <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
-            data engineer
-          </span>{" "}
-          and{" "}
-          <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
-            architect
-          </span>{" "}
-          helping businesses build solid technological foundations &mdash; with reliable, secure, and modern solutions.
-        </p>
+        <div>
+          <p className="xl:w-3/5 w-full text-xl font-medium" style={{ lineHeight: "1.5rem" }}>
+            Hi, I&apos;m Gabriele, a{" "}
+            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
+              data engineer
+            </span>{" "}
+            and{" "}
+            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
+              architect
+            </span>{" "}
+            helping businesses build solid technological foundations &mdash; with reliable, secure, and modern solutions.
+          </p>
+          <div className="flex gap-x-4 w-fit">
+            <Link href={"/contact"} className="mt-2 px-3 py-2 bg-blue-neon rounded-md text-background font-semibold">
+              Let's Talk
+            </Link>
+            <Link href={"/services"} className="mt-2 px-3 py-2 bg-background text-foreground rounded-md border border-border font-semibold">
+              What I Do
+            </Link>
+          </div>
+        </div>
         <div className="xl:w-3/5 w-full">
           <p className="leading-6">
-            My goal is to support businesses in automating and growing with confidence, building{" "}
+            I support businesses in automating and growing with confidence, building{" "}
             <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
               smarter
             </span>{" "}
@@ -33,7 +44,17 @@ function Hero() {
             <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
               faster
             </span>
-            . I work alongside you to create thoughtful data strategies, build reliable cloud infrastructures, and
+            . With nearly a decade of experience, I work alongside you to create thoughtful
+            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
+              data architectures
+            </span>
+            and
+            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
+              integrations
+            </span>, build reliable
+            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
+              cloud infrastructures
+            </span>, and
             develop systems that serve real needs.
           </p>
         </div>
