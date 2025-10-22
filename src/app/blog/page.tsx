@@ -19,7 +19,7 @@ export default async function Blog() {
   return (
     <section
       id="blog"
-      className="w-full xl:h-screen xl:p-10 xl:flex xl:flex-col text-foreground selection:bg-blue-neon selection:text-background"
+      className="w-full xl:h-fit xl:p-10 xl:flex xl:flex-col text-foreground selection:bg-blue-neon selection:text-background"
     >
       <h1
         className={`${serif.className} w-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`}

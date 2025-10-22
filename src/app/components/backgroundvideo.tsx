@@ -73,9 +73,8 @@ export default function BackgroundVideo() {
   return (
     <video
       ref={videoRef}
-      className={`absolute top-0 left-0 w-full h-full object-cover z-[-1] transition-opacity duration-1000 ${
-        isVisible ? "opacity-100" : "opacity-0"
-      }`}
+      className={`absolute top-0 left-0 w-full h-full object-cover z-[-1] transition-opacity duration-1000 ${isVisible ? "opacity-100" : "opacity-0"
+        }`}
       muted
       playsInline
       preload="auto"

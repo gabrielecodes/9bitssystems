@@ -29,25 +29,25 @@ function TopNav() {
       <div className="w-full h-full pr-4 flex items-center justify-between">
         <ul className="w-full h-full flex items-center gap-x-4 justify-end ">
           <li className="h-full flex items-center">
-            <Link href={"/services"} className="flex items-center">
+            <Link href={"#services"} className="flex items-center">
               Services
             </Link>
           </li>
           <li className="h-full flex items-center">
-            <Link href={"/about"} className="flex items-center">
+            <Link href={"#about"} className="flex items-center">
               About
             </Link>
           </li>
           <li className="h-full flex items-center">
-            <Link href={"/blog"} className="flex items-center">
-              Blog
-            </Link>
-          </li>
-          <li className="h-full flex items-center">
-            <Link href={"/contact"} className="flex items-center">
+            <Link href={"#contact"} className="flex items-center">
               Contact
             </Link>
           </li>
+          {/* <li className="h-full flex items-center">
+            <Link href={"/blog"} className="flex items-center">
+              Blog
+            </Link>
+          </li> */}
         </ul>
       </div>
     </nav>
@@ -81,7 +81,7 @@ function SideNav() {
           </li>
           <li className="w-full h-full">
             <Link
-              href={"/services"}
+              href={"#services"}
               className="w-full h-10 flex items-center hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] group/services p-4 rounded-md"
             >
               SERVICES
@@ -92,7 +92,7 @@ function SideNav() {
           </li>
           <li className="w-full h-full">
             <Link
-              href={"/about"}
+              href={"#about"}
               className="w-full h-10 flex items-center group/about hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md"
             >
               ABOUT
@@ -101,7 +101,18 @@ function SideNav() {
               </span>
             </Link>
           </li>
-          <li className="w-full h-full">
+          <li className="w-full h-full flex items-center">
+            <Link
+              href={"#contact"}
+              className="w-full h-10 flex items-center group/contact hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md"
+            >
+              CONTACT
+              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/ group-hover/contact:left-24">
+                &rarr;
+              </span>
+            </Link>
+          </li>
+          {/* <li className="w-full h-full">
             <Link
               href={"/blog"}
               className="w-full h-10 flex items-center group/blog hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md"
@@ -111,18 +122,7 @@ function SideNav() {
                 &rarr;
               </span>
             </Link>
-          </li>
-          <li className="w-full h-full flex items-center">
-            <Link
-              href={"/contact"}
-              className="w-full h-10 flex items-center group/contact hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] p-4 rounded-md"
-            >
-              CONTACT
-              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/ group-hover/contact:left-24">
-                &rarr;
-              </span>
-            </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

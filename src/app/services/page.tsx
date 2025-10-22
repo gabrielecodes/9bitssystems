@@ -33,7 +33,7 @@ export default function Services() {
   useEffect(() => {
     if (isHovering) {
       intervalRef.current = setInterval(() => {
-        const str = generateRandomString(9000);
+        const str = generateRandomString(10000);
         setRandomString(str);
       }, 50);
     } else if (intervalRef.current) {
@@ -58,18 +58,19 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className="w-full xl:h-screen xl:p-10 text-foreground overflow-hidden">
+    <section id="services" className="xl:h-screen xl:p-10 text-foreground">
       <h1
         className={`${serif.className} w-fit h-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`}
       >
         Services
       </h1>
 
-      <div className="w-fit h-full xl:mx-auto xl:mt-0 mt-10 xl:p-0 p-4 flex xl:flex-row flex-col items-center justify-center relative">
+      <div className="w-fit h-full xl:mx-auto xl:mt-0 mt-10 xl:p-0 p-4 flex xl:flex-row flex-col items-center justify-center relative overflow-x-clip">
         <div
           onMouseMove={handleMouseMove}
           className="group/card w-full relative bg-transparent flex xl:flex-row flex-col items-baseline justify-center overflow-clip"
         >
+
           <div className="pointer-events-none">
             <div className="absolute inset-0 [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50" />
             <motion.div
@@ -88,11 +89,12 @@ export default function Services() {
 
           <div className="relative">
             <div className="xl:block hidden absolute w-full h-20 top-0 left-0 bg-gradient-to-b from-background" />
-            <div className="xl:block hidden absolute w-20 h-full top-0 left-0 bg-gradient-to-r from-background" />
-            <div className="xl:block hidden absolute w-20 h-full top-0 right-0 bg-gradient-to-l from-background" />
+            <div className="xl:block hidden absolute w-38 h-full top-0 left-0 bg-gradient-to-r from-background" />
+            <div className="xl:block hidden absolute w-38 h-full top-0 right-0 bg-gradient-to-l from-background" />
             <div className="xl:block hidden absolute w-full h-20 bottom-0 left-0 bg-gradient-to-t from-background" />
 
-            <div className="w-full h-full xl:p-22 flex xl:flex-row flex-col xl:gap-x-4 gap-y-10 xl:gap-y-0 items-center ">
+            <div className="h-full xl:p-36 flex xl:flex-row flex-col xl:gap-x-4 gap-y-10 xl:gap-y-0 items-center">
+
               <div className="xl:w-96 w-full xl:p-8 bg-background/75 relative z-20 group/container overflow-hidden">
                 <Star className="mb-8 static flex mx-auto" />
                 <h3 className="mb-6 font-black">DATA INTEGRATION</h3>
@@ -134,10 +136,22 @@ export default function Services() {
                   </Link>
                 </ReadMoreButton>
               </div>
+
             </div>
+
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
+
+  // return (
+  //   <section id="services" className="w-[90%] text-foreground">
+  //     <h1
+  //       className={`${serif.className} w-32 h-fit px-2 text-center inline-block transform bg-foreground text-background font-semibold`}
+  //     >
+  //       Services
+  //     </h1>
+  //   </section>
+  // )
 }

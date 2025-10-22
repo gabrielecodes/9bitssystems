@@ -10,7 +10,7 @@ const serif = Instrument_Serif({
 
 function Hero() {
   return (
-    <section className="w-full h-full xl:p-10 p-2 flex xl:flex-row flex-col relative">
+    <section className="h-screen xl:p-10 p-2 flex xl:flex-row flex-col relative">
       <BackgroundVideo />
       <div className="xl:w-1/2 w-full xl:h-full h-3/4 flex flex-col justify-between">
         <div>
