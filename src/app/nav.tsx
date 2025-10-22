@@ -34,6 +34,11 @@ function TopNav() {
             </Link>
           </li>
           <li className="h-full flex items-center">
+            <Link href={"#projects"} className="flex items-center">
+              Projects
+            </Link>
+          </li>
+          <li className="h-full flex items-center">
             <Link href={"#about"} className="flex items-center">
               About
             </Link>
@@ -85,6 +90,17 @@ function SideNav() {
               className="w-full h-10 flex items-center hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] group/services p-4 rounded-md"
             >
               SERVICES
+              <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/services:left-24">
+                &rarr;
+              </span>
+            </Link>
+          </li>
+          <li className="w-full h-full">
+            <Link
+              href={"#projects"}
+              className="w-full h-10 flex items-center hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] group/services p-4 rounded-md"
+            >
+              PROJECTS
               <span className="w-8 h-8 ml-3 absolute left-full flex justify-center transition-all duration-[400ms] ease-in-out group-hover/services:left-24">
                 &rarr;
               </span>
