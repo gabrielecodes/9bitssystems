@@ -103,7 +103,7 @@ export default function Services() {
                   maximum value from your data—at speed and scale.
                 </p>
                 <ReadMoreButton className="left-[80%] xl:left-[115%]">
-                  <Link href={"/contact"} className="pt-2 flex items-center justify-center text-background">
+                  <Link href={"#contact"} className="pt-2 flex items-center justify-center text-background">
                     <ArrowRight className="size-6" />
                   </Link>
                 </ReadMoreButton>
@@ -117,7 +117,7 @@ export default function Services() {
                   seamless integration with your workflows.
                 </p>
                 <ReadMoreButton className="left-[80%] xl:left-[115%]">
-                  <Link href={"/contact"} className="pt-2 flex items-center justify-center text-background">
+                  <Link href={"#contact"} className="pt-2 flex items-center justify-center text-background">
                     <ArrowRight className="size-6" />
                   </Link>
                 </ReadMoreButton>
@@ -131,7 +131,7 @@ export default function Services() {
                   built for performance, security, and growth.
                 </p>
                 <ReadMoreButton className="left-[80%] xl:left-[115%]">
-                  <Link href={"/contact"} className="pt-2 flex items-center justify-center text-background">
+                  <Link href={"#contact"} className="pt-2 flex items-center justify-center text-background">
                     <ArrowRight className="size-6" />
                   </Link>
                 </ReadMoreButton>
