@@ -22,6 +22,8 @@ export default function Experience() {
       <div className="my-20 h-full xl:flex flex-col items-end">
         <div className="w-full xl:h-1/2 xl:block hidden"></div>
         <div className="xl:w-full xl:h-full gap-x-8 px-4 flex flex-col items-center">
+          <h2 className="xl:w-2/5 w-full mb-10">Want to work with me? I specialize in Data Engineering and Cloud Architecture</h2>
+          <p className="xl:w-2/5 w-full mb-10">These are some of the technologies I use</p>
           {/* */}
           <div className="xl:w-2/5 w-full select-none mb-8">
             <h3 className="mb-4">Cloud</h3>
@@ -57,6 +59,8 @@ export default function Experience() {
                 <Tool name="SQL Server" />
                 <Tool name="PostgreSQL" />
                 <Tool name="Airflow" />
+                <Tool name="Beam" />
+                <Tool name="Spark" />
                 <Tool name="Custom Pipelines (Kubernetes)" />
                 <Tool name="Redis" />
                 <Tool name="Batch Processes" />
@@ -71,21 +75,35 @@ export default function Experience() {
             <div className="h-fit flex flex-wrap gap-2">
               <div className="flex flex-wrap gap-x-2">
                 <Tool name="Git" />
-                <Tool name="GitHub" />
+                <Tool name="GitHub Actions" />
                 <Tool name="Kubernetes" />
                 <Tool name="Argo" />
                 <Tool name="Docker" />
                 <Tool name="Podman" />
-                <Tool name="Terraform" />
+                <Tool name="Infrastructure-as-Code" />
               </div>
             </div>
           </div>
 
           <div className="xl:w-2/5 w-full select-none mb-8">
-            <h3 className="mb-4">Languages</h3>
+            <h3 className="mb-4">AI/ML Integrations</h3>
+            <div className="h-fit flex flex-wrap gap-2">
+              <Tool name="Gemini" />
+              <Tool name="ChatGPT" />
+              <Tool name="Claude" />
+            </div>
+          </div>
+
+          <div className="xl:w-2/5 w-full select-none mb-8">
+            <h3 className="mb-4">Programming & Tools</h3>
             <div className="h-fit flex flex-wrap gap-2">
               <Tool name="Python" />
+              <Tool name="Flask" />
+              <Tool name="FastAPI" />
+              <Tool name="Slack" />
               <Tool name="SQL" />
+              <Tool name="Terraform" />
+              <Tool name="Bash & Scripting" />
               <Tool name="Typescript" />
               <Tool name="Rust" />
             </div>

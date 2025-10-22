@@ -16,8 +16,8 @@ const projects = [
   },
   {
     url: "#",
-    title: "Coming Soon",
-    subtitle: ""
+    title: "More samples coming soon",
+    subtitle: "Contact me for if you want to see something specific"
   }
 ]
 
@@ -33,7 +33,8 @@ export default function Projects() {
         Projects
       </h1>
 
-      <div className="xl:w-1/2 xl:mt-40 mt-10 mx-auto xl:flex xl:flex-row relative xl:border-t border-border">
+      <h2 className="xl:w-1/2 w-full xl:mt-40 mt-10 mb-10 mx-auto">Some things I work with</h2>
+      <div className="xl:w-1/2 mt-10 mx-auto xl:flex xl:flex-row relative xl:border-t border-border">
         <Plus className="size-6 -left-3 -top-3 xl:block hidden" />
         <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-10 xl:block hidden" />
 

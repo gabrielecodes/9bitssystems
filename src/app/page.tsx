@@ -21,8 +21,8 @@ export default function Home() {
       <div className="w-0 xl:h-20 h-10"></div>
       <Services />
       <div className="w-0 xl:h-20 h-10"></div>
-      {/* <Projects />
-      <div className="w-0 xl:h-20 h-10"></div> */}
+      <Projects />
+      <div className="w-0 xl:h-20 h-10"></div>
       <Experience />
       <div className="xl:h-20 h-10"></div>
       <Contact />
