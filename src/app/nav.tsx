@@ -33,11 +33,11 @@ function TopNav() {
               Services
             </Link>
           </li>
-          <li className="h-full flex items-center">
+          {/* <li className="h-full flex items-center">
             <Link href={"#projects"} className="flex items-center">
               Projects
             </Link>
-          </li>
+          </li> */}
           <li className="h-full flex items-center">
             <Link href={"#about"} className="flex items-center">
               About
@@ -95,7 +95,7 @@ function SideNav() {
               </span>
             </Link>
           </li>
-          <li className="w-full h-full">
+          {/* <li className="w-full h-full">
             <Link
               href={"#projects"}
               className="w-full h-10 flex items-center hover:text-background hover:bg-blue-neon hover:animate-[neon-blink_5s_infinite_alternate] group/services p-4 rounded-md"
@@ -105,7 +105,7 @@ function SideNav() {
                 &rarr;
               </span>
             </Link>
-          </li>
+          </li> */}
           <li className="w-full h-full">
             <Link
               href={"#about"}
