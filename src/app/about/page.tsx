@@ -21,7 +21,7 @@ export default function Experience() {
         About
       </h1>
 
-      <div className="my-20 h-full xl:flex flex-col items-end">
+      <div className="mt-20 h-full xl:flex flex-col items-end">
         <div className="w-full xl:h-1/2 xl:block hidden"></div>
         <div className="xl:w-full xl:h-full gap-x-8 px-4 flex flex-col items-center">
           <h2 className="xl:w-2/5 w-full mb-10">Want to work with me? I specialize in Data Engineering and Cloud Architecture</h2>
@@ -123,13 +123,12 @@ export default function Experience() {
         </div>
         {/* */}
 
-        <div className="xl:w-2/5 w-full xl:h-full gap-x-2 mx-auto flex items-center">
+        {/* <div className="xl:w-2/5 w-full xl:h-full gap-x-2 mx-auto flex items-center">
           <p className="xl:ml-0 ml-4 w-fit">Find my CV here:</p>
           <Link href={"https://www.linkedin.com/in/gabriele-costanza/"} target="_blank">
             <LinkedIn />
           </Link>
-        </div>
-
+        </div> */}
 
         {/* <div className="mt-40 mx-auto xl:flex hidden xl:flex-col items-end justify-end">
           <div id="top-row" className="xl:w-full w-0 grid grid-cols-7 justify-start items-end border-b border-border">
@@ -146,9 +145,9 @@ export default function Experience() {
         </div> */}
       </div>
 
-      {/* <div className="xl:hidden">
+      <div className="xl:w-2/5 w-full mx-auto">
         <AllExperience />
-      </div> */}
+      </div>
     </section>
   );
 }
@@ -199,7 +198,7 @@ function Experience3({ className }: { className?: string }) {
         <div className="w-4 h-4 top-3 -left-[calc(2rem+1px)] absolute rounded-full bg-background border border-foreground flex group-hover:bg-blue-neon group-hover:border-blue-neon transition-color duration-300 ease-in-out" />
         Sr. Data Eng. & Analyst<p className="xl:ml-4 inline-block">Jun 2020 - Jan 2023</p>
       </h3>
-      <p>Data Integration & Data Products. Reporting & Dashboards. Apple Pay Feature Data Integration.</p>
+      <p>Data Integration & Data Products. Reporting & Dashboards</p>
     </div>
   );
 }
@@ -255,7 +254,7 @@ function Experience5({ className }: { className?: string }) {
 function AllExperience() {
   return (
     <div id="left-column" className="w-full px-4 flex flex-col gap-y-4 xl:border-0 border-t border-border">
-      <h2 className="mt-4">Curriculum</h2>
+      <h2 className="mt-4">Experience</h2>
       <Experience1 />
       <Experience2 />
       <Experience3 />
