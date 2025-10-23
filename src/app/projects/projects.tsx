@@ -11,8 +11,13 @@ const serif = Instrument_Serif({
 const projects = [
   {
     url: "https://github.com/gabrielecodes/airflow_rds_terraform",
-    title: "Teffaform Config: Airflow + Postgres RDS instance on AWS",
+    title: "Terraform Config: Airflow + Postgres RDS instance on AWS",
     subtitle: "Terraform AWS Infrastructure for Airflow with an RDS Postgres Instance"
+  },
+  {
+    url: "https://github.com/gabrielecodes/aws_s3_cloudfront_deployment",
+    title: "AWS S3 + Cloudfront Terraform Configuration for Static Site",
+    subtitle: "Basic terraform config for a static site with certificate"
   },
   {
     url: "#",
@@ -33,8 +38,8 @@ export default function Projects() {
         Projects
       </h1>
 
-      <h2 className="xl:w-1/2 w-full xl:mt-40 mt-10 mb-10 mx-auto">Some things I work with</h2>
-      <div className="xl:w-1/2 mt-10 mx-auto xl:flex xl:flex-row relative xl:border-t border-border">
+      <h2 className="xl:w-2/5 w-full xl:mt-40 mt-10 mb-10 mx-auto">Some things I work with</h2>
+      <div className="xl:w-2/5 mt-10 mx-auto xl:flex xl:flex-row relative xl:border-t border-border">
         <Plus className="size-6 -left-3 -top-3 xl:block hidden" />
         <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-10 xl:block hidden" />
 

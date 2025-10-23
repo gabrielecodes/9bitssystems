@@ -36,7 +36,7 @@ function Hero() {
         </div>
         <div className="xl:w-3/5 w-full">
           <p className="leading-6">
-            I support businesses in automating and growing, building{" "}
+            I support businesses in automating, growing{" "}
             <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
               smarter
             </span>{" "}

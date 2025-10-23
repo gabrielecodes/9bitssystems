@@ -34,11 +34,11 @@ export default function Contact() {
               There are no obligations.
             </h2>
             <p className="mb-4">
-              I craft solutions that prioritize your goals, drawing on almost a decade of experience as a data engineer
-              and analyst in the financial and service industries. I build effective systems that enable your teams to
-              move faster freeing them from five-hour video calls and bloated slide decks. <br />
+              You need reliable and effective technology that serves your business. I deliver that, drawing
+              on almost a decade of experience in tech. I design effective systems that you don&apos;t
+              have to rebuild every three months, freeing you from bloat and complexities.<br />
               <br /> Many businesses are dragged down by unreliable technology and broken processes. I help you get
-              clarity about your technology and build systems that actually work for you.
+              clarity around your technology and build systems that actually work for you.
             </p>
             <p>You can also find me here:</p>
             <div className="flex">

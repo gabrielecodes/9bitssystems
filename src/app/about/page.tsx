@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { LinkedIn } from "../components/linkedin";
 import { cn } from "../utils";
 import { Instrument_Serif } from "next/font/google";
 
@@ -121,7 +123,15 @@ export default function Experience() {
         </div>
         {/* */}
 
-        <div className="mt-40 mx-auto xl:flex hidden xl:flex-col items-end justify-end">
+        <div className="xl:w-2/5 w-full xl:h-full gap-x-2 mx-auto flex items-center">
+          <p className="w-fit">Find a summary of my CV here:</p>
+          <Link href={"https://www.linkedin.com/in/gabriele-costanza/"} target="_blank">
+            <LinkedIn />
+          </Link>
+        </div>
+
+
+        {/* <div className="mt-40 mx-auto xl:flex hidden xl:flex-col items-end justify-end">
           <div id="top-row" className="xl:w-full w-0 grid grid-cols-7 justify-start items-end border-b border-border">
             <Experience5 className="col-start-1 w-[28rem] h-34 pl-10" />
             <Experience4 className="col-start-3 w-[28rem] h-34 pl-10" />
@@ -133,12 +143,12 @@ export default function Experience() {
             <Experience3 className="col-start-4 w-[28rem] h-34 pt-4 pl-10" />
             <Experience1 className="col-start-6 w-[28rem] h-34 pt-4 pl-10" />
           </div>
-        </div>
+        </div> */}
       </div>
-      {/* */}
-      <div className="xl:hidden">
+
+      {/* <div className="xl:hidden">
         <AllExperience />
-      </div>
+      </div> */}
     </section>
   );
 }
