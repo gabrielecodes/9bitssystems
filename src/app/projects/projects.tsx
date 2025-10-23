@@ -12,7 +12,7 @@ const projects = [
   {
     url: "https://github.com/gabrielecodes/airflow_rds_terraform",
     title: "Teffaform Config: Airflow + Postgres RDS instance on AWS",
-    subtitle: "Terraform AWS Infrastructure for Airflow with Replicated RDS Postgres"
+    subtitle: "Terraform AWS Infrastructure for Airflow with an RDS Postgres Instance"
   },
   {
     url: "#",
