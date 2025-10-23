@@ -19,11 +19,6 @@ const projects = [
     title: "AWS S3 + Cloudfront Terraform Configuration for Static Site",
     subtitle: "Basic terraform config for a static site with certificate"
   },
-  {
-    url: "#",
-    title: "More samples coming soon",
-    subtitle: "Contact me for if you want to see something specific"
-  }
 ]
 
 export default function Projects() {
