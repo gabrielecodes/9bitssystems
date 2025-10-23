@@ -124,7 +124,7 @@ export default function Experience() {
         {/* */}
 
         <div className="xl:w-2/5 w-full xl:h-full gap-x-2 mx-auto flex items-center">
-          <p className="w-fit">Find a summary of my CV here:</p>
+          <p className="xl:ml-0 ml-4 w-fit">Find my CV here:</p>
           <Link href={"https://www.linkedin.com/in/gabriele-costanza/"} target="_blank">
             <LinkedIn />
           </Link>
