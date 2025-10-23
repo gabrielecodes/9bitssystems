@@ -36,7 +36,7 @@ function Hero() {
         </div>
         <div className="xl:w-3/5 w-full">
           <p className="leading-6">
-            I support businesses in automating and growing with confidence, building{" "}
+            I support businesses in automating and growing, building{" "}
             <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
               smarter
             </span>{" "}
@@ -44,11 +44,11 @@ function Hero() {
             <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
               faster
             </span>
-            . With nearly a decade of experience, I to create thoughtful
+            . With nearly a decade of experience, I build
             <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
               data integrations
             </span>
-            and build reliable
+            and
             <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
               cloud infrastructures
             </span>, developing systems that serve real needs.
