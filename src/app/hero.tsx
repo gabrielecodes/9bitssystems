@@ -14,8 +14,8 @@ function Hero() {
       <BackgroundVideo />
       <div className="xl:w-1/2 w-full xl:h-full h-3/4 flex flex-col justify-between">
         <div>
-          <p className="xl:w-3/5 w-full text-xl font-medium" style={{ lineHeight: "1.6rem" }}>
-            <span className="xl:inline-block hidden xl:w-20"></span><span className="text-2xl font-black">I&apos;m Gabriele</span>, a{" "}
+          <div className="xl:w-3/5 w-full text-xl font-medium" style={{ lineHeight: "1.6rem" }}>
+            <div className="text-2xl font-black">I&apos;m Gabriele,</div> a{" "}
             <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
               data engineer
             </span>{" "}
@@ -23,13 +23,17 @@ function Hero() {
             <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
               cloud architect
             </span>{" "}
-            helping businesses build solid technological foundations &mdash; with reliable, secure, and modern solutions.
-          </p>
+            helping businesses build solid technological foundations &mdash; with reliable, secure, and modern
+            solutions.
+          </div>
           <div className="flex gap-x-4 w-fit">
             <Link href={"#contact"} className="mt-2 px-3 py-2 bg-blue-neon rounded-md text-background font-semibold">
               Let&apos;s Talk
             </Link>
-            <Link href={"#services"} className="mt-2 px-3 py-2 bg-background text-foreground rounded-md border border-border font-semibold">
+            <Link
+              href={"#services"}
+              className="mt-2 px-3 py-2 bg-background text-foreground rounded-md border border-border font-semibold"
+            >
               What I Do
             </Link>
           </div>
@@ -50,8 +54,12 @@ function Hero() {
             </span>
             and
             <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
-              cloud infrastructures
-            </span>, developing systems that serve real needs.
+              cloud
+            </span>{" "}
+            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
+              infrastructures
+            </span>
+            , developing systems that serve real needs.
           </p>
         </div>
       </div>
