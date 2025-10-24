@@ -3,7 +3,7 @@
 :root {
   --foreground: #fff;
   --background: #010203;
-  --blue-neon: #03e9f4;
+  --blue-neon: #00FFFF;
   --green-neon: #54f2a6;
 }
 
@@ -135,9 +135,26 @@ blockquote {
   box-shadow: 5px 5px 15px 10px #03e9f4;
 }
 
+.neon-gradient1 {
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: conic-gradient(from 270deg at 65% 0%, #00FFFFcc 50%, transparent 90%);
+}
+
+.neon-gradient2 {
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: conic-gradient(from 90deg at 35% 0%, transparent 10%, #00FFFFcc 50%);
+}
+
+/* .neon-gradient2 {
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: conic-gradient(from 90deg at 35% 0%, transparent 10%, #00FFFF90 30%, #00FFFFaa 35%, #00FFFFb6 40%);
+} */
+
 .neon-animation {
   animation: neon-blink 2s infinite alternate;
-
 }
 
 @keyframes neon-blink {

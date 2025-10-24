@@ -1,20 +1,12 @@
 import { Hero } from "./hero";
 import Services from "./services/page";
 import Experience from "./about/page";
-import Blog from "./blog/page";
+// import Blog from "./blog/page";
 import Contact from "./contact/page";
-import { Instrument_Serif } from "next/font/google";
 import Projects from "./projects/projects";
-
-const serif = Instrument_Serif({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-serif",
-});
-
+import { Footer } from "./footer";
 
 export default function Home() {
-
   return (
     <>
       <Hero />
@@ -26,9 +18,10 @@ export default function Home() {
       <Experience />
       <div className="xl:h-20 h-10"></div>
       <Contact />
-      <div className="xl:h-20 h-10"></div>
+      <div className="xl:h-40 h-10"></div>
+      <Footer />
       {/* <Blog />
       <div className="xl:h-20 h-10"></div> */}
     </>
-  )
+  );
 }
