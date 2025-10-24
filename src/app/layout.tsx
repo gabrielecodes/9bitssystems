@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${font.className} w-screen bg-background antialiased overflow-x-hidden`}>
         <Nav />
-        <main className="text-foreground selection:bg-blue-neon selection:text-background">{children}</main>
+        <main className="text-foreground selection:bg-blue-neon selection:text-background overflow-x-hidden">
+          {children}
+        </main>
       </body>
     </html>
   );

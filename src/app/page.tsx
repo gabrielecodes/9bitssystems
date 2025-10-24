@@ -18,7 +18,7 @@ export default function Home() {
       <Experience />
       <div className="xl:h-20 h-10"></div>
       <Contact />
-      <div className="xl:h-40 h-10"></div>
+      <div className="xl:h-40 h-28"></div>
       <Footer />
       {/* <Blog />
       <div className="xl:h-20 h-10"></div> */}
