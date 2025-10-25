@@ -65,9 +65,9 @@ function Hero() {
         </div>
       </div>
       <div className="xl:w-1/2 xl:h-full h-1/4 flex flex-col items-end justify-end relative">
-        <div className="w-full h-[10%] absolute top-0 left-0 z-50 bg-gradient-to-b from-background"></div>
-        <div className="w-full h-[10%] absolute bottom-0 left-0 z-50 bg-gradient-to-t from-background"></div>
-        <div className="w-full h-full absolute top-0 left-0 z-20 bg-[radial-gradient(circle,transparent_50%,black_90%)]"></div>
+        <div className="w-full h-[10%] transform -translate-x-20 absolute top-0 left-0 z-50 bg-gradient-to-b from-background"></div>
+        <div className="w-full h-[10%] transform -translate-x-20 absolute bottom-0 left-0 z-50 bg-gradient-to-t from-background"></div>
+        <div className="w-full h-full transform -translate-x-20 absolute top-0 left-0 z-20 bg-[radial-gradient(circle,transparent_50%,black_90%)]"></div>
         <Image
           className="w-[70rem] h-[26rem] absolute transform -translate-x-20 z-0 object-cover xl:block hidden scale-x-[-1]"
           src="/self.png"
