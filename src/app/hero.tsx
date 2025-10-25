@@ -1,5 +1,6 @@
 import { Instrument_Serif } from "next/font/google";
-import BackgroundVideo from "./components/backgroundvideo";
+// import BackgroundVideo from "./components/backgroundvideo";
+import Image from "next/image";
 import Link from "next/link";
 
 const serif = Instrument_Serif({
@@ -11,7 +12,7 @@ const serif = Instrument_Serif({
 function Hero() {
   return (
     <section className="h-screen xl:p-48 p-2 flex xl:flex-row flex-col relative">
-      <BackgroundVideo />
+      {/* <BackgroundVideo /> */}
       <div className="xl:w-1/2 w-full xl:h-full h-3/4 flex flex-col justify-between">
         <div>
           <div className="xl:w-3/5 w-full text-xl font-medium" style={{ lineHeight: "1.6rem" }}>
@@ -38,7 +39,7 @@ function Hero() {
             </Link>
           </div>
         </div>
-        <div className="xl:w-3/5 w-full">
+        <div className="xl:w-3/5 w-full ">
           <p className="leading-6">
             I support businesses in automating, growing{" "}
             <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
@@ -64,8 +65,18 @@ function Hero() {
         </div>
       </div>
       <div className="xl:w-1/2 xl:h-full h-1/4 flex flex-col items-end justify-end relative">
-        <p className="absolute bottom-12">Welcome to</p>
-        <span className="styro text-5xl scale-x-250 tracking-wide absolute bottom-0 right-18">NINE BITS</span>
+        <div className="w-full h-[10%] absolute top-0 left-0 z-50 bg-gradient-to-b from-background"></div>
+        <div className="w-full h-[10%] absolute bottom-0 left-0 z-50 bg-gradient-to-t from-background"></div>
+        <div className="w-full h-full absolute top-0 left-0 z-20 bg-[radial-gradient(circle,transparent_50%,black_90%)]"></div>
+        <Image
+          className="w-[70rem] h-[26rem] absolute top-0 left-0 z-0 object-cover"
+          src="/self.png"
+          alt="Profile picture of self"
+          priority
+          fill
+        />
+        <p className="absolute bottom-12 z-50">Welcome to</p>
+        <span className="styro text-5xl scale-x-250 tracking-wide absolute bottom-0 right-18 z-50">NINE BITS</span>
       </div>
     </section>
   );
