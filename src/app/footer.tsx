@@ -15,16 +15,7 @@ function Footer() {
           <div className="w-full flex flex-col gap-y-20 items-center">
             <div>
               <div className="w-full styro text-5xl scale-x-250 tracking-wide">NINE BITS</div>
-              <div className="w-full text-xl -mt-2">
-                Build
-                <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "1.8rem" }}>
-                  smarter,
-                </span>
-                Scale
-                <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "1.8rem" }}>
-                  faster
-                </span>
-              </div>
+              <div className="w-full text-xl -mt-1">Small Brand, Large Deliveries.</div>
             </div>
             <ul className="flex flex-wrap gap-x-10">
               <li className="h-full flex items-center">
