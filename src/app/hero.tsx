@@ -65,19 +65,20 @@ function Hero() {
         </div>
       </div>
       <div className="xl:w-1/2 xl:h-full h-1/4 flex flex-col items-end justify-end relative">
-        {/* <div className="w-full h-[10%] transform -translate-x-20 absolute top-0 left-0 z-50 bg-gradient-to-b from-background"></div>
-        <div className="w-full h-[10%] transform -translate-x-20 absolute bottom-0 left-0 z-50 bg-gradient-to-t from-background"></div>
-        <div className="w-full h-full transform -translate-x-20 absolute top-0 left-0 z-20 bg-[radial-gradient(circle,transparent_50%,black_90%)]"></div> */}
+        <div className="w-[5%] h-full absolute top-0 left-0 z-50 bg-gradient-to-r from-background"></div>
+        <div className="w-full h-[15%] transform absolute top-10 left-0 z-50 bg-gradient-to-b from-background"></div>
+        {/* <div className="w-full h-[10%] transform -translate-x-40 absolute bottom-0 left-0 z-50 bg-gradient-to-t from-background"></div> */}
+        {/* <div className="w-full h-full transform -translate-x-40 absolute top-0 left-0 z-20 bg-[radial-gradient(circle,transparent_50%,black_90%)]"></div> */}
         <Image
-          className="h-full absolute transform -translate-x-40 z-0 object-cover xl:block hidden"
+          className="h-full absolute transform left-0 top-10 z-0 bottom-0 object-cover xl:block hidden"
           src="/self2.png"
           alt="Profile picture of self"
           priority
-          width={400}
-          height={1000}
+          width={330}
+          height={200}
         />
-        <p className="absolute bottom-12 z-50">Welcome to</p>
-        <span className="styro text-5xl scale-x-250 tracking-wide absolute bottom-0 right-18 z-50">NINE BITS</span>
+        {/* <p className="absolute bottom-12 z-50">Welcome to</p>
+        <span className="styro text-5xl scale-x-250 tracking-wide absolute bottom-0 right-18 z-50">NINE BITS</span> */}
       </div>
     </section>
   );
