@@ -11,11 +11,11 @@ const serif = Instrument_Serif({
 
 function Hero() {
   return (
-    <section className="h-screen xl:p-48 p-2 flex xl:flex-row flex-col relative">
+    <section className="h-screen xl:px-80 xl:py-48 p-2 flex xl:flex-row flex-col relative xl:gap-x-10 justify-center">
       {/* <BackgroundVideo /> */}
-      <div className="xl:w-1/2 w-full xl:h-full h-3/4 flex flex-col justify-between">
-        <div>
-          <div className="xl:w-3/5 w-full text-xl font-medium" style={{ lineHeight: "1.6rem" }}>
+      <div className="xl:w-1/3 w-full xl:h-full h-3/4 flex flex-col justify-between">
+        <div className="xl:mt-30 mt-0">
+          <div className="w-full mb-6 text-xl font-medium" style={{ lineHeight: "1.6rem" }}>
             <div className="text-2xl font-black">I&apos;m Gabriele,</div> a{" "}
             <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
               data engineer
@@ -39,7 +39,7 @@ function Hero() {
             </Link>
           </div>
         </div>
-        <div className="xl:w-3/5 w-full ">
+        <div className="w-full">
           <p className="leading-6">
             I support businesses in automating, growing{" "}
             <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
@@ -64,13 +64,13 @@ function Hero() {
           </p>
         </div>
       </div>
-      <div className="xl:w-1/2 xl:h-full h-1/4 flex flex-col items-end justify-end relative">
-        <div className="w-[5%] h-full absolute top-0 left-0 z-50 bg-gradient-to-r from-background"></div>
-        <div className="w-full h-[15%] transform absolute top-10 left-0 z-50 bg-gradient-to-b from-background"></div>
-        {/* <div className="w-full h-[10%] transform -translate-x-40 absolute bottom-0 left-0 z-50 bg-gradient-to-t from-background"></div> */}
+      <div className="xl:w-1/3 xl:h-full h-1/4 xl:flex xl:flex-col items-end justify-end relative hidden">
+        {/* <div className="w-[5%] h-full absolute top-0 left-0 z-50 bg-gradient-to-r from-background"></div>
+        <div className="w-full h-[15%] transform absolute top-10 right-0 z-50 bg-gradient-to-b from-background"></div>*/}
+        <div className="w-full h-[10%] transform absolute -bottom-10 z-50 bg-background"></div>
         {/* <div className="w-full h-full transform -translate-x-40 absolute top-0 left-0 z-20 bg-[radial-gradient(circle,transparent_50%,black_90%)]"></div> */}
         <Image
-          className="h-full absolute transform left-0 top-10 z-0 bottom-0 object-cover xl:block hidden"
+          className="h-full absolute transform right-0 z-0 -bottom-10 object-cover xl:block hidden"
           src="/self2.png"
           alt="Profile picture of self"
           priority
