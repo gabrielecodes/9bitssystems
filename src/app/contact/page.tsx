@@ -25,10 +25,15 @@ export default function Contact() {
       <div id="contact" className="xl:w-2/3 w-full xl:mt-20 mt-10 p-4 xl:px-0 mx-auto flex justify-center items-center">
         <div className="w-full h-fit xl:p-12 m-auto flex xl:flex-row flex-col items-start justify-center gap-x-4">
           <div className="w-full h-full">
-            <h2 className="xl:block hidden mb-6 leading-10 text-foreground">
-              Let&apos;s talk about your idea. <br />
-              There are no obligations.
-            </h2>
+            <div className="flex gap-x-6 mb-10 items-center">
+              <div className="w-30 h-30 rounded-full border-foreground border-3 overflow-hidden">
+                <img src="self2.png" alt="self" className="scale-280 mt-22 -ml-2"></img>
+              </div>
+              <h2 className="xl:block hidden leading-10 text-foreground">
+                Let&apos;s talk about your idea. <br />
+                There are no obligations.
+              </h2>
+            </div>
             <h2 className="xl:hidden block mb-6 leading-10 text-foreground" style={{ fontSize: "1.7rem" }}>
               Let&apos;s talk about your idea. <br />
               There are no obligations.
