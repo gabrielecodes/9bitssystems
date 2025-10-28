@@ -10,6 +10,11 @@ const serif = Instrument_Serif({
 
 const projects = [
   {
+    url: "https://github.com/gabrielecodes/aws_tf_clickhouse",
+    title: "Highly available and fault-tolerant ClickHouse cluster + Metabase frontend (WIP)",
+    subtitle: "AWS Infrastructure for a multi-node Clickhouse Data Warehouse for BI"
+  },
+  {
     url: "https://github.com/gabrielecodes/airflow_rds_terraform",
     title: "Terraform Config: Airflow + Postgres RDS instance on AWS",
     subtitle: "Terraform AWS Infrastructure for Airflow with an RDS Postgres Instance"
