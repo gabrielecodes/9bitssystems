@@ -17,11 +17,11 @@ function Hero() {
         <div className="xl:mt-30 mt-0">
           <div className="w-full mb-6 text-xl font-medium" style={{ lineHeight: "1.6rem" }}>
             <div className="text-2xl font-black">I&apos;m Gabriele,</div> a{" "}
-            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
+            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "1.8rem" }}>
               data engineer
             </span>{" "}
             and{" "}
-            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
+            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "1.8rem" }}>
               cloud architect
             </span>{" "}
             helping businesses build solid technological foundations &mdash; with reliable, secure, and modern
@@ -42,25 +42,25 @@ function Hero() {
         <div className="w-full">
           <p className="leading-6">
             I support businesses in automating, growing{" "}
-            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
+            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "1.8rem" }}>
               smarter
             </span>{" "}
             and scaling{" "}
-            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
-              faster
+            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "1.8rem" }}>
+              faster. {" "}
             </span>
-            . With nearly a decade of experience, I build
-            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
+            With nearly a decade of experience, I build
+            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "1.8rem" }}>
               data integrations
             </span>
             and
-            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
+            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "1.8rem" }}>
               cloud
             </span>{" "}
-            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "2rem" }}>
-              infrastructures
+            <span className={`${serif.className} mx-1 inline-block`} style={{ fontSize: "1.8rem" }}>
+              infrastructures,{" "}
             </span>
-            , developing systems that serve real needs.
+            developing systems that serve real needs.
           </p>
         </div>
       </div>
