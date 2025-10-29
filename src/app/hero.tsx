@@ -1,6 +1,6 @@
 import { Instrument_Serif } from "next/font/google";
 import BackgroundVideo from "./components/backgroundvideo";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 const serif = Instrument_Serif({

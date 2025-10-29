@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { LinkedIn } from "../components/linkedin";
+// import Link from "next/link";
+// import { LinkedIn } from "../components/linkedin";
 import { cn } from "../utils";
 import { Instrument_Serif } from "next/font/google";
 

@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-key */
+
 import Link from "next/link";
 import { Instrument_Serif } from "next/font/google";
 import { Plus } from "../components/plus";
@@ -73,7 +75,7 @@ export default function Projects() {
         <Plus className="size-6 left-[calc(100%-0.75rem)] -top-3 z-10 xl:block hidden" />
 
         <div className="px-4 w-full">
-          {projects && projects.map((project) => <ProjectCard key={project.url} project={project} />)}
+          {projects && projects.map((project, idx) => <ProjectCard key={idx} project={project} />)}
         </div>
       </div>
     </section>
