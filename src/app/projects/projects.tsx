@@ -1,6 +1,16 @@
 import Link from "next/link";
 import { Instrument_Serif } from "next/font/google";
 import { Plus } from "../components/plus";
+import Aws from "../components/icons/aws";
+import Terraform from "../components/icons/terraform";
+import Clickhouse from "../components/icons/clickhouse";
+import Metabase from "../components/icons/metabase";
+import Ansible from "../components/icons/ansible";
+import Airflow from "../components/icons/airflow";
+import ArrowRight from "../components/icons/arrowright";
+import Bash from "../components/icons/bash";
+import Jinja from "../components/icons/jinja";
+import Python from "../components/icons/python";
 
 const serif = Instrument_Serif({
   weight: "400",
@@ -11,18 +21,37 @@ const serif = Instrument_Serif({
 const projects = [
   {
     url: "https://github.com/gabrielecodes/aws_tf_clickhouse",
-    title: "Highly available and fault-tolerant ClickHouse cluster + Metabase frontend (WIP)",
-    subtitle: "AWS Infrastructure for a multi-node Clickhouse Data Warehouse for BI"
+    title: "A Highly available and fault-tolerant ClickHouse cluster with Metabase BI (WIP)",
+    subtitle: "AWS Infrastructure for a multi-node Clickhouse Data Warehouse for BI",
+    tags: [
+      <Aws className="size-8" stroke="white" fill="white" />,
+      <Terraform className="size-8" stroke="white" />,
+      <Clickhouse className="size-8" stroke="white" fill="white" />,
+      <Metabase className="size-8" stroke="white" fill="white" />,
+      <Ansible className="size-9" stroke="white" fill="white" />,
+      <Jinja className="size-9" stroke="black" fill="white" />,
+      <Bash className="size-9" stroke="black" fill="white" />,
+      <Python className="size-9" stroke="black" fill="white" />
+    ]
   },
   {
     url: "https://github.com/gabrielecodes/airflow_rds_terraform",
-    title: "Terraform Config: Airflow + Postgres RDS instance on AWS",
-    subtitle: "Terraform AWS Infrastructure for Airflow with an RDS Postgres Instance"
+    title: "Airflow Setup with a Postgres RDS instance on AWS",
+    subtitle: "Terraform AWS Infrastructure for Airflow with an RDS Postgres Instance",
+    tags: [
+      <Aws className="size-8" stroke="white" fill="white" />,
+      <Terraform className="size-8" stroke="white" />,
+      <Airflow className="size-8" stroke="white" fill="white" />,
+    ]
   },
   {
     url: "https://github.com/gabrielecodes/aws_s3_cloudfront_deployment",
-    title: "AWS S3 + Cloudfront Terraform Configuration for Static Site",
-    subtitle: "Basic terraform config for a static site with certificate"
+    title: "AWS S3 With Cloudfront CDN: Terraform Configuration",
+    subtitle: "Basic terraform config for a static site with certificate",
+    tags: [
+      <Aws className="size-8" stroke="white" fill="white" />,
+      <Terraform className="size-8" stroke="white" />,
+    ]
   },
 ]
 
@@ -53,16 +82,24 @@ export default function Projects() {
 
 function ProjectCard({ project }: { project: any }) {
   return (
-    <div className="w-full my-2 xl:px-8 xl:py-2 p-6 rounded-md relative group overflow-hidden xl:border-0 border border-border">
-      <div className="absolute w-full h-full bg-foreground right-full top-0 rounded-md group-hover:right-0 transition-all duration-300 ease-in-out z-[-1]" />
-      <Link href={project.url} rel="noopener noreferrer" target="_blank">
-        <div className="py-4 flex flex-col justify-center">
-          <h2 className="mb-2 leading-8 uppercase mix-blend-exclusion" style={{ fontWeight: 900, fontSize: "1.2rem" }}>
-            {project["title"]}
-          </h2>
-          <p className="mix-blend-exclusion">{project["subtitle"]}</p>
-        </div>
-      </Link>
-    </div>
+    <div className="w-full my-2 xl:px-8 xl:py-2 p-6 rounded-md relative group overflow-hidden xl:border-0 border border-border group">
+      <div className="w-8 h-8 flex items-center justify-center text-background absolute left-full bottom-0 rounded-full bg-blue-neon transition-all duration-200 ease-in-out group-hover:left-[92%]">
+        <Link href={project.url} rel="noopener noreferrer" target="_blank">
+          <ArrowRight className="size-6 -rotate-45" />
+        </Link>
+      </div>
+      {/* <div className="absolute w-full h-full bg-foreground right-full top-0 rounded-md group-hover:right-0 transition-all duration-300 ease-in-out z-[-1]" /> */}
+
+      <div className="py-4 flex flex-col justify-center">
+        <h2 className="mb-2 leading-8 mix-blend-exclusion" style={{ fontWeight: 900, fontSize: "1.2rem" }}>
+          {project["title"]}
+        </h2>
+        {/* <p className="mix-blend-exclusion">{project["subtitle"]}</p> */}
+      </div>
+
+      <ul className="w-full flex flex-wrap gap-x-4">
+        {project.tags && project.tags.map((tag: React.ReactNode, idx: number) => <li key={idx}>{tag}</li>)}
+      </ul>
+    </div >
   );
 }
