@@ -32,8 +32,7 @@ const projects = [
       <Metabase className="size-8" stroke="white" fill="white" />,
       <Ansible className="size-9" stroke="white" fill="white" />,
       <Jinja className="size-9" stroke="black" fill="white" />,
-      <Bash className="size-9" stroke="black" fill="white" />,
-      <Python className="size-9" stroke="black" fill="white" />
+      <Bash className="size-9" stroke="black" fill="white" />
     ]
   },
   {
@@ -44,6 +43,7 @@ const projects = [
       <Aws className="size-8" stroke="white" fill="white" />,
       <Terraform className="size-8" stroke="white" />,
       <Airflow className="size-8" stroke="white" fill="white" />,
+      <Python className="size-9" stroke="black" fill="white" />
     ]
   },
   {
